@@ -1,0 +1,71 @@
+
+#aboutSec2 {
+    .secrow1 {
+        padding: 15% 20%;
+    }
+}
+
+#aboutSec3 {
+    #empathySlider {
+        .slideContent {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+    }
+
+    .sliderNavs {
+        top: auto;
+        left: 50px;
+        right: auto;
+        bottom: 10%;
+        height: auto;
+        width: auto;
+
+        > div {
+            display: inline-block;
+            background: none;
+            box-shadow: none;
+            margin-right: 20px;
+            padding: 0;
+            height: auto;
+            width: auto;
+        }
+
+        svg {
+            stroke: $color1;
+            height: 20px;
+        }
+    }
+}
+
+#aboutSec4 {
+    .sliderNavs {
+        height: auto;
+
+        > div {
+            background: transparent;
+            box-shadow: none;
+            width: auto;
+            height: auto;
+            text-align: left;
+            padding: 5px 10px;
+
+            svg {
+                height: 20px;
+            }
+        }
+    }
+}
+
+#aboutSec5 {
+    .v-stretch {
+        min-height: 400px;
+        padding: 50px;
+        @include transition ($transition-set2);
+        margin: 25px;
+
+        .btn {
+            margin-top: 50px;
+        }
+    }
+}

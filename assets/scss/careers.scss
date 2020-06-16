@@ -1,0 +1,231 @@
+.career {
+    section {
+        > .sec-bg {
+            z-index: -1;
+        }
+    }
+}
+
+#careerSec1 {
+
+    &::after {
+        content: '';
+        @extend %absolute-basic;
+        background: transparent;
+        background: linear-gradient(0deg, rgba($color3,0) 20%, rgba($color7,1) 100%);
+    }
+
+    .secrow1 {
+        .text-stroke {
+            color: rgba($color1, 0.5);
+            -webkit-text-fill-color: $color7;
+            -webkit-text-stroke-width: 1px; 
+            -webkit-text-stroke-color: rgba($color1, 0.5);
+        }
+    }
+
+    .sec-bg {
+        span {
+            display: block;
+            width: 100%;
+            height: 10%;
+            background: url('../images/Career-bg1.svg') left center/contain repeat-x;
+        }
+
+        &.animated {
+            span {
+                opacity: 0;
+
+                &:nth-child(even){
+                    @include animation(fadeInLeft 1s 0.5s forwards);
+                }
+                &:nth-child(odd){
+                    @include animation(fadeInRight 1s 0.5s forwards);
+                }
+            }
+        }
+    }
+}
+
+#careerSec2 {
+    .secrow1{
+        .cell:first-child{
+            .secText,
+            .secHeader {
+                padding: 10px 10px 10px 50px;
+            }
+        }
+
+        .dealSliderScore {
+            padding: 0 10px 0 50px;
+            top: auto;
+            right: auto;
+
+            div {
+                padding: 5px 10px;
+
+                &:last-child {
+                    padding-left: 25px;
+
+                    &::after{
+                        content: '';
+                        @extend %absolute-basic;
+                        background-color: $color1;
+                        height: 2px;
+                        width: 30px;
+                        right: 100%;
+                        left: -10px;
+                    }
+                }
+            }
+        }
+
+        #dealSlider {
+            .slide {
+                max-width: 480px;
+                padding: 40px 30px;
+                @include transition($transition-set2);
+
+                &.slick-current {                    
+                    .innerSlide {
+                        box-shadow : $box-shadow3;
+                    }
+                }
+
+                .innerSlide {
+                    .absolute-bg{
+                        top:auto;
+                        padding: 40px;
+
+                        .secHead {
+                            padding: 20px 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        .sliderNavs {
+            left: 0;
+            right: 0;
+            height: auto;
+            padding-left: 20px;
+
+            > div {
+                background: transparent;
+                box-shadow: none;
+                width: auto;
+                height: auto;
+                text-align: left;
+                padding: 5px 10px;
+
+                svg {
+                    stroke:$color1;
+                    height: 20px;
+                }
+            }
+        }
+    }
+}
+
+#careerSec3 {
+    #slaySlider {
+        .slideContent {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+    }
+
+    .sliderNavs {
+        top: auto;
+        left: 50px;
+        right: auto;
+        bottom: 10%;
+        height: auto;
+        width: auto;
+
+        > div {
+            display: inline-block;
+            background: none;
+            box-shadow: none;
+            margin-right: 20px;
+            padding: 0;
+            height: auto;
+            width: auto;
+        }
+
+        svg {
+            height: 20px;
+        }
+    }
+}
+
+#careerSec4 {
+    .secrow2{
+        padding-left: 50px;
+
+        .slide{
+            max-width: 480px;
+            padding: 40px 30px;
+
+            .v-stretch {
+                min-height: 500px;
+                padding: 40px 30px;
+                @include transition ($transition-set2);
+
+                &::after {
+                    content: '';
+                    @extend %absolute-basic;
+                    background: transparent;
+                    @include transition ($transition-set2);
+                }
+        
+                .btn {
+                    margin-top: 50px;
+                }
+            }
+    
+            &.slick-current {
+                .v-stretch {
+                    &::after {
+                        background: rgba($color7, 0.5);
+                    }
+                    
+                    .btn {
+                        background: $color3;
+                    }
+                }
+            }
+        }
+
+        .sliderNavs {
+            height: auto;
+            padding-left: 20px;
+
+            > div {
+                background: transparent;
+                box-shadow: none;
+                width: auto;
+                height: auto;
+                text-align: left;
+                padding: 5px 10px;
+
+                svg {
+                    height: 20px;
+                }
+            }
+        }
+    }
+}
+
+#careerSec6 {
+    padding-bottom: 0;
+    .secContent {
+        padding-left: 50px;
+        padding-right: 50px;
+
+        .btn {
+            margin-top: 30px;
+        }
+    }
+}

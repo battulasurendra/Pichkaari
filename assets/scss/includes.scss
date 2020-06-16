@@ -1,0 +1,253 @@
+
+/****************** Loader styles ******************/
+#page_loader {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+    z-index: 99999;
+
+	&::before {
+		content: '';
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		background-color: $color1;
+		opacity: 1;
+    }
+
+	.spinner_svg {
+		@extend %absolute-basic;
+		@include anim($name: rotate, $duration: 2s, $timing-function: linear, $iteration-count: infinite);
+		z-index: 2;
+
+		.path {
+			stroke-dasharray: 1, 850;
+			stroke-dashoffset: 0;
+			stroke: $color7;
+			stroke-linecap: round;
+			@include anim($name: dash, $duration: 1.5s, $timing-function: ease-in-out, $iteration-count: infinite);
+		}
+
+		.bgPath {
+			stroke: $color8;
+		}
+	}
+}
+
+@include keyframes(rotate) {
+	100% {
+		@include transform(rotate(360deg));
+	}
+}
+
+@include keyframes(dash) {
+	0% {
+		stroke-dasharray: 1, 850;
+		stroke-dashoffset: 0;
+	}
+
+	50% {
+		stroke-dasharray: 90, 850;
+		stroke-dashoffset: -35;
+	}
+
+	100% {
+		stroke-dasharray: 90, 850;
+		stroke-dashoffset: -150;
+	}
+}
+/****************** Loader styles ******************/
+/****************** Header styles ******************/
+header {
+	height: auto;
+
+	.navbar {
+        padding: 0;
+		position: fixed;
+		z-index: 99;
+		@include transition($transition-set2);
+		@include color($color1);
+        
+        .container {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+    
+    .logoAnchor {
+        img {
+            max-width: 136px;
+            @include transition($transition-set2);
+        }
+
+        .logo-black{
+            display: none;
+        }
+	}
+
+    .menu-scroll {
+        display: inline-block;
+        vertical-align: top;
+        font-size: 12px;
+        line-height: 24px;
+        padding: 5px 15px;
+        margin: 18px auto;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 1.5px;
+    }
+
+    #scrollToTop {
+        height: 60px;
+        padding: 15px;
+        line-height: 30px;
+        @extend %absolute-basic;
+        position: fixed;
+        right: auto;
+        z-index: 99;
+        @include transform(rotate(-90deg));
+        left: -30px;
+
+        #scrollToTopBtn{
+            color: $color1;
+        }
+
+        &::after,        
+        &::before {
+            @extend %absolute-basic;
+            content: '';
+            right: auto;
+            height: 4px;
+            width: 75px;
+            left: -75px;
+            background: $color5;
+            border-radius: 10px;
+        }
+
+        &::after {
+            width: 30px;
+            left: -30px;
+            background: $color1;
+        }
+
+        &.dark{
+            #scrollToTopBtn{
+                color: $color3;
+            }
+
+            &::after {
+                background: $color3;
+            }
+        }
+    }
+
+    .connectFloat {
+        height: 60px;
+        line-height: 30px;
+        margin: 3%;
+        position: fixed;
+        top: auto;
+        right: 0;
+        bottom: 0;
+        left: auto;
+        z-index: 99;
+        box-shadow: $box-shadow1;
+
+        &.dark {
+            box-shadow: 0 0 0 16px rgba($color3, 0.2);
+        }
+        
+        .connectBtn {
+            padding: 17px 15px 13px;
+            border-radius: 50%;
+        }
+
+        #connectText {
+            @extend %absolute-basic;
+            left: -15px;
+            right: -15px;
+            top: -15px;
+            bottom: auto;
+            z-index: -1;
+            @include transform(scale(1));
+            @include transition($transition-set3);
+
+            i {
+                width: 90px;
+                height: 90px;
+            }
+        }
+
+        .socialIcons {
+            @include transition($transition-set3);
+            @include transform(scale(0));
+            a {
+                padding: 5px;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                @include property($transform-origin: center);
+                box-shadow: $box-shadow1;
+
+                &:nth-child(1) {
+                    @include transform(translate(-36px, -30px));
+                }
+
+                &:nth-child(2) {
+                    @include transform(translate(-10px, -60px));
+                }
+
+                &:nth-child(3) {
+                    @include transform(translate(30px, -64px));
+                }
+
+                i {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+
+        &.active,
+        &:hover {
+            &.dark {
+                box-shadow: $box-shadow1;
+            }
+
+            #connectText{
+                @include transform(scale(0));
+            }
+
+            .socialIcons{
+                @include transform(scale(1));
+            }
+        }
+
+    }
+
+    &.dark {
+
+        .navbar {
+            @include color($color3);
+        }
+        
+
+        .logoAnchor {    
+            .logo-default{
+                display: none;
+            }
+
+            .logo-black {
+                display: block;
+            }
+        }
+    }
+}
+/****************** Header styles ******************/
+/****************** Footer ******************/
+footer {
+    .footrow1 {
+        padding: 25px 10px;
+    }
+}
+/****************** Footer ******************/
