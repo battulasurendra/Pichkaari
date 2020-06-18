@@ -6,10 +6,10 @@
 </div>
 <header>
     <nav class="navbar w-g-12" id="header-menu">
-        <div class="d-table container">
+        <div class="d-table">
             <div class="navbar-header cell w-g-sm-3 w-g-8">
                 <div class="brand-logo">
-                    <a class="d-inline logoAnchor text-center v-top" href="index.php">
+                    <a class="d-inline w-g-12 logoAnchor text-center v-top" href="index.php">
                         <img src="assets/images/logo.svg" class="logo-default">
                         <img src="assets/images/logo-black.svg" class="logo-black">
                     </a>
@@ -35,7 +35,15 @@
         </div>
     </nav>
     <div id="scrollToTop" class="d-none">
-        <button type="button" class="fs2 fw5" id="scrollToTopBtn">Scroll to top</button>
+        <button type="button" class="fw5 d-block" id="scrollToTopBtn">
+            <svg x="0px" y="0px" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" class="d-inline v-top">
+                <line x1="0.71" y1="10" x2="18.54" y2="10"/>
+                <polyline points="11.87,3.78 18.21,10 11.87,16.22"/>
+            </svg>
+            <span class="d-inline v-top">
+                Scroll to top
+            </span>
+        </button>
     </div>
     <div class="connectFloat pos-rel br-circle d-none">
         <button type="button" class="connectBtn btn bg1 pos-rel"><i class="sprite-sm icon-1"></i></button>

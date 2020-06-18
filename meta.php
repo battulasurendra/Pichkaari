@@ -38,5 +38,6 @@
     <meta name="msapplication-config" content="assets/favicons/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
 
+    <link href="assets/css/fullpage.min.css" rel="stylesheet">
     <link href="assets/css/app.min.css?v=2.0" rel="stylesheet">
 </head>

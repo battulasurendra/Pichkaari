@@ -62,25 +62,28 @@ header {
 	height: auto;
 
 	.navbar {
-        padding: 0;
+        padding: 0 80px;
 		position: fixed;
 		z-index: 99;
-		@include transition($transition-set2);
-		@include color($color1);
+		@include transition($transition-set3);
+        @include color($color3);
+        background-color: $color1;
+        box-shadow: 0px 0px 3px 0px rgba(0,0,0,.1);
         
         .container {
-            padding-left: 10px;
-            padding-right: 10px;
+            padding-left: 70px;
+            padding-right: 70px;
         }
     }
     
     .logoAnchor {
+        max-width: 136px;
         img {
-            max-width: 136px;
+            margin-top: 3px;
             @include transition($transition-set2);
         }
 
-        .logo-black{
+        .logo-default{
             display: none;
         }
 	}
@@ -90,49 +93,66 @@ header {
         vertical-align: top;
         font-size: 12px;
         line-height: 24px;
-        padding: 5px 15px;
+        padding: 12px 15px;
         margin: 18px auto;
         text-transform: uppercase;
         font-weight: bold;
         letter-spacing: 1.5px;
     }
 
+    &.transparent {
+        .navbar {
+            @include color($color1);
+            background-color: transparent;
+            box-shadow: none;
+        }
+        
+
+        .logoAnchor {    
+            .logo-black{
+                display: none;
+            }
+
+            .logo-default {
+                display: block;
+            }
+        }
+    }
+
     #scrollToTop {
-        height: 60px;
-        padding: 15px;
-        line-height: 30px;
+        height: 20px;
         @extend %absolute-basic;
         position: fixed;
         right: auto;
+        left: 33px;
         z-index: 99;
-        @include transform(rotate(-90deg));
-        left: -30px;
+        @include transform(rotate(-90deg) translateX(-50%));
+        @include property($transform-origin: 0 0);
 
         #scrollToTopBtn{
             color: $color1;
-        }
 
-        &::after,        
-        &::before {
-            @extend %absolute-basic;
-            content: '';
-            right: auto;
-            height: 4px;
-            width: 75px;
-            left: -75px;
-            background: $color5;
-            border-radius: 10px;
-        }
+            span {
+                padding: 2px;
+            }
 
-        &::after {
-            width: 30px;
-            left: -30px;
-            background: $color1;
+            svg {
+                fill: none;
+                stroke:$color1;
+                stroke-width: 1.5;
+                stroke-miterlimit: 10;
+                height: 20px;
+                margin: 0 5px;
+            }
         }
 
         &.dark{
             #scrollToTopBtn{
                 color: $color3;
+
+                svg {
+                    stroke: $color3;
+                }
             }
 
             &::after {
@@ -142,7 +162,7 @@ header {
     }
 
     .connectFloat {
-        height: 60px;
+        padding: 30px;
         line-height: 30px;
         margin: 3%;
         position: fixed;
@@ -151,30 +171,36 @@ header {
         bottom: 0;
         left: auto;
         z-index: 99;
-        box-shadow: $box-shadow1;
-
-        &.dark {
-            box-shadow: 0 0 0 16px rgba($color3, 0.2);
-        }
+        @include transition($transition-set2);
         
         .connectBtn {
             padding: 17px 15px 13px;
             border-radius: 50%;
+            box-shadow: $box-shadow1;
+            @include transition($transition-set2);
         }
 
         #connectText {
             @extend %absolute-basic;
-            left: -15px;
-            right: -15px;
-            top: -15px;
+            left: 15px;
+            right: 15px;
+            top: 15px;
             bottom: auto;
             z-index: -1;
             @include transform(scale(1));
-            @include transition($transition-set3);
+            @include transition($transition-set2);
 
             i {
                 width: 90px;
                 height: 90px;
+            }
+        }
+
+        &.dark {
+            #connectText {
+                i {
+                    background-position-x: 100%;
+                }
             }
         }
 
@@ -208,12 +234,7 @@ header {
             }
         }
 
-        &.active,
         &:hover {
-            &.dark {
-                box-shadow: $box-shadow1;
-            }
-
             #connectText{
                 @include transform(scale(0));
             }
@@ -224,24 +245,6 @@ header {
         }
 
     }
-
-    &.dark {
-
-        .navbar {
-            @include color($color3);
-        }
-        
-
-        .logoAnchor {    
-            .logo-default{
-                display: none;
-            }
-
-            .logo-black {
-                display: block;
-            }
-        }
-    }
 }
 /****************** Header styles ******************/
 /****************** Footer ******************/
@@ -251,3 +254,21 @@ footer {
     }
 }
 /****************** Footer ******************/
+
+/****************** fullpage.js patch work ******************/
+script + div {
+    animation: fadeOut 0.1s forwards;
+}
+
+@include keyframes(fadeOut) {
+    0% {
+        opacity: 1;
+        @include transform(scale3d(0.3, 0.3, 0.3));
+    }
+
+    to {
+        opacity: 0;
+        @include transform(scale3d(0,0,0));
+    }
+}
+/****************** fullpage.js patch work ******************/

@@ -113,10 +113,11 @@ i {
 }
 
 section {
-	padding: 110px 0 70px;
+	padding: 110px 90px 70px;
 	position: relative;
 	z-index: 1;
     clear: both;
+    min-height: 100%;
     overflow: hidden;
 }
 
@@ -160,7 +161,7 @@ address{
 }
 /****************** Browser Override ******************/
 /****************** Sprite styles ******************/
-@include generateSprite('../images/sprite-icons.svg',1,7);
+@include generateSprite('../images/sprite-icons.svg',2,7);
 /****************** Sprite styles ******************/
 /****************** Button styles ******************/
 .btn {
@@ -293,7 +294,23 @@ body {
 	.zero-padding {
 		padding-top: 0 !important;
 		padding-bottom: 0 !important;
-	}
+    }
+    
+    .no-pad-left {
+		padding-left: 0;
+    }
+
+    .no-pad-right {
+		padding-right: 0;
+    }
+
+    .no-pad-top {
+		padding-top: 0 !important;
+    }
+
+    .no-pad-bottom {
+		padding-bottom: 0 !important;
+    }
 }
 
 .logoPadding {
@@ -627,7 +644,7 @@ h2 {
 }
 
 .hs5 {
-	font-size: 40px;
+	font-size: 38px;
 	line-height: 1.1;
 }
 /****************** Font Sizes ******************/

@@ -3,7 +3,7 @@
 <body class="about">
     <?php include('header.php') ?>
 
-    <section id="aboutSec1" class="zero-padding bg7" data-float="hide">
+    <section id="aboutSec1" class="zero-padding bg7" data-float="hide" data-nav="transparent">
         <div class="container pos-rel">
             <div class="secrow1 h-fold d-table animate up">
                 <div class="bannerContent cell">
@@ -17,7 +17,7 @@
             <img src="assets/images/About-bg1.jpg">
         </div>
     </section>
-    <section id="aboutSec2" data-header="dark">
+    <section id="aboutSec2" data-theme="dark">
         <div class="container">
             <div class="secrow1 bg6 animate up pos-rel">
                 <div class="bannerContent pos-rel">
@@ -37,7 +37,7 @@
             <div class="secrow1 row pos-rel">
                 <div id="empathySlider">
                     <div class="slide">
-                        <div class="d-table d-xs-block bg9">
+                        <div class="d-table d-xs-block bg8">
                             <div class="cell w-g-md-5 w-g-sm-6 w-g-12 slideContent">
                                 <div class="fs3 fc1 secText w-g-md-10 w-g-12">
                                     Consume the assigned brief, digest it and use it as a launchpad for the project, rather than a barricade tape.
@@ -51,7 +51,7 @@
                         </div>
                     </div>
                     <div class="slide">
-                        <div class="d-table d-xs-block bg9">
+                        <div class="d-table d-xs-block bg8">
                             <div class="cell w-g-md-5 w-g-sm-6 w-g-12 slideContent">
                                 <div class="fs3 fc1 secText w-g-md-10 w-g-12">
                                     Exchange playlists, books, movie reviews, and whatever you feel is relevant to our brainstorming session. In our book, there is nothing called a silly idea.
@@ -65,7 +65,7 @@
                         </div>
                     </div>
                     <div class="slide">
-                        <div class="d-table d-xs-block bg9">
+                        <div class="d-table d-xs-block bg8">
                             <div class="cell w-g-md-5 w-g-sm-6 w-g-12 slideContent">
                                 <div class="fs3 fc1 secText w-g-md-10 w-g-12">
                                     Collect said ideas, immerse yourself fully and brew them to perfection until they make the desired impact.
@@ -79,7 +79,7 @@
                         </div>
                     </div>
                     <div class="slide">
-                        <div class="d-table d-xs-block bg9">
+                        <div class="d-table d-xs-block bg8">
                             <div class="cell w-g-md-5 w-g-sm-6 w-g-12 slideContent">
                                 <div class="fs3 fc1 secText w-g-md-10 w-g-12">
                                     Juggle multiple projects at a time, without getting intimidated by deadlines. But don’t worry, we’re all in this together.
@@ -113,7 +113,7 @@
             <img src="assets/images/About-bg3.svg" class="i-inline">
         </div>
     </section>
-    <section id="aboutSec4" data-header="dark">
+    <section id="aboutSec4" data-theme="dark">
         <div class="container">
             <div class="secrow1 row pos-rel bg8">
                 <h4 class="hs4 fw8 secHeader text-center w-g-md-6 w-g-sm-8 w-g-12">
@@ -121,7 +121,7 @@
                 </h4>
                 <div id="founderSlider">
                     <div class="slide">
-                        <div class="d-table d-xs-block bg9">
+                        <div class="d-table d-xs-block bg8">
                             <div class="cell w-g-md-5 w-g-sm-6 w-g-12 slideContent">
                                 <div class="fs3 fc1 secText w-g-md-10 w-g-12">
                                     Consume the assigned brief, digest it and use it as a launchpad for the project, rather than a barricade tape.
@@ -135,7 +135,7 @@
                         </div>
                     </div>
                     <div class="slide">
-                        <div class="d-table d-xs-block bg9">
+                        <div class="d-table d-xs-block bg8">
                             <div class="cell w-g-md-5 w-g-sm-6 w-g-12 slideContent">
                                 <div class="fs3 fc1 secText w-g-md-10 w-g-12">
                                     Exchange playlists, books, movie reviews, and whatever you feel is relevant to our brainstorming session. In our book, there is nothing called a silly idea.
@@ -149,7 +149,7 @@
                         </div>
                     </div>
                     <div class="slide">
-                        <div class="d-table d-xs-block bg9">
+                        <div class="d-table d-xs-block bg8">
                             <div class="cell w-g-md-5 w-g-sm-6 w-g-12 slideContent">
                                 <div class="fs3 fc1 secText w-g-md-10 w-g-12">
                                     Collect said ideas, immerse yourself fully and brew them to perfection until they make the desired impact.
@@ -163,7 +163,7 @@
                         </div>
                     </div>
                     <div class="slide">
-                        <div class="d-table d-xs-block bg9">
+                        <div class="d-table d-xs-block bg8">
                             <div class="cell w-g-md-5 w-g-sm-6 w-g-12 slideContent">
                                 <div class="fs3 fc1 secText w-g-md-10 w-g-12">
                                     Juggle multiple projects at a time, without getting intimidated by deadlines. But don’t worry, we’re all in this together.

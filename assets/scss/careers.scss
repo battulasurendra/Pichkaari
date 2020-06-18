@@ -12,13 +12,16 @@
         content: '';
         @extend %absolute-basic;
         background: transparent;
-        background: linear-gradient(0deg, rgba($color3,0) 20%, rgba($color7,1) 100%);
+        background: -moz-linear-gradient(0deg, rgba($color1,0) 20%, rgba($color7,1) 100%);
+        background: -webkit-linear-gradient(0deg, rgba($color1,0) 20%, rgba($color7,1) 100%);
+        background: linear-gradient(0deg, rgba($color1,0) 20%, rgba($color7,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ff3333",GradientType=1);
     }
 
     .secrow1 {
         .text-stroke {
             color: rgba($color1, 0.5);
-            -webkit-text-fill-color: $color7;
+            -webkit-text-fill-color: transparent;
             -webkit-text-stroke-width: 1px; 
             -webkit-text-stroke-color: rgba($color1, 0.5);
         }
@@ -49,15 +52,7 @@
 
 #careerSec2 {
     .secrow1{
-        .cell:first-child{
-            .secText,
-            .secHeader {
-                padding: 10px 10px 10px 50px;
-            }
-        }
-
         .dealSliderScore {
-            padding: 0 10px 0 50px;
             top: auto;
             right: auto;
 
@@ -83,7 +78,7 @@
         #dealSlider {
             .slide {
                 max-width: 480px;
-                padding: 40px 30px;
+                padding: 40px 20px;
                 @include transition($transition-set2);
 
                 &.slick-current {                    
@@ -126,6 +121,16 @@
             }
         }
     }
+
+    .sec-bg {
+        opacity: 0.1;
+
+        img {
+            width: 200%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
 }
 
 #careerSec3 {
@@ -162,15 +167,13 @@
 
 #careerSec4 {
     .secrow2{
-        padding-left: 50px;
-
         .slide{
-            max-width: 480px;
-            padding: 40px 30px;
+            max-width: 420px;
+            padding: 40px 20px;
 
             .v-stretch {
                 min-height: 500px;
-                padding: 40px 30px;
+                padding: 20% 30px 15%;
                 @include transition ($transition-set2);
 
                 &::after {
@@ -185,14 +188,15 @@
                 }
             }
     
-            &.slick-current {
+            &:hover {
                 .v-stretch {
                     &::after {
                         background: rgba($color7, 0.5);
                     }
                     
                     .btn {
-                        background: $color3;
+                        background: $color1;
+                        color: $color7;
                     }
                 }
             }
@@ -218,14 +222,38 @@
     }
 }
 
+#careerSec5 {
+    .container {
+        top: 50%;
+        @include transform (translateY(-50%));
+    }
+
+    .sec-bg {
+        opacity: .3;
+        top: -25%;
+        left: -10%;
+        right: 10%;
+    }
+}
+
 #careerSec6 {
-    padding-bottom: 0;
     .secContent {
-        padding-left: 50px;
+        padding-left: 70px;
         padding-right: 50px;
 
         .btn {
             margin-top: 30px;
+        }
+    }
+
+    .sec-bg {
+        opacity: 0.1;
+
+        img {
+            width: 200%;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
         }
     }
 }

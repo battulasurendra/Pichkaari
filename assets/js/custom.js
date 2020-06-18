@@ -49,68 +49,101 @@ jQuery(function($){
         }
     }
 
+    function equalHeight(selector){
+        var maxHeight = 0,
+            elements = $(selector);
+        
+        elements.each(function(){
+            var height = $(this).innerHeight();
+            if(height > maxHeight) {
+                maxHeight = height;
+            }
+        });
+
+        elements.innerHeight(maxHeight);
+    }
+
+    function themeChanges() {
+        var scrollPos = $(window).scrollTop();
+                    
+        sections.each(function(){
+            var secPos = $(this).offset().top;
+            var navTheme = $(this).data('nav') || '';
+            var theme = $(this).data('theme') || '';
+            var floats = $(this).data('float') || '';
+            
+            if((scrollPos + headerHeight/2) >= secPos) {
+                header.removeClass().addClass(navTheme);
+            }
+            
+            if((scrollPos + screenHeight/2) >= secPos) {
+                if(floats === 'hide') {
+                    scrollTop.hide();
+                } else {
+                    scrollTop.show();
+                }
+
+                scrollTop.removeClass('dark').addClass(theme);
+            }
+
+            if((scrollPos + screenHeight) >= secPos) {
+                if(floats === 'hide') {
+                    connect.hide();
+                } else {
+                    connect.show();
+                }
+                
+                connect.removeClass('dark').addClass(theme);
+            }
+        });
+    }
+
+    var screenHeight = $(window).height(),
+        headerHeight = $('#header-menu').height(),
+        sections = $('section'),
+        header = $('header'),
+        scrollTop = $('#scrollToTop'),
+        connect = $('.connectFloat');
+
     var actions = {
         preload: {
-            init: function() {                
-                populate_animations();
+            init: function() {
 
-                $(window).click(function(e){
-                    if (!$.contains($('.connectFloat'), e.target)){
-                      $('.connectFloat').removeClass('active');
-                    }
-                });
-                  
+                if($('#fullpage').length > 0){
+                    $('#fullpage').fullpage({
+                        //options here
+                        autoScrolling:true,
+                        slideSelector: '.fullpageSlide',
+                        licenseKey: '897A7684-99CB4ACB-931F45AA-AA7D475B',
+                        parallaxKey: '7E0A0283-09AA4525-99BE6DBB-A249FD6C',                    
+                        scrollOverflowResetKey: '11698024-1B244CC9-A3467738-31627BAC',                    
+                        parallax: true,
+                        scrollOverflow: true,
+                        scrollOverflowReset: true,
+                        afterLoad: function(origin, destination, direction){
+                            populate_animations();
+                            themeChanges();
+                        }
+                    });
+                
+                    //methods
+                    $.fn.fullpage.setAllowScrolling(true);
+                }
 
                 $('#scrollToTopBtn').click(function() {
+                    $.fn.fullpage.moveTo(1);
                     $("html, body").animate({ scrollTop: "0" });
                 });
 
-                $('.connectFloat').hover(function(){
-                    $(this).addClass('active');
-                });
-
-                var screenHeight = $(window).height(),
-                    headerHeight = $('#header-menu').height();
-
                 $(window).on("scroll", function() {
                     populate_animations();
-                    var scrollPos = $(window).scrollTop();
-                    
-                    $('section').each(function(){
-                        var secPos = $(this).offset().top;
-                        var menuTheme = $(this).data('header') || '';
-                        var floats = $(this).data('float') || '';
-                        
-                        if((scrollPos + headerHeight/2) > secPos) {
-                            $('header').removeClass('dark').addClass(menuTheme);
-                        }
-                        
-                        if((scrollPos + screenHeight/2) > secPos) {
-                            if(floats === 'hide') {
-                                $('#scrollToTop').hide();
-                            } else {
-                                $('#scrollToTop').show();
-                            }
-
-                            $('#scrollToTop').removeClass('dark').addClass(menuTheme);
-                        }
-
-                        if((scrollPos + screenHeight) > secPos) {
-                            if(floats === 'hide') {
-                                $('.connectFloat').hide();
-                            } else {
-                                $('.connectFloat').show();
-                            }
-                            
-                            $('.connectFloat').removeClass('dark').addClass(menuTheme);
-                        }
-                    });
+                    themeChanges();
                 });
             }
         },
         home: {
             init: function() {
-                var categories = ['branding', 'package design', 'marketing & communication', 'ui/ux development', 'information design', 'motion graphics & video']
+                var categories = ['branding', 'package design', 'marketing & communication', 'ui/ux development', 'information design', 'motion graphics & video'];
 
                 $('.clientLocation').hover(function() {
                     var ele = $(this);
@@ -175,11 +208,15 @@ jQuery(function($){
                     nextArrow: $("#dealSliderArrow2")
                 });
 
+                equalHeight($('#dealSlider .slide .secText'));
+
                 $('#slaySlider').slick({
                     infinite: true,
                     autoplay: false,
                     autoplaySpeed: 5000,
                     adaptiveHeight: true,
+                    // fade: true,
+                    // cssEase: 'linear',
                     prevArrow: $("#slaySliderArrow1"),
                     nextArrow: $("#slaySliderArrow2")
                 });
@@ -220,7 +257,9 @@ jQuery(function($){
         },
         postload: {
             init: function() {
-                $('#page_loader').delay(350).fadeOut();
+                $('#page_loader').fadeOut();
+                populate_animations();                  
+                themeChanges();
             }
         }
     },
