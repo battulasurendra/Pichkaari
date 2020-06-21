@@ -251,10 +251,16 @@
 }
 
 #homeSec6 {
-    padding-top: 10%;
+    padding-top: 140px;
+
+    .container
+
+    .secrow1 {        
+        max-width: 1155px;
+    }
 
     .v-stretch {
-        min-height: 500px;
+        min-height: 490px;
         padding: 9% 50px 5%;
         @include transition ($transition-set2);
         @include transform (scale(1));

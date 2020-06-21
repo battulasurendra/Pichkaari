@@ -8,15 +8,15 @@
 
 #careerSec1 {
 
-    &::after {
-        content: '';
-        @extend %absolute-basic;
-        background: transparent;
-        background: -moz-linear-gradient(0deg, rgba($color1,0) 20%, rgba($color7,1) 100%);
-        background: -webkit-linear-gradient(0deg, rgba($color1,0) 20%, rgba($color7,1) 100%);
-        background: linear-gradient(0deg, rgba($color1,0) 20%, rgba($color7,1) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ff3333",GradientType=1);
-    }
+    // &::after {
+    //     content: '';
+    //     @extend %absolute-basic;
+    //     background: transparent;
+    //     background: -moz-linear-gradient(0deg, rgba($color1,0) 20%, rgba($color7,1) 100%);
+    //     background: -webkit-linear-gradient(0deg, rgba($color1,0) 20%, rgba($color7,1) 100%);
+    //     background: linear-gradient(0deg, rgba($color1,0) 20%, rgba($color7,1) 100%);
+    //     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ff3333",GradientType=1);
+    // }
 
     .secrow1 {
         .text-stroke {
@@ -25,27 +25,28 @@
             -webkit-text-stroke-width: 1px; 
             -webkit-text-stroke-color: rgba($color1, 0.5);
         }
+
+        .secHeaer {
+            padding-bottom: 30px;
+        }
     }
 
     .sec-bg {
-        span {
-            display: block;
-            width: 100%;
-            height: 10%;
-            background: url('../images/Career-bg1.svg') left center/contain repeat-x;
+        .image-top {
+            bottom: auto;
+            z-index:2;
         }
 
-        &.animated {
-            span {
-                opacity: 0;
+        .image-right {
+            background-image: url('../images/Career-bg1-right.png');
+            background-repeat: repeat;
+            @include animation(bgScrollRight 1200s infinite linear);
+        }
 
-                &:nth-child(even){
-                    @include animation(fadeInLeft 1s 0.5s forwards);
-                }
-                &:nth-child(odd){
-                    @include animation(fadeInRight 1s 0.5s forwards);
-                }
-            }
+        .image-left {
+            background-image: url('../images/Career-bg1-left.png');
+            background-repeat: repeat;
+            @include animation(bgScrollLeft 1200s infinite linear);
         }
     }
 }
@@ -91,6 +92,7 @@
                     .absolute-bg{
                         top:auto;
                         padding: 40px;
+                        z-index: 3;
 
                         .secHead {
                             padding: 20px 0;
@@ -168,10 +170,10 @@
 #careerSec4 {
     .secrow2{
         .slide{
-            max-width: 420px;
             padding: 40px 20px;
 
             .v-stretch {
+                max-width: 380px;
                 min-height: 500px;
                 padding: 20% 30px 15%;
                 @include transition ($transition-set2);
@@ -186,6 +188,16 @@
                 .btn {
                     margin-top: 50px;
                 }
+
+                .absolute-bg {
+                    opacity: 1;
+                    @include transition ($transition-set2);
+                    
+                    &.hover-image {
+                        opacity: 0;
+                    }
+                }
+
             }
     
             &:hover {
@@ -197,6 +209,14 @@
                     .btn {
                         background: $color1;
                         color: $color7;
+                    }
+
+                    .absolute-bg {
+                        opacity: 0;
+                        
+                        &.hover-image {
+                            opacity: 1;
+                        }
                     }
                 }
             }
@@ -223,10 +243,13 @@
 }
 
 #careerSec5 {
-    .container {
-        top: 50%;
-        @include transform (translateY(-50%));
-    }
+    min-height: auto;
+    padding-top: 90px;
+    padding-bottom: 50px;
+    // .container {
+    //     top: 50%;
+    //     @include transform (translateY(-50%));
+    // }
 
     .sec-bg {
         opacity: .3;

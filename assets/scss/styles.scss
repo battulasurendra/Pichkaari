@@ -161,7 +161,7 @@ address{
 }
 /****************** Browser Override ******************/
 /****************** Sprite styles ******************/
-@include generateSprite('../images/sprite-icons.svg',2,7);
+@include generateSprite('../images/sprite-icons.svg',2,8);
 /****************** Sprite styles ******************/
 /****************** Button styles ******************/
 .btn {
@@ -180,12 +180,111 @@ address{
 	border: none;
 	border-radius: 25px 25px 25px 0;
 	cursor: pointer;
-    overflow: hidden;
+    position: relative;
 	@include transition($transition-set2);
+    
+    &::before,
+    &::after {
+        position: absolute;
+        content: '';
+        display: block;
+        width: 140%;
+        height: 100%;
+        left: -20%;
+        z-index: -1000;
+        transition: all ease-in-out 0.5s;
+        background-repeat: no-repeat;
+    }
+
+    &::before {
+        display: none;
+        top: -75%;
+        background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%, 18% 18%;
+    }
+
+    &::after {
+        display: none;
+        bottom: -75%;
+        background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%;
+    }
+
+    &.btn-black {    
+        &-white {
+            background: $color3;
+            &:hover {
+                color: $color3;
+                background: $color1;
+
+                &::before {
+                    background-image: radial-gradient(circle, $color1 20%, transparent 20%), radial-gradient(circle, transparent 20%, $color1 20%, transparent 30%), radial-gradient(circle, $color1 20%, transparent 20%), radial-gradient(circle, $color1 20%, transparent 20%), radial-gradient(circle, transparent 10%, $color1 15%, transparent 20%), radial-gradient(circle, $color1 20%, transparent 20%), radial-gradient(circle, $color1 20%, transparent 20%), radial-gradient(circle, $color1 20%, transparent 20%), radial-gradient(circle, $color1 20%, transparent 20%);
+                }
+            
+                &::after {
+                    background-image: radial-gradient(circle, $color1 20%, transparent 20%), radial-gradient(circle, $color1 20%, transparent 20%), radial-gradient(circle, transparent 10%, $color1 15%, transparent 20%), radial-gradient(circle, $color1 20%, transparent 20%), radial-gradient(circle, $color1 20%, transparent 20%), radial-gradient(circle, $color1 20%, transparent 20%), radial-gradient(circle, $color1 20%, transparent 20%);
+                }                
+            }
+        }
+
+        &-red {
+            background: $color3;
+            &:hover {
+                background: $color7;
+    
+                &::before {
+                    background-image: radial-gradient(circle, $color7 20%, transparent 20%), radial-gradient(circle, transparent 20%, $color7 20%, transparent 30%), radial-gradient(circle, $color7 20%, transparent 20%), radial-gradient(circle, $color7 20%, transparent 20%), radial-gradient(circle, transparent 10%, $color7 15%, transparent 20%), radial-gradient(circle, $color7 20%, transparent 20%), radial-gradient(circle, $color7 20%, transparent 20%), radial-gradient(circle, $color7 20%, transparent 20%), radial-gradient(circle, $color7 20%, transparent 20%);
+                }
+            
+                &::after {
+                    background-image: radial-gradient(circle, $color7 20%, transparent 20%), radial-gradient(circle, $color7 20%, transparent 20%), radial-gradient(circle, transparent 10%, $color7 15%, transparent 20%), radial-gradient(circle, $color7 20%, transparent 20%), radial-gradient(circle, $color7 20%, transparent 20%), radial-gradient(circle, $color7 20%, transparent 20%), radial-gradient(circle, $color7 20%, transparent 20%);
+                }                
+            }
+        }
+    }
+
+    &.btn-red {    
+        &-white {
+            background: $color7;
+            &:hover {
+                color: $color7;
+                background: $color1;
+
+                &::before {
+                    background-image: radial-gradient(circle, $color1 20%, transparent 20%), radial-gradient(circle, transparent 20%, $color1 20%, transparent 30%), radial-gradient(circle, $color1 20%, transparent 20%), radial-gradient(circle, $color1 20%, transparent 20%), radial-gradient(circle, transparent 10%, $color1 15%, transparent 20%), radial-gradient(circle, $color1 20%, transparent 20%), radial-gradient(circle, $color1 20%, transparent 20%), radial-gradient(circle, $color1 20%, transparent 20%), radial-gradient(circle, $color1 20%, transparent 20%);
+                }
+            
+                &::after {
+                    background-image: radial-gradient(circle, $color1 20%, transparent 20%), radial-gradient(circle, $color1 20%, transparent 20%), radial-gradient(circle, transparent 10%, $color1 15%, transparent 20%), radial-gradient(circle, $color1 20%, transparent 20%), radial-gradient(circle, $color1 20%, transparent 20%), radial-gradient(circle, $color1 20%, transparent 20%), radial-gradient(circle, $color1 20%, transparent 20%);
+                }                
+            }
+        }
+
+        &-black {
+            background: $color7;
+            &:hover {
+                background: $color3;
+    
+                &::before {
+                    background-image: radial-gradient(circle, $color3 20%, transparent 20%), radial-gradient(circle, transparent 20%, $color3 20%, transparent 30%), radial-gradient(circle, $color3 20%, transparent 20%), radial-gradient(circle, $color3 20%, transparent 20%), radial-gradient(circle, transparent 10%, $color3 15%, transparent 20%), radial-gradient(circle, $color3 20%, transparent 20%), radial-gradient(circle, $color3 20%, transparent 20%), radial-gradient(circle, $color3 20%, transparent 20%), radial-gradient(circle, $color3 20%, transparent 20%);
+                }
+            
+                &::after {
+                    background-image: radial-gradient(circle, $color3 20%, transparent 20%), radial-gradient(circle, $color3 20%, transparent 20%), radial-gradient(circle, transparent 10%, $color3 15%, transparent 20%), radial-gradient(circle, $color3 20%, transparent 20%), radial-gradient(circle, $color3 20%, transparent 20%), radial-gradient(circle, $color3 20%, transparent 20%), radial-gradient(circle, $color3 20%, transparent 20%);
+                }                
+            }
+        }
+    }
 
 	&:hover {
-        border-radius: 25px;
-	}
+        &::before {
+            display: block;
+            animation: btnBubblesTop ease-in-out 0.75s forwards;
+        }
+    
+        &::after {
+            display: block;
+            animation: btnBubblesBottom ease-in-out 0.75s forwards;
+        }
+    }
 }
 /****************** Button styles ******************/
 /****************** Support styles ******************/
@@ -604,7 +703,7 @@ h2 {
 }
 
 .fs3 {
-	font-size: 17px;
+	font-size: 18px;
 	line-height: 30px;
 }
 
@@ -696,7 +795,7 @@ h2 {
 .br-circle {border-radius: 50%;}
 /****************** Border Radius ******************/
 /****************** Scroll Animations ******************/
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 320px) {
 	.loading,
 	.animate {
 		opacity: 0
@@ -738,6 +837,83 @@ h2 {
 				}
 			}
 		}
-	}
+    }
+    
+    @include keyframes(bgScrollLeft) {
+        0% {
+            background-position: 0%;
+        }
+        
+        to {
+            background-position: 90000%;
+        }
+    }
+
+    @include keyframes(bgScrollRight) {
+        0% {
+            background-position: 0%;
+        }
+        
+        to {
+            background-position: -90000%;
+        }
+    }
+
+    
+    @include keyframes(bounce) {
+        from, 20%, 53%, to {
+            @include property($animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1));
+            @include transform(translate3d(0, 0, 0));
+        }
+
+        40%, 43% {
+            @include property($animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06));
+            @include transform(translate3d(0, -30px, 0) scaleY(1.1));
+        }
+
+        70% {
+            @include property($animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06));
+            @include transform(translate3d(0, -15px, 0) scaleY(1.05));
+        }
+
+        80% {
+            @include property($transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1));
+            @include transform(translate3d(0, 0, 0) scaleY(0.95));
+        }
+
+        90% {
+            @include transform(translate3d(0, -4px, 0) scaleY(1.02));
+        }
+    }
+
+    @keyframes btnBubblesTop {
+        0% {
+            background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
+        }
+
+        50% {
+            background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 90% 30%;
+        }
+
+        100% {
+            background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%, 50% 40%, 65% 10%, 90% 20%;
+            background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+        }
+    }
+
+    @keyframes btnBubblesBottom {
+        0% {
+            background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%, 70% -10%, 70% 0%;
+        }
+
+        50% {
+            background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%, 105% 0%;
+        }
+
+        100% {
+            background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
+            background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+        }
+    }
 }
 /****************** Scroll Animations ******************/

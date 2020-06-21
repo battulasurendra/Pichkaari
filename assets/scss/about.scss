@@ -1,12 +1,17 @@
 
 #aboutSec2 {
     .secrow1 {
-        padding: 15% 20%;
+        padding: 10% 10px;
+    }
+
+    .sec-bg {
+        width: 85%;
+        top: -10%;
     }
 }
 
 #aboutSec3 {
-    #empathySlider {
+    #motifSlider {
         .slideContent {
             padding-left: 50px;
             padding-right: 50px;
@@ -17,7 +22,7 @@
         top: auto;
         left: 50px;
         right: auto;
-        bottom: 10%;
+        bottom: 0;
         height: auto;
         width: auto;
 
@@ -36,11 +41,66 @@
             height: 20px;
         }
     }
+
+    .sec-bg {
+        left: -100%;
+        top: 20%;
+        bottom: -20%;
+        opacity: 0.1;
+        width: 70%;
+    }
 }
 
 #aboutSec4 {
+    .secHeader {
+        padding: 60px 0 0;
+        margin: auto auto -45px;
+    }
+
+    #founderSlider {
+        padding: 0 6%;
+        max-width: 1200px;
+
+        .slide {
+            padding-top: 100px;
+        }
+        
+        .founderImage {
+            margin-top: -100px;
+        }
+
+        .founderDesignation {
+            padding: 5px 0 20px;
+        }
+        
+        .founderDescription {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        .founderSocialIcons {
+            padding-top: 30px;
+            a {
+                margin-bottom: 15px; 
+            }
+        }
+
+        .founderHobbies {
+            > .col {
+                border-right: 1px solid $color3;
+                
+                &:last-child {
+                    border-right: none;
+                }
+            }
+        }
+    }
+
     .sliderNavs {
         height: auto;
+        padding: 20px 0 4%;
+        left: 0;
+        right: 0;
 
         > div {
             background: transparent;
@@ -55,17 +115,62 @@
             }
         }
     }
+
+    .sec-bg {
+        left: -20%;
+        right: -40%;
+        top: -70%;
+        opacity: 0.4;
+    }
 }
 
 #aboutSec5 {
     .v-stretch {
-        min-height: 400px;
+        max-width: 573px;
+        min-height: 457px;
+        margin: 25px auto;
         padding: 50px;
         @include transition ($transition-set2);
-        margin: 25px;
+        box-shadow: $box-shadow3;
 
         .btn {
-            margin-top: 50px;
+            margin-top: 20px;
         }
+    }
+}
+
+#aboutSec6 {
+    .socialIcons{
+        a {
+            margin: 10px 20px;
+        }
+        i {
+            width: 54px;
+            height: 54px;
+            background-position-x: 100%;
+        }
+    }
+
+    .sec-bg {
+        left: -30%;
+        right: -30%;
+        top: -45%;
+        opacity: 0.1;
+    }
+}
+
+#aboutSec7 {
+    .container {
+        padding: 80px 10px;
+
+        .btn {
+            margin-top: 20px;
+        }
+    }
+
+    .sec-bg {
+        top: -40%;
+        opacity: .1;
+        width: 75%;
     }
 }

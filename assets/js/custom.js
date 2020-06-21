@@ -119,10 +119,17 @@ jQuery(function($){
                         scrollOverflowResetKey: '11698024-1B244CC9-A3467738-31627BAC',                    
                         parallax: true,
                         scrollOverflow: true,
-                        scrollOverflowReset: true,
+                        scrollOverflowReset: false,
                         afterLoad: function(origin, destination, direction){
                             populate_animations();
                             themeChanges();
+                        },
+                        onLeave : function(origin, destination, direction){
+                            if(origin.index === 0){
+                                if($('#dealSlider').length > 0) {
+                                    equalHeight($('#dealSlider .slide .secText'));
+                                }
+                            }
                         }
                     });
                 
@@ -157,6 +164,8 @@ jQuery(function($){
                     infinite: true,
                     dots: true,
                     autoplay: false,
+                    fade: true,
+                    cssEase: 'linear',
                     autoplaySpeed: 5000,
                     adaptiveHeight: true,
                     customPaging: function(slider, i) {
@@ -201,14 +210,12 @@ jQuery(function($){
                 }).slick({
                     infinite: true,
                     variableWidth: true,
-                    autoplay: true,
+                    autoplay: false,
                     autoplaySpeed: 5000,
                     adaptiveHeight: true,
                     prevArrow: $("#dealSliderArrow1"),
                     nextArrow: $("#dealSliderArrow2")
                 });
-
-                equalHeight($('#dealSlider .slide .secText'));
 
                 $('#slaySlider').slick({
                     infinite: true,
@@ -223,25 +230,25 @@ jQuery(function($){
 
                 $('#jobsSlider').slick({
                     infinite: true,
-                    variableWidth: true,
+                    slidesToShow: 3,
                     autoplay: false,
                     autoplaySpeed: 5000,
                     adaptiveHeight: true,
                     prevArrow: $("#jobsSliderArrow1"),
-                    nextArrow: $("#jobsSliderArrow2")
+                    nextArrow: $("#jobsSliderArrow2") 
                 });
             }
         },
         about: {
             init: function() {
 
-                $('#empathySlider').slick({
+                $('#motifSlider').slick({
                     infinite: true,
                     autoplay: false,
                     autoplaySpeed: 5000,
                     adaptiveHeight: true,
-                    prevArrow: $("#empathySliderArrow1"),
-                    nextArrow: $("#empathySliderArrow2")
+                    prevArrow: $("#motifSliderArrow1"),
+                    nextArrow: $("#motifSliderArrow2")
                 });
                 
                 $('#founderSlider').slick({
