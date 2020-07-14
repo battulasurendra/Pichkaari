@@ -21,8 +21,9 @@ $color5 : #B3B3B3;
 $color6 : #E3E7E8;
 $color7 : #FF3333;
 $color8 : #FFCC33;
+$color9 : #FF9900;
 
-$colors: $color1,$color2,$color3,$color4,$color5,$color6,$color7,$color8;
+$colors: $color1,$color2,$color3,$color4,$color5,$color6,$color7,$color8,$color9;
 
 $font-family1 : 'Flink';
 $font-family2 : 'Gilroy';
@@ -37,7 +38,7 @@ $border-set3: 1px solid transparent;
 
 $box-shadow1: 0 0px 4px rgba($color3, .2);
 $box-shadow2: 0 1px 4px rgba($color3, .2);
-$box-shadow3: 0 10px 30px rgba($color3, .4);
+$box-shadow3: 0 2px 6px rgba($color3, .2);
 
 $transition-set1 : all 0.5s ease-in-out;
 $transition-set2 : all 0.2s ease-in-out;

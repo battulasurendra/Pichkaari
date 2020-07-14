@@ -10,8 +10,7 @@
     .secrow1 {
         .bannerContent {
             max-width: 430px;
-            top: 45%;
-            @include transform(translateY(-45%));
+            top: -45px;
 
             button {
                 margin-top: 9%;
@@ -19,8 +18,19 @@
         }
 
         .absolute-bg {
+            max-height: 90%;
+            max-width: 75%;
             top: auto;
+            left : auto;
             right: 20px;
+        }
+    }
+
+    .sec-bg {
+        img {
+            top: 50%;
+            left: 50%;
+            @include transform(translate(-50%, -50%));
         }
     }
 }
@@ -28,7 +38,7 @@
 #homeSec2 {
     .secrow1 {
         .secText {
-            padding-top:8%;
+            padding-top: 2vh;
         }
     }
 
@@ -40,8 +50,13 @@
 }
 
 #homeSec3 {
+    .container-fluid {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
     #categorySliderLinks {
-        padding: 50px 20px;
+        padding: 20px;
 
         .slick-dots {
             li {
@@ -88,6 +103,27 @@
         }
     }
 
+    .sliderNavs {
+        left: 0;
+        right: 0;
+        height: auto;
+        padding-left: 0;
+
+        > div {
+            background: transparent;
+            box-shadow: none;
+            width: auto;
+            height: auto;
+            text-align: left;
+            padding: 5px 10px;
+
+            svg {
+                stroke:$color1;
+                height: 20px;
+            }
+        }
+    }
+
     .sec-bg {
         right: auto;
         left: -33%;
@@ -96,7 +132,7 @@
     }
 }
 
-#homeSec4 {
+#homeSec4 {    
     .secrow1 {
         background-color: rgba($color6,0.5);
         padding-bottom: 150px;
@@ -169,8 +205,10 @@
 #homeSec5 {
     .secrow1{
         .testimonialSliderScore {
-            top: auto;
             right: auto;
+            left: -71%;
+            top: auto;
+            bottom: auto;
 
             div {
                 padding: 5px 10px;
@@ -182,7 +220,7 @@
                         content: '';
                         @extend %absolute-basic;
                         background-color: $color1;
-                        height: 2px;
+                        height: 1px;
                         width: 30px;
                         right: 100%;
                         left: -10px;
@@ -193,8 +231,8 @@
 
         #testimonialSlider {
             .slide {
-                max-width: 517px;
-                padding: 30px 20px;
+                max-width: 480px;
+                padding: 10px 20px;
                 @include transform (scale(0.9));
                 @include transition($transition-set2);
 
@@ -207,7 +245,7 @@
                 }
 
                 .innerSlide {
-                    padding: 40px;
+                    padding: 5vh;
 
                     .secImage {
                         width: 80px;
@@ -215,7 +253,10 @@
                     }
 
                     .secText {
-                        padding-bottom: 41px;
+                        margin-bottom: 5vh;
+                        max-height: 150px;
+                        padding-right: 16%;
+                        overflow-y: auto;
                     }
 
                     .testiDetails {
@@ -231,7 +272,8 @@
             left: 0;
             right: 0;
             height: auto;
-            padding-left: 20px;
+            padding-left: 10px;
+            padding-top: 3%;
 
             > div {
                 background: transparent;
@@ -251,17 +293,17 @@
 }
 
 #homeSec6 {
-    padding-top: 140px;
-
-    .container
-
     .secrow1 {        
         max-width: 1155px;
+        padding: 2% 0;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     }
 
     .v-stretch {
-        min-height: 490px;
-        padding: 9% 50px 5%;
+        padding: 8vh;
+        max-height: 490px;
         @include transition ($transition-set2);
         @include transform (scale(1));
 
@@ -296,6 +338,12 @@
         .footHead {
             padding: 30px 0;
         }
+
+        .footerSocialLinks {
+            a:hover {
+                color: $color7;
+            }
+        }
     
         .sec-bg.pattern1 {
             width: 70%;
@@ -314,3 +362,168 @@
         }
     }
 }
+
+/************************************ Media queries(Mobile & Tablet) ************************************/
+@media only screen and (max-width: 991px) {
+    #homeSec3 {
+        padding-left: 50px;
+        padding-right: 50px;
+        #categorySlider {
+            .slide {
+                .cell:last-child {
+                    padding: 50px 0;
+                }
+            }
+        }
+    }
+
+    #homeSec4 {    
+        .secrow1 {    
+            .cell {
+                padding: 5% 5% 0;
+                
+                .secHead {
+                    padding: 20px 0;
+                }
+            }
+    
+            .secImage {
+                padding: 0;    
+            }
+        }
+
+        .secrow3 {
+            margin-right: 40px;
+            margin-left: 40px;
+            width: auto;
+        }
+    }
+
+    
+    #homeSec6 {
+        .secrow1 {     
+            flex-direction: column;
+        }
+        
+        .v-stretch {
+            padding: 20px 10%;
+            justify-content: space-evenly;
+
+            br {
+                display: none;
+            }
+    
+            .btn {
+                margin-top: 10%;
+            }
+        }
+    }
+
+    #homeSec7 {
+        .secrow1 {
+            padding: 25% 7% 7%;
+        }
+
+        .secrow2 {
+            padding: 7%;
+        
+            .footHead {
+                padding: 15px 0 5px;
+            }
+            
+            .secText {
+                padding: 0 0 10px;
+            }
+        }
+    }
+
+}
+/************************************ Media queries(Mobile & Tablet) ************************************/
+/************************************ Media queries(Mobile) ************************************/
+@media only screen and (max-width: 767px) {
+    #homeSec1 {
+        .secrow1 {
+            .bannerContent {
+                top: -37px;
+            }
+        } 
+    }
+
+    #homeSec3 {
+        padding-left: 30px;
+        padding-right: 30px;
+
+        #categorySlider {
+            .slide {
+                .cell:last-child {
+                    padding: 20px 0;
+                }
+
+                .secText {
+                    padding: 10px 0;
+                }
+            }
+        }
+    }
+    
+    #homeSec4 {    
+        .secrow1 {    
+            .cell {
+                padding: 5% 5% 0 !important;
+                
+                .secHead {
+                    padding: 10px 0;
+                }
+            }
+        }
+
+        .secrow3 {
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+    }
+    
+    #homeSec5 {
+        padding-right: 30px;
+        .secrow1{
+            .secHeader {
+                br {
+                    display: none;
+                }
+            }
+
+            .cell {
+                padding: 0;
+            }
+
+            #testimonialSlider .slide {
+                padding: 0;
+
+                .innerSlide {
+                    padding: 4vh;
+
+                    .secImage {
+                        width: 60px;
+                        margin-bottom: 5px;
+                    }
+
+                    .secText {
+                        margin-bottom: 4vh;
+                        max-height: 130px;
+                        padding-right: 10%;
+                    }
+                }
+            }
+
+            .sliderNavs {
+                padding: 10px 0;
+            }
+        } 
+    }
+}
+/************************************ Media queries(Mobile) ************************************/
+/************************************ Media queries(Older Mobiles) ************************************/
+@media only screen and (max-width: 359px) {
+
+}
+/************************************ Media queries(Older Mobiles) ************************************/

@@ -1,16 +1,30 @@
 
+#aboutSec1 {
+    .sec-bg {
+        img {
+            top: 50%;
+            left: 50%;
+            @include transform(translate(-50%, -50%));
+        }
+    }
+}
+
+
 #aboutSec2 {
     .secrow1 {
-        padding: 10% 10px;
+        padding: 10px;
     }
 
     .sec-bg {
-        width: 85%;
-        top: -10%;
     }
 }
 
 #aboutSec3 {
+    .secrow1 {
+        flex-direction: column;
+        justify-content: center;
+    }
+
     #motifSlider {
         .slideContent {
             padding-left: 50px;
@@ -22,7 +36,7 @@
         top: auto;
         left: 50px;
         right: auto;
-        bottom: 0;
+        bottom: 5%;
         height: auto;
         width: auto;
 
@@ -125,13 +139,29 @@
 }
 
 #aboutSec5 {
+    &::after{
+        content: '';
+        @extend %absolute-basic;
+        background-color: $color1;
+        z-index: 2;
+        height: 50px;
+        bottom: auto;
+    }
+
     .v-stretch {
-        max-width: 573px;
+        width: 48%;
         min-height: 457px;
         margin: 25px auto;
-        padding: 50px;
+        padding: 9% 50px 5%;
         @include transition ($transition-set2);
-        box-shadow: $box-shadow3;
+        @include transition ($transition-set2);
+        @include transform (scale(1));
+        
+        &:hover {
+            box-shadow: 0 6px 24px 4px rgba(25,24,27,.5);
+            @include transform (scale(1.05));
+            z-index: 2;
+        }
 
         .btn {
             margin-top: 20px;
@@ -142,11 +172,11 @@
 #aboutSec6 {
     .socialIcons{
         a {
-            margin: 10px 20px;
+            margin: 10px;
         }
         i {
-            width: 54px;
-            height: 54px;
+            width: 50px;
+            height: 50px;
             background-position-x: 100%;
         }
     }
@@ -174,3 +204,19 @@
         width: 75%;
     }
 }
+
+/************************************ Media queries(Mobile & Tablet) ************************************/
+@media only screen and (max-width: 991px) {
+
+}
+/************************************ Media queries(Mobile & Tablet) ************************************/
+/************************************ Media queries(Mobile) ************************************/
+@media only screen and (max-width: 767px) {
+    
+}
+/************************************ Media queries(Mobile) ************************************/
+/************************************ Media queries(Older Mobiles) ************************************/
+@media only screen and (max-width: 359px) {
+
+}
+/************************************ Media queries(Older Mobiles) ************************************/

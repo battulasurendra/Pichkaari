@@ -117,6 +117,12 @@ header {
                 display: block;
             }
         }
+
+        #navbar-toggle {
+            .icon-bar {
+                background-color: $color1;
+            }
+        }
     }
 
     #scrollToTop {
@@ -234,6 +240,8 @@ header {
             }
         }
 
+        &:focus,
+        &:active,
         &:hover {
             #connectText{
                 @include transform(scale(0));
@@ -254,7 +262,6 @@ footer {
     }
 }
 /****************** Footer ******************/
-
 /****************** fullpage.js patch work ******************/
 script + div {
     animation: fadeOut 0.1s forwards;
@@ -272,3 +279,153 @@ script + div {
     }
 }
 /****************** fullpage.js patch work ******************/
+
+/************************************ Media queries(Mobile & Tablet) ************************************/
+@media only screen and (max-width: 991px) {
+    /****************** Header styles ******************/
+    header {    
+        .navbar {
+            padding: 0 40px;
+
+            .logoAnchor {
+                padding: 12px 0px;
+            }
+
+            .navbar-menu {
+                width: auto;
+                position: fixed;
+                background: $color1;
+                padding: 8px 0;
+                top: 55px;
+                right: -400px;
+                bottom: 0;
+                left: auto;
+                z-index: 9;
+                box-shadow: 0px 0px 3px 0px rgba(0,0,0,.1);
+                transition: $transition-set3;
+                border-top: 1px solid $color1;
+                border-top-left-radius: 30px;
+            }
+    
+            .menu-scroll {
+                color: $color3;
+                margin: 5px 35px;
+                text-align: right;
+                padding: 8px 15px;
+                display: block;
+            }
+    
+            #navbar-toggle {
+                width: 30px;
+                height: 30px;
+                position: relative;
+                @include transform(rotate(0deg));
+                @include transition(.5s ease-in-out);
+
+                .icon-bar {
+                    display: block;
+                    position: absolute;
+                    height: 3px;
+                    width: 100%;
+                    border-radius: 9px;
+                    opacity: 1;
+                    right: 0;
+                    @include transform(rotate(0deg));
+                    @include transition(.25s ease-in-out);
+
+                    &:nth-child(1) {
+                        top: 5px;
+                    }
+
+                    &:nth-child(2) {
+                        top: 13px;
+                    }
+
+                    &:nth-child(3) {
+                        top: 21px;
+                    }
+                }
+            }
+
+            &.open {
+                .navbar-menu {
+                    right: 0;
+                }
+
+                #navbar-toggle {
+                    .icon-bar {
+                        &:nth-child(1) {
+                            top: 13px;
+                            @include transform(rotate(135deg));
+                        }
+    
+                        &:nth-child(2) {
+                            opacity: 0;
+                            right: -60px;
+                        }
+    
+                        &:nth-child(3) {
+                            top: 13px;
+                            @include transform(rotate(-135deg));
+                        }
+                    }
+                }
+            }
+        }
+
+        &.transparent {    
+            #navbar-toggle {
+                .icon-bar {
+                    background-color: $color1;
+                }
+            }
+        }
+
+        #scrollToTop {
+            left: 15px;
+        }
+    }
+    /****************** Header styles ******************/
+}
+/************************************ Media queries(Mobile & Tablet) ************************************/
+/************************************ Media queries(Mobile) ************************************/
+@media only screen and (max-width: 767px) {
+    /****************** Header styles ******************/
+    header {    
+        .navbar {
+            padding: 0 20px;
+    
+            .menu-scroll {
+                margin: 5px 15px;
+            }
+        }
+
+        .logoAnchor {
+            padding: 5px 0px;
+        }
+
+        .connectFloat {
+            .connectBtn {
+                padding: 11px 10px 9px;
+            }
+        }
+    }        
+    /****************** Header styles ******************/
+    /****************** Footer ******************/
+    footer {
+        .footrow1 {
+            padding: 15px 10px;
+        }
+    }
+    /****************** Footer ******************/
+}
+/************************************ Media queries(Mobile) ************************************/
+/************************************ Media queries(Older Mobiles) ************************************/
+@media only screen and (max-width: 359px) {
+    header {    
+        .navbar {
+            padding: 0;
+        }
+    }
+}
+/************************************ Media queries(Older Mobiles) ************************************/

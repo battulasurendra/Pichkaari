@@ -67,20 +67,20 @@
 }
 
 @mixin transition($set){
-	-webkit-transition: $set;
-	   -moz-transition: $set;
+    -webkit-transition: $set;
+        -moz-transition: $set;
 			transition: $set;
 }
 
 @mixin transform($set){
 	-webkit-transform: $set;
-	   -moz-transform: $set;
+        -moz-transform: $set;
 			transform: $set;
 }
 
 @mixin animation($set) {
 	-webkit-animation: $set;
-	   -moz-animation: $set;
+        -moz-animation: $set;
             animation: $set;
 }
 
@@ -98,7 +98,7 @@
 	@debug keywords($args);
 	@each $name, $value in keywords($args) {
 		-webkit-animation-#{$name}: $value;
-		   -moz-animation-#{$name}: $value;
+            -moz-animation-#{$name}: $value;
 				animation-#{$name}: $value;
 	}
 }
@@ -185,4 +185,38 @@
 			@include anim($delay: ($delay*($i+1))+unquote('s'));
 		}
 	}
+}
+
+@mixin interpolate($properties, $min-screen, $max-screen, $min-value, $max-value) {
+	& {
+		// @each $property in $properties {
+		// 	#{$property}: $min-value;
+		// }
+
+		@media screen and (min-width: $min-screen) and (max-width: $max-screen) {
+			@each $property in $properties {
+				#{$property}: calc-interpolation($min-screen, $min-value, $max-screen, $max-value); 
+			}
+		}
+
+		// @media screen and (max-width: $max-screen) {
+		// 	@each $property in $properties {
+		// 		#{$property}: $max-value;
+		// 	}
+		// }
+	}
+}
+
+// Requires the calc-interpolation function which can also be used independently
+
+@function calc-interpolation($min-screen, $min-value, $max-screen, $max-value) {
+	$a: ($max-value - $min-value) / ($max-screen - $min-screen);
+	$b: $min-value - $a * $min-screen; 
+
+	$sign: "+";
+	@if ($b < 0) {
+		$sign: "-";
+		$b: abs($b);
+	}
+	@return calc(#{$a*100}vw #{$sign} #{$b});
 }

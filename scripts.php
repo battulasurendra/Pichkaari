@@ -4,6 +4,7 @@
 <script src="assets/js/fullpage.parallax.min.js"></script>
 <script src="assets/js/fullpage.scrollOverflowReset.min.js"></script>
 <script src="assets/js/fullpage.extensions.min.js"></script>
+<script src="assets/js/mixitup.min.js"></script>
 <script src="assets/js/custom.js"></script>
 
 </html>

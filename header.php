@@ -7,7 +7,7 @@
 <header>
     <nav class="navbar w-g-12" id="header-menu">
         <div class="d-table">
-            <div class="navbar-header cell w-g-sm-3 w-g-8">
+            <div class="navbar-header cell w-g-md-3 w-g-8">
                 <div class="brand-logo">
                     <a class="d-inline w-g-12 logoAnchor text-center v-top" href="index.php">
                         <img src="assets/images/logo.svg" class="logo-default">
@@ -15,39 +15,39 @@
                     </a>
                 </div>
             </div>
-            <div class="navbar-wrapper collapse navbar-collapse cell w-g-sm-9 w-g-0">
+            <div class="navbar-wrapper collapse navbar-collapse cell w-g-md-9 w-g-0">
                 <ul class="navbar-menu main-menuList text-right ttu">
                     <li class="menu-scroll"><a class="d-block" href="about.php">About Us</a></li>
                     <li class="menu-scroll"><a class="d-block" href="#">Services</a></li>
-                    <li class="menu-scroll"><a class="d-block" href="#">Portfolio</a></li>
+                    <li class="menu-scroll"><a class="d-block" href="portfolio.php">Portfolio</a></li>
                     <li class="menu-scroll"><a class="d-block" href="careers.php">Careers</a></li>
                     <li class="menu-scroll"><a class="d-block" href="#">Project Planner</a></li>
                     <li class="menu-scroll"><a class="d-block" href="#">Contact Us</a></li>
                 </ul>
             </div>
-            <div class="navbar-social cell w-g-sm-0 w-g-4">
-                <button type="button" class="navbar-toggle d-inline v-top">
-                    <span class="icon-bar bg1"></span>
-                    <span class="icon-bar bg1"></span>
-                    <span class="icon-bar bg1"></span>
+            <div class="navbar-social cell w-g-md-0 w-g-4 text-right">
+                <button type="button" id="navbar-toggle" class="d-inline v-top md-hide lg-hide">
+                    <span class="icon-bar bg3 br-4 d-block"></span>
+                    <span class="icon-bar bg3 br-4 d-block"></span>
+                    <span class="icon-bar bg3 br-4 d-block"></span>
                 </button>
             </div>
         </div>
     </nav>
-    <div id="scrollToTop" class="d-none">
+    <div id="scrollToTop" class="d-none xs-hide">
         <button type="button" class="fw5 d-block" id="scrollToTopBtn">
+            <span class="d-inline v-top">
+                Scroll to top
+            </span>
             <svg x="0px" y="0px" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" class="d-inline v-top">
                 <line x1="0.71" y1="10" x2="18.54" y2="10"/>
                 <polyline points="11.87,3.78 18.21,10 11.87,16.22"/>
             </svg>
-            <span class="d-inline v-top">
-                Scroll to top
-            </span>
         </button>
     </div>
     <div class="connectFloat pos-rel br-circle d-none">
-        <button type="button" class="connectBtn btn bg1 pos-rel"><i class="sprite-sm icon-1"></i></button>
-        <div id="connectText"><i class="sprite-lg icon-7"></i></div>
+        <button type="button" class="connectBtn btn bg1 pos-rel"><i class="sprite-sm icon-8"></i></button>
+        <!-- <div id="connectText"><i class="sprite-lg icon-7"></i></div> -->
         <div class="socialIcons"> 
             <a class="d-inline bg1 br-circle" href="https://www.facebook.com/" target="_blank" title="Facebook"><i class="sprite-xs icon-2"></i></a>
             <a class="d-inline bg1 br-circle" href="https://www.linkedin.com/" target="_blank" title="Linkedin"><i class="sprite-xs icon-3"></i></a>

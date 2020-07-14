@@ -7,17 +7,6 @@
 }
 
 #careerSec1 {
-
-    // &::after {
-    //     content: '';
-    //     @extend %absolute-basic;
-    //     background: transparent;
-    //     background: -moz-linear-gradient(0deg, rgba($color1,0) 20%, rgba($color7,1) 100%);
-    //     background: -webkit-linear-gradient(0deg, rgba($color1,0) 20%, rgba($color7,1) 100%);
-    //     background: linear-gradient(0deg, rgba($color1,0) 20%, rgba($color7,1) 100%);
-    //     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ff3333",GradientType=1);
-    // }
-
     .secrow1 {
         .text-stroke {
             color: rgba($color1, 0.5);
@@ -26,9 +15,15 @@
             -webkit-text-stroke-color: rgba($color1, 0.5);
         }
 
-        .secHeaer {
-            padding-bottom: 30px;
+        .secHeader {
+            padding:3vh 15px;
+            margin: auto;
         }
+    }
+
+    .bannerContent {
+        flex-direction: column;
+        justify-content: flex-end;
     }
 
     .sec-bg {
@@ -77,10 +72,18 @@
         }
 
         #dealSlider {
+            .slick-track, .slick-list {
+                height: 100% !important;
+            }
+
             .slide {
                 max-width: 480px;
+                max-height: 560px;
                 padding: 40px 20px;
                 @include transition($transition-set2);
+                top: 50%;
+                transform: translateY(-50%);
+                position: relative;
 
                 &.slick-current {                    
                     .innerSlide {
@@ -107,6 +110,8 @@
             right: 0;
             height: auto;
             padding-left: 20px;
+            position: relative;
+            top: -33px;
 
             > div {
                 background: transparent;
@@ -136,10 +141,34 @@
 }
 
 #careerSec3 {
+    .secrow1 {
+        flex-direction: column;
+    }
+
     #slaySlider {
+        flex: 1 1 50%;
+        max-height: 100%;
+        .slick-track, .slick-list {
+            height: 100% !important;
+        }
+
+        .innerslide{
+            display: flex;
+            height: 100%;
+        }
+
         .slideContent {
+            align-self: center;
             padding-left: 50px;
             padding-right: 50px;
+        }
+
+        .secImage {
+            img {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
         }
     }
 
@@ -170,12 +199,24 @@
 #careerSec4 {
     .secrow2{
         .slide{
-            padding: 40px 20px;
+            padding: 40px 20px 20px;
+
+            .slideContent {
+                .secHeader {
+                    padding-top: 0;
+                    margin-top: 0;
+                    margin-bottom: 20px;
+                }
+                .secText {
+                    padding-top: 4vh;
+                }
+            }
 
             .v-stretch {
+                margin: auto;
                 max-width: 380px;
                 min-height: 500px;
-                padding: 20% 30px 15%;
+                padding: 15% 30px 15%;
                 @include transition ($transition-set2);
 
                 &::after {
@@ -225,6 +266,7 @@
         .sliderNavs {
             height: auto;
             padding-left: 20px;
+            padding-top: 15px;
 
             > div {
                 background: transparent;
@@ -261,8 +303,7 @@
 
 #careerSec6 {
     .secContent {
-        padding-left: 70px;
-        padding-right: 50px;
+        padding: 50px 50px 50px 70px;
 
         .btn {
             margin-top: 30px;
@@ -280,3 +321,79 @@
         }
     }
 }
+
+/************************************ Media queries(Mobile & Tablet) ************************************/
+@media only screen and (max-width: 991px) {
+    
+#careerSec3 {
+    #slaySlider {
+        .innerslide{
+            flex-direction: column;
+
+            .cell:last-child {
+                flex: 1 1 auto;
+            }
+        }
+
+    }
+}
+
+}
+/************************************ Media queries(Mobile & Tablet) ************************************/
+/************************************ Media queries(Mobile) ************************************/
+@media only screen and (max-width: 767px) {
+    #careerSec1 {
+        .secrow1 {
+    
+            .secHeader {
+                padding:3vh 0;
+            }
+        }
+    
+        .sec-bg {    
+            .image-right,    
+            .image-left {
+                animation-duration: 6400s;
+                background-size: 750px;
+            }
+        }
+    }
+
+    #careerSec2 {
+        padding-right: 30px;
+        .secrow1{
+            flex-direction: column;
+
+            .dealSliderScore {
+                display: none;
+            }
+
+            #dealSlider {
+                .slick-track, .slick-list {
+                    height: 100% !important;
+                }
+    
+                .slide {
+                    padding: 20px 0;
+                }
+            }
+        }
+    }
+
+    #careerSec6 {
+        .secContent {
+            padding: 25px;
+    
+        }
+
+        .secImage.animate {
+            opacity: 1;
+        }
+    }
+}
+/************************************ Media queries(Mobile) ************************************/
+/************************************ Media queries(Older Mobiles) ************************************/
+@media only screen and (max-width: 359px) {
+
+}
+/************************************ Media queries(Older Mobiles) ************************************/

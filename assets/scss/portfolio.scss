@@ -1,0 +1,104 @@
+#portfolioSec1 {
+    .secrow1 {
+        padding: 10vh 10px;
+    }
+
+    .sec-bg {
+        top: -40%;
+        opacity: 0.1;
+        width: 75%;
+    }
+}
+
+#portfolioSec2 {
+    #portfolioFilters {
+        padding: 0 0 20px;
+        li {
+            display: inline-block;
+            vertical-align: top;
+            padding: 5px 13px;
+            position: relative;
+
+            button {
+                letter-spacing: 0.3px;
+                cursor: pointer;
+
+                &.mixitup-control-active{
+                    color: $color7;
+                }
+            }
+
+            &::after {
+                content: '';
+                @extend %absolute-basic;
+                width: 4px;
+                height: 4px;
+                border-radius: 50%;
+                right: auto;
+                background-color: $color4;
+            }
+
+            &:first-child {
+                &::after {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    #portfolioCards {
+        .portfolioCard {
+            max-width: 33%;
+            width: 370px;
+            padding: 20px 15px;
+        }
+    }
+
+    .secrow3 {
+        margin-top: 4%;
+    }
+}
+
+#portfolioSec3 {
+    .secrow1 {
+        padding: 80px 10px;
+
+        .btn {
+            margin-top: 20px;
+        }
+    }
+
+    .sec-bg {
+        left: -30%;
+        right: -30%;
+        top: -45%;
+        opacity: 0.35;
+    }
+}
+
+/************************************ Media queries(Mobile & Tablet) ************************************/
+@media only screen and (max-width: 991px) {
+
+}
+/************************************ Media queries(Mobile & Tablet) ************************************/
+/************************************ Media queries(Mobile) ************************************/
+@media only screen and (max-width: 767px) {
+    
+    #portfolioSec2 {
+
+        #portfolioCards {
+            .portfolioCard {
+                width: 100%;
+                max-width: 200px;
+                margin: 25px auto auto;
+                float: none;
+            }
+        }
+    }
+}
+/************************************ Media queries(Mobile) ************************************/
+/************************************ Media queries(Older Mobiles) ************************************/
+@media only screen and (max-width: 359px) {
+
+}
+/************************************ Media queries(Older Mobiles) ************************************/

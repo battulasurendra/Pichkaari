@@ -1,0 +1,336 @@
+[
+    {
+        "betsol" : [
+            {
+                "branding" : {
+                    "title" : "Betsol",
+                    "categories" : "Branding",
+                    "link": "Betsol",
+                    "thumbnail": "betsol-branding"
+                }
+            },
+            {
+                "video" : {
+                    "title" : "Betsol",
+                    "categories" : "Graphics Video",
+                    "link": "Betsol-video",
+                    "thumbnail": "betsol-video"
+                }
+            },
+            {
+                "information" : {
+                    "title" : "Betsol",
+                    "categories" : "Information Design",
+                    "link": "Betsol",
+                    "thumbnail": "betsol-information"
+                }
+            }
+        ] 
+    },
+    {
+        "envi" : [
+            {
+                "branding" : {
+                    "title" : "Envi",
+                    "categories" : "Branding",
+                    "link": "Envi",
+                    "thumbnail": "envi-branding"
+                }
+            },
+            {
+                "video" : {
+                    "title" : "Envi",
+                    "categories" : "Graphics Video",
+                    "link": "Envi",
+                    "thumbnail": "envi-video"
+                }
+            },
+            {
+                "uiux" : {
+                    "title" : "Envi",
+                    "categories" : "UI/UX Design",
+                    "link": "Envi",
+                    "thumbnail": "envi-uiux"
+                }
+            }
+        ] 
+    },
+    {
+        "getsetride" : [
+            {
+                "branding" : {
+                    "title" : "Get Set Ride",
+                    "categories" : "Branding",
+                    "link": "Getsetride",
+                    "thumbnail": "getsetride-branding"
+                }
+            },
+            {
+                "marketing" : {
+                    "title" : "Get Set Ride",
+                    "categories" : "Marketing & Communication",
+                    "link": "Getsetride",
+                    "thumbnail": "getsetride-marketing"
+                }
+            }
+        ] 
+    },
+    {
+        "homefully" : [
+            {
+                "branding" : {
+                    "title" : "Homefully",
+                    "categories" : "Branding",
+                    "link": "Homefully",
+                    "thumbnail": "homefully-branding"
+                }
+            }
+        ] 
+    },
+    {
+        "indianmart" : [
+            {
+                "branding" : {
+                    "title" : "Indianmart",
+                    "categories" : "Branding",
+                    "link": "Indianmart-branding",
+                    "thumbnail": "indianmart-branding"
+                }
+            },
+            {
+                "video" : {
+                    "title" : "Indianmart",
+                    "categories" : "Graphics Video",
+                    "link": "Indianmart",
+                    "thumbnail": "indianmart-video"
+                }
+            },
+            {
+                "uiux" : {
+                    "title" : "Indianmart",
+                    "categories" : "UI/UX Design",
+                    "link": "Indianmart",
+                    "thumbnail": "indianmart-uiux"
+                }
+            }
+        ] 
+    },
+    {
+        "levbon" : [
+            {
+                "branding" : {
+                    "title" : "Levbon",
+                    "categories" : "Branding",
+                    "link": "Levbon",
+                    "thumbnail": "levbon-branding"
+                }
+            },
+            {
+                "uiux" : {
+                    "title" : "Levbon",
+                    "categories" : "UI/UX Design",
+                    "link": "Levbon",
+                    "thumbnail": "levbon-uiux"
+                }
+            }
+        ] 
+    },
+    {
+        "organicana" : [
+            {
+                "branding" : {
+                    "title" : "Organicana",
+                    "categories" : "Branding",
+                    "link": "Organicana",
+                    "thumbnail": "organicana-branding"
+                }
+            },
+            {
+                "packaging" : {
+                    "title" : "Organicana",
+                    "categories" : "Packaging",
+                    "link": "Organicana",
+                    "thumbnail": "organicana-packaging"
+                }
+            },
+            {
+                "uiux" : {
+                    "title" : "Organicana",
+                    "categories" : "UI/UX Design",
+                    "link": "Organicanauiux",
+                    "thumbnail": "organicana-uiux"
+                }
+            }
+        ] 
+    },
+    {
+        "zenpulse" : [
+            {
+                "branding" : {
+                    "title" : "Zenpulse",
+                    "categories" : "Branding",
+                    "link": "Zenpulse",
+                    "thumbnail": "zenpulse-branding"
+                }
+            }
+        ] 
+    },
+    {
+        "kots" : [
+            {
+                "video" : {
+                    "title" : "Kots",
+                    "categories" : "Graphics Video",
+                    "link": "Kots",
+                    "thumbnail": "kots-video"
+                }
+            }
+        ] 
+    },
+    {
+        "neeyamo" : [
+            {
+                "video" : {
+                    "title" : "Neeyamo works",
+                    "categories" : "Graphics Video",
+                    "link": "Neyamo",
+                    "thumbnail": "neeyamo-video"
+                }
+            }
+        ] 
+    },
+    {
+        "allstate" : [
+            {
+                "information" : {
+                    "title" : "Allstate India",
+                    "categories" : "Information Design",
+                    "link": "Allstate",
+                    "thumbnail": "allstate-information"
+                }
+            },
+            {
+                "uiux" : {
+                    "title" : "Allstate India",
+                    "categories" : "UI/UX Design",
+                    "link": "Allstate-UI",
+                    "thumbnail": "allstate-uiux"
+                }
+            }
+        ] 
+    },
+    {
+        "compile" : [
+            {
+                "information" : {
+                    "title" : "Compile",
+                    "categories" : "Information Design",
+                    "link": "Compile",
+                    "thumbnail": "compile-information"
+                }
+            }
+        ] 
+    },
+    {
+        "t4u" : [
+            {
+                "information" : {
+                    "title" : "T4U",
+                    "categories" : "Information Design",
+                    "link": "T4U",
+                    "thumbnail": "t4u-information"
+                }
+            }
+        ] 
+    },
+    {
+        "acadgild" : [
+            {
+                "marketing" : {
+                    "title" : "Acadgild",
+                    "categories" : "Marketing & Communication",
+                    "link": "Acadgild",
+                    "thumbnail": "acadgild-marketing"
+                }
+            }
+        ] 
+    },
+    {
+        "alchemy" : [
+            {
+                "marketing" : {
+                    "title" : "The Alchemy Nursery",
+                    "categories" : "Marketing & Communication",
+                    "link": "Alchemy",
+                    "thumbnail": "alchemy-marketing"
+                }
+            },
+            {
+                "uiux" : {
+                    "title" : "The Alchemy Nursery",
+                    "categories" : "UI/UX Design",
+                    "link": "Alchemy",
+                    "thumbnail": "alchemy-uiux"
+                }
+            }
+        ] 
+    },
+    {
+        "mi" : [
+            {
+                "marketing" : {
+                    "title" : "MI",
+                    "categories" : "Marketing & Communication",
+                    "thumbnail": "mi-marketing"
+                }
+            }
+        ] 
+    },
+    {
+        "udaan" : [
+            {
+                "marketing" : {
+                    "title" : "Udaan",
+                    "categories" : "Marketing & Communication",
+                    "thumbnail": "udaan-marketing"
+                }
+            }
+        ] 
+    },
+    {
+        "bhoomi" : [
+            {
+                "packaging" : {
+                    "title" : "Bhoomi",
+                    "categories" : "Packaging",
+                    "link": "Bhoomi",
+                    "thumbnail": "bhoomi-packaging"
+                }
+            }
+        ] 
+    },
+    {
+        "bryn" : [
+            {
+                "packaging" : {
+                    "title" : "Bhoomi",
+                    "categories" : "Packaging",
+                    "link": "Bryn",
+                    "thumbnail": "bhoomi-packaging"
+                }
+            }
+        ] 
+    },
+    {
+        "oyeti" : [
+            {
+                "uiux" : {
+                    "title" : "Oyeti",
+                    "categories" : "UI/UX Design",
+                    "link": "Oyeti",
+                    "thumbnail": "oyeti-uiux"
+                }
+            }
+        ] 
+    }
+]
