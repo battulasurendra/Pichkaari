@@ -207,8 +207,19 @@
                     margin-top: 0;
                     margin-bottom: 20px;
                 }
+
                 .secText {
-                    padding-top: 4vh;
+                    margin-top: 4vh;
+                }
+
+                .scrollable-content {
+                    max-height: 130px;
+                    padding-right: 5%;
+                    overflow-y: hidden;
+
+                    &:hover {
+                        overflow-y: auto;
+                    }
                 }
             }
 

@@ -66,8 +66,8 @@
     padding-top: 50px;
     
     .secHeader {
-        padding: 60px 0 0;
-        margin: auto auto -45px;
+        padding: 50px 0 0;
+        margin: auto auto -50px;
     }
 
     #founderSlider {
@@ -99,6 +99,10 @@
         }
 
         .founderHobbies {
+            .secImage {
+                max-width: 400px;
+            }
+            
             > .col {
                 border-right: 1px solid $color3;
                 

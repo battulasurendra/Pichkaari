@@ -6,8 +6,8 @@
         <div class="container-fluid pos-rel">
             <div class="secrow1 animate explode">
                 <div class="bannerContent cell">
-                    <div class="hs3 fc1 fw8 text-center w-g-md-8 w-g-12 m-auto">
-                        Read less of what we say and See more of <span class="fc7">what we’ve done</span>
+                    <div class="hs3 fc1 fw8 text-center w-g-12 m-auto">
+                        Read less of what we say and<br><span class="fc7">See more of what we do</span>
                     </div>
                 </div>
             </div>

@@ -9,7 +9,7 @@
                 <div class="container pos-rel">
                     <div class="secrow1 h-fold d-table animate up">
                         <div class="bannerContent cell">
-                            <div class="hs3 fc1 fw8 text-center">
+                            <div class="hs3 fc1 fw8 ttc text-center">
                                 A better glimpse at the <br>pichkaari way of living
                             </div>
                         </div>
@@ -24,10 +24,10 @@
             <section id="aboutSec2" class="h-max d-table" data-theme="dark">
                 <div class="container-fluid cell no-padding h-max">
                     <div class="secrow1 animate up pos-rel hideflow h-max d-flex">
-                        <div class="bannerContent pos-rel w-g-md-8 w-g-sm-10 w-g-12 m-auto">
+                        <div class="bannerContent pos-rel w-g-lg-10 w-g-md-9 w-g-sm-10 w-g-12 m-auto">
                             <div class="hs4 fc2 fw8 text-center animate flipInX slow">
-                                We're a design and communication studio, based out of Bangalore, India, that came into force in 2013.<br>
-                                Our mission is to embrace, <span class="fc7">empathy</span> and <span class="fc7">symphony</span> to <span class="fc7">design</span> a <span class="fc7">story</span> that <br>is <span class="fc7">playful</span> but <span class="fc7">meaningful.</span>
+                                We're a design and communication studio, based in Bangalore, India, <br>that came into force in 2013.<br>
+                                Our mission is to embrace <span class="fc7">empathy</span> and <span class="fc7">symphony</span> to <span class="fc7">design</span> a <span class="fc7">story</span> that <br>is <span class="fc7">playful</span> but <span class="fc7">meaningful.</span>
                             </div>
                         </div>
                         <div class="absolute-bg sec-bg hideflow">
@@ -45,8 +45,8 @@
                             <div class="slide">
                                 <div class="d-table d-xs-block">
                                     <div class="cell w-g-md-5 w-g-sm-6 w-g-12 slideContent">
-                                        <div class="fs3 fc1 secText w-g-md-10 w-g-12">
-                                            We are not designing for ourselves. We are here to understand user psyche and better the user experience. Ergo, empathy is our way to put ourselves in their shoes and ﬁgure out what they want.
+                                        <div class="fs3 fc1 secText w-g-md-11 w-g-12">
+                                            We keep in mind that we are not designing for ourselves. We are here to understand user psyche and better the user experience. Ergo, empathy is our way to put ourselves in their shoes and ﬁgure out what they need.
                                         </div>
                                     </div>
                                     <div class="cell w-g-md-7 w-g-sm-6 w-g-12 no-padding">
@@ -60,7 +60,7 @@
                                 <div class="d-table d-xs-block">
                                     <div class="cell w-g-md-5 w-g-sm-6 w-g-12 slideContent">
                                         <div class="fs3 fc1 secText w-g-md-10 w-g-12">
-                                            We design to communicate as at the end of the day making connections is all that matters. We don’t just prettify but also make things more functional.
+                                            We design to communicate, at the end of the day, striking a connection is all that matters. We don't just prettify things, we also make them more functional.
                                         </div>
                                     </div>
                                     <div class="cell w-g-md-7 w-g-sm-6 w-g-12 no-padding">
@@ -74,7 +74,7 @@
                                 <div class="d-table d-xs-block">
                                     <div class="cell w-g-md-5 w-g-sm-6 w-g-12 slideContent">
                                         <div class="fs3 fc1 secText w-g-md-10 w-g-12">
-                                            No matter what we do, how big or small the venture is, our driving force is the ultimate search for meaning. We try in our little ways to make an impact, something that will stand out amidst all the clutter. 
+                                            No matter what we do, how big or small the venture is, our driving force is the ultimate search for meaning. We try in our little ways to make an impact, something that will stand out amidst the clutter. 
                                         </div>
                                     </div>
                                     <div class="cell w-g-md-7 w-g-sm-6 w-g-12 no-padding">
@@ -88,7 +88,7 @@
                                 <div class="d-table d-xs-block">
                                     <div class="cell w-g-md-5 w-g-sm-6 w-g-12 slideContent">
                                         <div class="fs3 fc1 secText w-g-md-10 w-g-12">
-                                            Who says you have to outgrow stories to be labelled as proper adults? Bedtime stories might have evolved into the design, but that doesn’t make us any less of a storyteller.
+                                            Who says you have to outgrow stories to be labelled as proper adults? Bedtime stories might have transformed into the design, but that doesn’t make us any less of a storyteller.
                                         </div>
                                     </div>
                                     <div class="cell w-g-md-7 w-g-sm-6 w-g-12 no-padding">
@@ -102,7 +102,7 @@
                                 <div class="d-table d-xs-block">
                                     <div class="cell w-g-md-5 w-g-sm-6 w-g-12 slideContent">
                                         <div class="fs3 fc1 secText w-g-md-10 w-g-12">
-                                            Remember how in Ratatouille Remmy likes the taste of individual spices but together they create a symphony of flavour? Individual elements are great but together they are a force to be reckoned with. This applies to our Pichkaari family as well.
+                                            Remember how in Ratatouille, Likewise, individual elements are great, but together they are a force to be reckoned with. This applies to our Pichkaari family as well.
                                         </div>
                                     </div>
                                     <div class="cell w-g-md-7 w-g-sm-6 w-g-12 no-padding">
@@ -116,7 +116,7 @@
                                 <div class="d-table d-xs-block">
                                     <div class="cell w-g-md-5 w-g-sm-6 w-g-12 slideContent">
                                         <div class="fs3 fc1 secText w-g-md-10 w-g-12">
-                                            Joyfulness makes us more productive and strengthens our work ethics. We play with music and art among other things to make our work life more fun. At Pichkaari, we are all in for humour, a sophisticated version of intelligence.
+                                            Joyfulness makes us more productive and strengthens our work ethics. We play with music and art, among other things to make our work-life more fun. At Pichkaari, we are all in for humour, a sophisticated version of intelligence.
                                         </div>
                                     </div>
                                     <div class="cell w-g-md-7 w-g-sm-6 w-g-12 no-padding">
@@ -152,7 +152,7 @@
             <section id="aboutSec4" data-theme="dark">
                 <div class="container-fluid bg8">
                     <div class="secrow1 row pos-rel hideflow">
-                        <h4 class="hs4 fw8 secHeader text-center w-g-md-6 w-g-sm-8 w-g-12 pos-rel animate up">
+                        <h4 class="hs4 fw8 ttc secHeader text-center w-g-md-6 w-g-sm-8 w-g-12 pos-rel animate up">
                             Meet the co-parents <br> of Pichkaari.
                         </h4>
                         <div id="founderSlider" class="container m-auto pos-rel animate right">
@@ -275,7 +275,7 @@
                             <div class="fw8 hs5 pos-rel w-g-md-8 w-sm-10 w-g-11">
                                 If you're looking for partners in creativity
                             </div>
-                            <button class="btn btn-red-white pos-rel">Apply Now</button>
+                            <a href="careers.php" class="btn btn-red-white pos-rel">Apply Now</a>
                             <div class="absolute-bg hideflow">
                                 <img src="assets/images/About-img1.png" class="i-cover">
                             </div>
@@ -298,7 +298,7 @@
                 <div class="container pos-rel">
                     <div class="secrow1 row text-center">
                         <h4 class="hs4 fc1 fw8 secHeader w-g-md-8 w-g-sm-10 w-g-12 animate up">
-                            Not sure about the kardashians but you might want to <span class="fc7">keep up with us.</span>
+                            Not sure about the Kardashians but you might want to <span class="fc7">keep up with us on&nbsp;socialmedia.</span>
                         </h4>
                         <div class="socialIcons animate explode">
                             <a class="d-inline bg1 br-circle" href="https://www.facebook.com/" target="_blank" title="Facebook"><i class="sprite-md icon-2"></i></a>
@@ -317,7 +317,7 @@
                 <div class="container pos-rel bg6 hideflow">
                     <div class="secrow1 row text-center animate up pos-rel">
                         <h4 class="hs4 fc2 fw8 secHeader">Liked what you saw? <br> Hit us up</h4>
-                        <a href="#" target="_blank" class="btn btn-red-white d-inline">Contact Us</a>
+                        <a href="./#contactus" class="btn btn-red-white d-inline">Contact Us</a>
                     </div>
                     <div class="absolute-bg sec-bg">
                         <img src="assets/images/About-bg6.svg">

@@ -76,7 +76,7 @@
                                     <div class="cell w-g-md-6 w-g-12">
                                         <h4 class="hs4 fw8">Branding & Merchandising</h4>
                                         <div class="fs2 secText w-g-md-6">
-                                            We add 1/2 cup of identity, 1/2 cup of personality, stir them up with our creative juices  and we have ourselves a ‘brand’ new ﬂavour in the market!
+                                            We add half cup of identity, half cup of personality, stir them up with our creative juices  and we have ourselves a ‘brand’ new ﬂavour in the market!
                                         </div>
                                         <a href="portfolio.php?category=branding" class="btn btn-red-white">More Projects</a>
                                     </div>
@@ -90,7 +90,7 @@
                                     <div class="cell w-g-md-6 w-g-12">
                                         <h4 class="hs4 fw8">Marketing Communication</h4>
                                         <div class="fs2 secText w-g-md-6">
-                                            Your business creates the products and services. We make sure that the audience fully understands its worth with the right communication. Nobody is lost in translation.
+                                            Your business creates the products and services. We make sure that the audience <br>fully understands its worth with the right communication. Nobody is lost in <br>translation.
                                         </div>
                                         <a href="portfolio.php?category=marketing" class="btn btn-red-white">More Projects</a>
                                     </div>
@@ -104,7 +104,7 @@
                                     <div class="cell w-g-md-6 w-g-12">
                                         <h4 class="hs4 fw8">UI/UX Design</h4>
                                         <div class="fs2 secText w-g-md-6">
-                                            Whether it’s a website or an app, we put the user at it’s centre to create the smoothest user experience. We give U importance.
+                                            Whether it’s a website or an app, we put the user at it’s centre to create the smoothest <br>user experience. We give U importance.
                                         </div>
                                         <a href="portfolio.php?category=uiux" class="btn btn-red-white">More Projects</a>
                                     </div>
@@ -118,7 +118,7 @@
                                     <div class="cell w-g-md-6 w-g-12">
                                         <h4 class="hs4 fw8">Information Design</h4>
                                         <div class="fs2 secText w-g-md-6">
-                                            Your data is your biggest asset. BUT only when it is clear, engaging and easy to absorb. Our communication focuses on breaking down data and simplifying it through efficient design, conveying all the information at just a glance.
+                                            Your data is your biggest asset. BUT only <br>when it is clear, engaging and easy to absorb.<br> Our communication focuses on breaking down data and simplifying it through efficient design, conveying all the information at just a glance.
                                         </div>
                                         <a href="portfolio.php?category=information" class="btn btn-red-white">More Projects</a>
                                     </div>
@@ -131,7 +131,7 @@
                                     </div>
                                     <div class="cell w-g-md-6 w-g-12">
                                         <h4 class="hs4 fw8">Motion graphics & video</h4>
-                                        <div class="fs2 secText w-g-md-6">
+                                        <div class="fs2 secText w-g-md-7">
                                             A picture speaks a 1000 words. But a motion graphic/video can keep an audience’s attention for about a 1000 minutes (ever binge-watched online content like us? Exactly). We conceptualise and produce, interactive videos and animations that create the right impact and get the right reaction.
                                         </div>
                                         <a href="portfolio.php?category=video" class="btn btn-red-white">More Projects</a>
@@ -412,7 +412,7 @@
                             <div class="fwb fs5 footHead">Post address</div>
                             <div class="fs2 fwb secText">Pichkaari Design Studio Pvt. Ltd</div>
                             <address>
-                                209/210, The Arcade, Bridge Metropolis,
+                                209/210, The Arcade, Brigade Metropolis,
                                 Garudacharpalya, <br>Whitefield Main Road, Bangalore -560048
                             </address>
                         </div>

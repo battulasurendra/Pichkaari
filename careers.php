@@ -38,7 +38,7 @@
                                         Here’s what <br>it takes to <br><span class="fc7">seal the deal</span>
                                     </div>
                                     <div class="fc1 fs2 secText w-g-sm-10 w-g-12">
-                                        We're a fun bunch of communication creators, constantly on the lookout for people with passion <br> who have what it takes to join us. Here's a small cheat-list to give you an idea of what we look for in an eligible candidate.
+                                        We're a fun bunch of communication creators, constantly on the lookout for people with passion who have what it takes to join us. Here's a small cheat-list to give you an idea of what we look for in an eligible candidate.
                                     </div>
                                     <div class="absolute-bg fc1 fs2 test dealSliderScore">
                                         <div id="dealSliderPosition" class="d-inline v-top"></div>
@@ -73,7 +73,7 @@
                                             </div>
                                             <div class="fs6 fw8 secHead">Fun loving</div>
                                             <div class="fs2 secText">
-                                                Equally passionate about the projects you take on, brainstrom sessions and team outings as you are about your favorite show on Netflix
+                                                Equally passionate about the projects, brainstorming sessions and team-outings you participate in, as you are about your favourite Netflix shows.
                                             </div>
                                         </div>
                                         <div class="secImage h-max">
@@ -182,7 +182,7 @@
                                             And this is <br>how we slay
                                         </div>
                                         <div class="fs3 fc2 secText w-g-md-10 w-g-12">
-                                            Collect said ideas, immerse yourself fully and brew them to perfection until they make the desired impact.
+                                            Collect ideas, immerse yourself fully and brew them to perfection until they make the desired impact.
                                         </div>
                                     </div>
                                     <div class="cell w-g-md-7 w-g-12 no-padding">
@@ -262,8 +262,8 @@
                                         <div class="fwb fs1 ttu">
                                             EXPERIENCE - 1-2 years
                                         </div>
-                                        <div class="fs2 secText">
-                                            If you are a dreamer who has an eye for details, we are looking for you. If your specialty stunning visual imagery, you are at the right place.
+                                        <div class="fs2 secText scrollable-content">
+                                            If you are a dreamer who has an eye for details, we are looking for you. If your specialty is stunning visual-imagery, you&nbsp;have come to the right place.
                                         </div>
                                     </div>
                                     <a target="_blank" href="https://vikas921897.typeform.com/to/VG2IWn7u" class="btn btn-red-white pos-rel">Apply Now</a>
@@ -284,8 +284,8 @@
                                         <div class="fwb fs1 ttu">
                                             EXPERIENCE - 1-2 years
                                         </div>
-                                        <div class="fs2 secText">
-                                            If making an impact by focusing on user behavior is your thing. You are at the right place. You’ll be responsible for bringing out the teeny weeny intricacies and specifics of design while keeping in mind the psychology of consumers.
+                                        <div class="fs2 secText scrollable-content">
+                                            If making an impact by focusing on user-behavior is your thing, you have come to the right place. You’ll be responsible for bringing out the teeny-weeny intricacies and specifics of design, while keeping in mind the psychology of consumers.
                                         </div>
                                     </div>
                                     <a target="_blank" href="https://vikas921897.typeform.com/to/nGQhl5kB" class="btn btn-red-white pos-rel">Apply Now</a>
@@ -306,7 +306,7 @@
                                         <div class="fwb fs1 ttu">
                                             EXPERIENCE - 1-2 years
                                         </div>
-                                        <div class="fs2 secText">
+                                        <div class="fs2 secText scrollable-content">
                                             If you are a dreamer who has an eye for details, we are looking for you. If your specialty s stunning visual imagery, you are at the right place.
                                         </div>
                                     </div>
@@ -328,7 +328,7 @@
                                         <div class="fwb fs1 ttu">
                                             EXPERIENCE - 1-2 years
                                         </div>
-                                        <div class="fs2 secText">
+                                        <div class="fs2 secText scrollable-content">
                                             If making an impact by focusing on user behavior is your thing. You are at the right place. You’ll be responsible for bringing out the teeny weeny intricacies and specifics of design while keeping in mind the psychology of consumers.
                                         </div>
                                     </div>
@@ -350,7 +350,7 @@
                                         <div class="fwb fs1 ttu">
                                             EXPERIENCE - 1-2 years
                                         </div>
-                                        <div class="fs2 secText">
+                                        <div class="fs2 secText scrollable-content">
                                             If making an impact by focusing on user behavior is your thing. You are at the right place. You’ll be responsible for bringing out the teeny weeny intricacies and specifics of design while keeping in mind the psychology of consumers.
                                         </div>
                                     </div>
@@ -389,9 +389,9 @@
             <section id="careerSec5" class="bg7 h-auto">
                 <div class="container pos-rel">
                     <div class="secrow1 row text-center animate up">
-                        <h4 class="hs4 fc1 fw8 w-g-12 secHeader">If you are one of those <br>people who can’t be boxed</h4>
+                        <h4 class="hs4 fc1 fw8 w-g-12 secHeader">If you are a person of those <br>people who can’t be boxed</h4>
                         <div class="fs3 fc1 fw5 secText secHeader">
-                            Drop us a mail with your resume and a cover letter explaining what you’d like to do and why
+                            Drop us a mail with your resume and a cover-letter explaining what you’d like to do and why
                         </div>
                         <a target="_blank" href="https://vikas921897.typeform.com/to/t0AXRZ9d" class="btn btn-black-white d-inline">Contact Us</a>
                     </div>
@@ -411,7 +411,7 @@
                                     Internship <br> Programme
                                 </div>
                                 <div class="secText fs2 w-g-md-10 w-g-12">
-                                    Gone are the days when internship was synonymous with delivering coffee (not that we have anything against coffee). At Pichkaari, you will be treated like an adult who gets real time projects. If you think you can add as much value to our team, as much as we can add to your resume,
+                                    Gone are the days when internship was synonymous with delivering coffee. At Pichkaari, you will be treated like an adult who gets real-time projects. If you think you&nbsp;can add as much value to our team, as&nbsp;much&nbsp;as we can add to your resume.
                                 </div>
                                 <a target="_blank" href="https://vikas921897.typeform.com/to/N7GpLfDm" class="btn btn-red-white">Apply Now</a>
                             </div>
