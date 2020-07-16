@@ -27,7 +27,7 @@
                         <div class="bannerContent pos-rel w-g-md-8 w-g-sm-10 w-g-12 m-auto">
                             <div class="hs4 fc2 fw8 text-center animate flipInX slow">
                                 We're a design and communication studio, based out of Bangalore, India, that came into force in 2013.<br>
-                                Our mission is to embrace, <span class="fc7">empathy</span> and <span class="fc7">symphony</span> to <span class="fc7">design</span> a <span class="fc7">story</span> that is <span class="fc7">playful</span> but <span class="fc7">meaningful.</span>
+                                Our mission is to embrace, <span class="fc7">empathy</span> and <span class="fc7">symphony</span> to <span class="fc7">design</span> a <span class="fc7">story</span> that <br>is <span class="fc7">playful</span> but <span class="fc7">meaningful.</span>
                             </div>
                         </div>
                         <div class="absolute-bg sec-bg hideflow">
@@ -149,7 +149,7 @@
             </section>
         </div>
         <div class="section">
-            <section id="aboutSec4" class="h-auto" data-theme="dark">
+            <section id="aboutSec4" data-theme="dark">
                 <div class="container-fluid bg8">
                     <div class="secrow1 row pos-rel hideflow">
                         <h4 class="hs4 fw8 secHeader text-center w-g-md-6 w-g-sm-8 w-g-12 pos-rel animate up">
@@ -166,42 +166,21 @@
                                         <div class="founderDesignation ttu fs1 fw5">Co-Founder</div>
                                     </div>
                                     <div class="cell v-top w-g-sm-7 w-g-12 founderContent">
-                                        <div class="col w-g-10 fs2 founderDescription text-left">
-                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed dia nonummy nibh euismod tincidunt ut laoreet dolore magna aliquaerat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed dia nonummy nibh euismod tincidunt ut laoreet dolore magna aliquaerat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci.
+                                        <div class="col w-g-10 fs3 founderDescription text-left">
+                                            With his impeccable taste and attention to detail, Vikas is the leader of the tribe. He started Pichkaari out of his passion for UX and communication. A cup full of Darjeeling tea, a room full of optimistic people, and a playlist full of peppy and upbeat music is what gets him inspired to inspire.
                                         </div>
                                         <div class="col w-g-2 v-top founderSocialIcons text-right xs-hide">
-                                            <a class="col float-r" href="https://www.linkedin.com/" target="_blank" title="Linkedin"><i class="sprite-xs icon-3"></i></a>
+                                            <a class="col float-r" href="https://www.linkedin.com/in/jaiswalvikas/" target="_blank" title="Linkedin"><i class="sprite-xs icon-3"></i></a>
                                         </div>
                                         <div class="founderHobbies text-center w-g-sm-10 w-g-12">
-                                            <div class="col w-sm-2 w-g-4">
+                                            <!-- <div class="col w-sm-2 w-g-4">
                                                 <div class="d-inline">
                                                     <i class="sprite-md icon-8"></i>
                                                 </div>
                                                 <div class="fs1 ttu">Lorem</div>
-                                            </div>
-                                            <div class="col w-sm-2 w-g-4">
-                                                <div class="d-inline">
-                                                    <i class="sprite-md icon-8"></i>
-                                                </div>
-                                                <div class="fs1 ttu">Lorem</div>
-                                            </div>
-                                            <div class="col w-sm-2 w-g-4">
-                                                <div class="d-inline">
-                                                    <i class="sprite-md icon-8"></i>
-                                                </div>
-                                                <div class="fs1 ttu">Lorem</div>
-                                            </div>
-                                            <div class="col w-sm-2 w-g-4">
-                                                <div class="d-inline">
-                                                    <i class="sprite-md icon-8"></i>
-                                                </div>
-                                                <div class="fs1 ttu">Lorem</div>
-                                            </div>
-                                            <div class="col w-sm-2 w-g-4">
-                                                <div class="d-inline">
-                                                    <i class="sprite-md icon-8"></i>
-                                                </div>
-                                                <div class="fs1 ttu">Lorem</div>
+                                            </div> -->
+                                            <div class="col w-g-md-10 w-g-sm-10 w-g-12 secImage">
+                                                <img src="assets/images/hobbies.png" class="i-inline m-auto" >
                                             </div>
                                         </div>
                                     </div>
@@ -217,42 +196,21 @@
                                         <div class="founderDesignation ttu fs1 fw5">Co-Founder</div>
                                     </div>
                                     <div class="cell v-top w-g-sm-7 w-g-12 founderContent">
-                                        <div class="col w-g-10 fs2 founderDescription text-left">
-                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed dia nonummy nibh euismod tincidunt ut laoreet dolore magna aliquaerat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed dia nonummy nibh euismod tincidunt ut laoreet dolore magna aliquaerat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci.
+                                        <div class="col w-g-10 fs3 founderDescription text-left">
+                                        Painter, curator, green thumb, culinary genius; these just few of the many feathers that Priyanka wears on her cap. She is a nurturer by nature, and it shows in her creative approach, her rapport with the team and in all the green that you will see in our office!
                                         </div>
                                         <div class="col w-g-2 v-top founderSocialIcons text-right xs-hide">
-                                            <a class="col float-r" href="https://www.linkedin.com/" target="_blank" title="Linkedin"><i class="sprite-xs icon-3"></i></a>
+                                            <a class="col float-r" href="https://www.linkedin.com/company/pichkaari-design-studio-private-limited/about/" target="_blank" title="Linkedin"><i class="sprite-xs icon-3"></i></a>
                                         </div>
                                         <div class="founderHobbies text-center w-g-sm-10 w-g-12">
-                                            <div class="col w-sm-2 w-g-4">
+                                            <!-- <div class="col w-sm-2 w-g-4">
                                                 <div class="d-inline">
                                                     <i class="sprite-md icon-8"></i>
                                                 </div>
                                                 <div class="fs1 ttu">Lorem</div>
-                                            </div>
-                                            <div class="col w-sm-2 w-g-4">
-                                                <div class="d-inline">
-                                                    <i class="sprite-md icon-8"></i>
-                                                </div>
-                                                <div class="fs1 ttu">Lorem</div>
-                                            </div>
-                                            <div class="col w-sm-2 w-g-4">
-                                                <div class="d-inline">
-                                                    <i class="sprite-md icon-8"></i>
-                                                </div>
-                                                <div class="fs1 ttu">Lorem</div>
-                                            </div>
-                                            <div class="col w-sm-2 w-g-4">
-                                                <div class="d-inline">
-                                                    <i class="sprite-md icon-8"></i>
-                                                </div>
-                                                <div class="fs1 ttu">Lorem</div>
-                                            </div>
-                                            <div class="col w-sm-2 w-g-4">
-                                                <div class="d-inline">
-                                                    <i class="sprite-md icon-8"></i>
-                                                </div>
-                                                <div class="fs1 ttu">Lorem</div>
+                                            </div> -->
+                                            <div class="col w-g-md-10 w-g-sm-10 w-g-12 secImage">
+                                                <img src="assets/images/hobbies.png" class="i-inline m-auto" >
                                             </div>
                                         </div>
                                     </div>
@@ -268,42 +226,21 @@
                                         <div class="founderDesignation ttu fs1 fw5">Co-Founder</div>
                                     </div>
                                     <div class="cell v-top w-g-sm-7 w-g-12 founderContent">
-                                        <div class="col w-g-10 fs2 founderDescription text-left">
-                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed dia nonummy nibh euismod tincidunt ut laoreet dolore magna aliquaerat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed dia nonummy nibh euismod tincidunt ut laoreet dolore magna aliquaerat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci.
+                                        <div class="col w-g-10 fs3 founderDescription text-left">
+                                            The perfect example of a book that can’t be judged by the cover, behind Seb’s wallflower like persona, is a mind that is bursting with ideas, wit and dark humour. Being the perfectionist that he is, Seb art direction and UX expertise is what helps us makes sure that the projects we deliver are both aesthetically and technically sound.
                                         </div>
                                         <div class="col w-g-2 v-top founderSocialIcons text-right xs-hide">
-                                            <a class="col float-r" href="https://www.linkedin.com/" target="_blank" title="Linkedin"><i class="sprite-xs icon-3"></i></a>
+                                            <a class="col float-r" href="https://www.linkedin.com/in/sebastian-jacob-92701877/" target="_blank" title="Linkedin"><i class="sprite-xs icon-3"></i></a>
                                         </div>
                                         <div class="founderHobbies text-center w-g-sm-10 w-g-12">
-                                            <div class="col w-sm-2 w-g-4">
+                                            <!-- <div class="col w-sm-2 w-g-4">
                                                 <div class="d-inline">
                                                     <i class="sprite-md icon-8"></i>
                                                 </div>
                                                 <div class="fs1 ttu">Lorem</div>
-                                            </div>
-                                            <div class="col w-sm-2 w-g-4">
-                                                <div class="d-inline">
-                                                    <i class="sprite-md icon-8"></i>
-                                                </div>
-                                                <div class="fs1 ttu">Lorem</div>
-                                            </div>
-                                            <div class="col w-sm-2 w-g-4">
-                                                <div class="d-inline">
-                                                    <i class="sprite-md icon-8"></i>
-                                                </div>
-                                                <div class="fs1 ttu">Lorem</div>
-                                            </div>
-                                            <div class="col w-sm-2 w-g-4">
-                                                <div class="d-inline">
-                                                    <i class="sprite-md icon-8"></i>
-                                                </div>
-                                                <div class="fs1 ttu">Lorem</div>
-                                            </div>
-                                            <div class="col w-sm-2 w-g-4">
-                                                <div class="d-inline">
-                                                    <i class="sprite-md icon-8"></i>
-                                                </div>
-                                                <div class="fs1 ttu">Lorem</div>
+                                            </div> -->
+                                            <div class="col w-g-md-10 w-g-sm-10 w-g-12 secImage">
+                                                <img src="assets/images/hobbies.png" class="i-inline m-auto" >
                                             </div>
                                         </div>
                                     </div>
@@ -347,7 +284,7 @@
                             <div class="fw8 hs5 pos-rel w-g-md-8 w-sm-10 w-g-11">
                                 If you want to materialize your project into <br>reality
                             </div>
-                            <button class="btn btn-red-white pos-rel">Plan a project</button>
+                            <a href="https://vikas921897.typeform.com/to/ibpgeKDW" target="_blank" class="btn btn-red-white pos-rel">Plan a project</a>
                             <div class="absolute-bg hideflow">
                                 <img src="assets/images/About-img2.png" class="i-cover">
                             </div>
@@ -380,7 +317,7 @@
                 <div class="container pos-rel bg6 hideflow">
                     <div class="secrow1 row text-center animate up pos-rel">
                         <h4 class="hs4 fc2 fw8 secHeader">Liked what you saw? <br> Hit us up</h4>
-                        <button class="btn btn-red-white d-inline">Contact Us</button>
+                        <a href="#" target="_blank" class="btn btn-red-white d-inline">Contact Us</a>
                     </div>
                     <div class="absolute-bg sec-bg">
                         <img src="assets/images/About-bg6.svg">

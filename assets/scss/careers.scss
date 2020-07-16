@@ -35,13 +35,13 @@
         .image-right {
             background-image: url('../images/Career-bg1-right.png');
             background-repeat: repeat;
-            @include animation(bgScrollRight 1200s infinite linear);
+            @include animation(bgScrollRight 1600s infinite linear);
         }
 
         .image-left {
             background-image: url('../images/Career-bg1-left.png');
             background-repeat: repeat;
-            @include animation(bgScrollLeft 1200s infinite linear);
+            @include animation(bgScrollLeft 1600s infinite linear);
         }
     }
 }

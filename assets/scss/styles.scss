@@ -60,6 +60,10 @@
 }
 /****************** Fonts ******************/
 /****************** Global ******************/
+html {    
+  scroll-behavior: smooth;
+}
+
 body {
     font: $font-set1;
     @include interpolate(font-size, 300px, 767px, 12px, 12px);
@@ -219,6 +223,8 @@ address {
     &.btn-black {
         &-white {
             background: $color3;
+            &:focus,
+            &:active,
             &:hover {
                 color: $color3;
                 background: $color1;
@@ -272,6 +278,8 @@ address {
 
         &-red {
             background: $color3;
+            &:focus,
+            &:active,
             &:hover {
                 background: $color7;
 
@@ -326,6 +334,8 @@ address {
     &.btn-red {
         &-white {
             background: $color7;
+            &:focus,
+            &:active,
             &:hover {
                 color: $color7;
                 background: $color1;
@@ -379,6 +389,8 @@ address {
 
         &-black {
             background: $color7;
+            &:focus,
+            &:active,
             &:hover {
                 background: $color3;
 
@@ -430,6 +442,8 @@ address {
         }
     }
 
+    &:focus,
+    &:active,
     &:hover {
         &::before {
             display: block;

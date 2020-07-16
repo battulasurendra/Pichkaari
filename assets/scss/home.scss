@@ -12,7 +12,7 @@
             max-width: 430px;
             top: -45px;
 
-            button {
+            .btn {
                 margin-top: 9%;
             }
         }
@@ -31,7 +31,12 @@
             top: 50%;
             left: 50%;
             @include transform(translate(-50%, -50%));
+            
         }
+    }
+
+    .pattern-bg {
+        opacity: 0.5;
     }
 }
 
@@ -132,7 +137,9 @@
     }
 }
 
-#homeSec4 {    
+#homeSec4 {
+    padding-top: 50px;
+
     .secrow1 {
         background-color: rgba($color6,0.5);
         padding-bottom: 150px;
@@ -164,7 +171,6 @@
                     }
                 }
             }
-
         }
     }
 
@@ -179,23 +185,24 @@
             position: relative;
 
             .secImage {
-                filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
-                filter: gray; /* IE6-9 */
-                -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
-                background-color: $color6;
-                @include transition ($transition-set3);
-                @include transform (scale(1));
+                img {
+                    display: none;
+                }
+                .greyImage {
+                    display: block;
+                }
             }
 
             &.slick-center{
                 z-index: 2;
     
                 .secImage {
-                    filter: none;
-                    -webkit-filter: grayscale(0%);
-                    box-shadow : $box-shadow3;
-                    background-color: $color1;
-                    @include transform (scale(1.1));
+                    img {
+                        display: block;
+                    }
+                    .greyImage {
+                        display: none;
+                    }
                 }
             }
         }
@@ -248,8 +255,11 @@
                     padding: 5vh;
 
                     .secImage {
-                        width: 80px;
+                        height: 30px;
                         margin-bottom: 20px;
+                        img {
+                            margin-left: 0;
+                        }
                     }
 
                     .secText {
@@ -306,6 +316,7 @@
         max-height: 490px;
         @include transition ($transition-set2);
         @include transform (scale(1));
+        @include anim($fill-mode: backwards);
 
         &:hover {
             @include transform (scale(1.05));
@@ -333,7 +344,14 @@
     }
     
     .secrow2 {
-        padding: 50px 0 50px 50px;
+        padding: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        .row2col2{
+            padding-right: 60px;
+        }
 
         .footHead {
             padding: 30px 0;
@@ -444,7 +462,7 @@
     #homeSec1 {
         .secrow1 {
             .bannerContent {
-                top: -37px;
+                top: 0;
             }
         } 
     }

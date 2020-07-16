@@ -96,6 +96,16 @@ jQuery(function ($) {
         });
     }
 
+    $.rand = function(arg) {
+        if ($.isArray(arg)) {
+            return arg[$.rand(arg.length)];
+        } else if (typeof arg === "number") {
+            return Math.floor(Math.random() * arg);
+        } else {
+            return 4;  // chosen by fair dice roll
+        }
+    };
+
     var screenHeight = $(window).height(),
         headerHeight = $('#header-menu').height(),
         sections = $('section'),
@@ -112,7 +122,7 @@ jQuery(function ($) {
         },
         home: {
             init: function () {
-                var categories = ['branding', 'package design', 'marketing & communication', 'ui/ux design', 'information design', 'motion graphics & video'];
+                var categories = ['branding', 'marketing & communication', 'ui/ux design', 'information design', 'motion graphics & video','package design'];
 
                 $('.clientLocation').hover(function () {
                     var ele = $(this);
@@ -126,8 +136,6 @@ jQuery(function ($) {
                     infinite: true,
                     dots: true,
                     autoplay: false,
-                    fade: true,
-                    cssEase: 'linear',
                     autoplaySpeed: 5000,
                     adaptiveHeight: true,
                     prevArrow: $("#categorySliderArrow1"),
@@ -155,20 +163,20 @@ jQuery(function ($) {
                     autoplaySpeed: 1000,
                     prevArrow: $("#brandSliderArrow1"),
                     nextArrow: $("#brandSliderArrow2"),
-                    responsive: [
-                        {
-                            breakpoint: 991,
-                            settings: {
-                                slidesToShow: 3
-                            }
-                        },
-                        {
-                            breakpoint: 767,
-                            settings: {
-                                slidesToShow: 1
-                            }
-                        }
-                    ]
+                    // responsive: [
+                    //     {
+                    //         breakpoint: 991,
+                    //         settings: {
+                    //             slidesToShow: 3
+                    //         }
+                    //     },
+                    //     {
+                    //         breakpoint: 767,
+                    //         settings: {
+                    //             slidesToShow: 1
+                    //         }
+                    //     }
+                    // ]
                 });
 
                 $('#testimonialSlider').on('init', function (event, slick) {
@@ -284,72 +292,111 @@ jQuery(function ($) {
                 }
 
                 var pageLength = 6,
-                    pageIndex = 0,
-                    portfolioData = [],
+                    portfolioData ,
                     portfolioItems = [];
                     
                 populateCategories();
-
-                var mixer = mixitup('#portfolioCards', {
+                
+                const queryString = window.location.search;
+                const urlParams = new URLSearchParams(queryString);
+                const page_filter = urlParams.get('category');
+                var mixitConfig = {
                     animation: {
                         enable: true,
-                        duration: 300,
+                        duration: 200,
                         effects: 'fade translateZ(-100px)'
                     },
                     selectors: {
                         target: '.portfolioCard',
                         control: '.portfolioFilter'
                     }
-                });
+                };
+
+                if(page_filter){
+                    mixitConfig = {...mixitConfig, 
+                        load: {
+                            filter: '.'+page_filter
+                        }
+                    }
+                    $('html, body').animate({
+                        scrollTop: $('#portfolioSec2').offset().top
+                    }, 300);
+                }
+
+                var mixer = mixitup('#portfolioCards', mixitConfig);
+
 
                 $.getJSON( "./assets/json/portfolio.json").done(function( data ) {
                     portfolioData = data;
+                    portfolioItems = memoize(data);
                     addCards();
                 }).fail(function( jqxhr, textStatus, error ) {
                     alert( "Request Failed: " + textStatus + ", " + error);
-                  });
+                });
 
-                var randomProperty = function (obj) {
-                    var keys = Object.keys(obj);
-                    return keys[keys.length * Math.random() << 0];
-                };
+                function memoize(data) {
+                    var newArray = [];
+                    $.each(data, function (clientSlug, clientObject) {
+                        $.each(clientObject, function (category, projectObject) {
+                            if(projectObject.active){
+                                var newObj = {...projectObject, category, clientSlug};
+                                newObj.visible = false;
+                                newObj.slug = clientSlug + '-' + category;
+                                newArray.push(newObj);
+                            }
+                        });
+                    });
+
+                    newArray.sort(function() {return 0.5 - Math.random()});
+
+                    return newArray;
+                }
 
                 function addCards(category = '') {
-                    var startIndex = pageIndex * pageLength;
-                    var elements = '';
-                    var firstGap = $('#portfolioCards .gap');
-                    var arr = portfolioData;
+                    var elements = '',
+                        firstGap = $('#portfolioCards .gap'),
+                        projects = $.grep(portfolioItems, function(project) {
+                            return !project.visible;
+                        });
+
                     if(category.length) {
-                        arr = $.grep(portfolioData, function(elem) {
-                            return elem.toLowerCase().indexOf(category) > -1;
+                        projects = $.grep(projects, function(project) {
+                            return project.category.toLowerCase() === category.toLowerCase();
                         });
                     }
 
-                    console.log(arr);
-
-                    // $.each( arr, function( i, val ) {
-                    //     $( "#" + val ).text( "Mine is " + val + "." );
-                       
-                    //     // Will stop running after "three"
-                    //     return ( val !== "three" );
-                    // });
-
-                    // Insert a new target element before the first "gap" element
-
-                    for (var i = startIndex; i < (startIndex + pageLength); i++) {
-                        var cat = category || randomProperty(categories);
-                        elements += renderCard(i, cat);
+                    if(!projects.length) {
+                        $('#loadMoreCards').hide();
+                        return false;
                     }
+
+                    if(projects.length > pageLength) {
+                        projects = projects.slice(0, pageLength);
+                    }
+
+                    $.each(projects, function (i, project) {
+                        var objIndex = portfolioItems.findIndex((obj => obj == project));
+                        portfolioItems[objIndex].visible = true;
+                        elements += renderProject(project);
+                    });
                     
                     mixer.insertBefore(elements, firstGap);
+                    var state = mixer.getState();
+                    if (state.totalTargets === portfolioItems.length) {
+                        $('#loadMoreCards').hide();
+                    }
                 }
 
-                function renderCard(index, category) {
+                function renderProject(project) {
                     var html = '';
-                    html += '<div class="portfolioCard d-inline text-left ' + category + '"><div class="cardImage secText">';
-                    html += '<img src="assets/images/portfolio-thumbnails/Default-thumbnail1.jpg"></div>';
-                    html += '<div class="fs3 fwb cardTitle">Organicana ' + index + '</div>';
-                    html += '<div class="fs2 cardCategory">' + categories[category] + '</div></div>';
+                    html += '<div class="portfolioCard d-inline pos-rel ' + project.category + '">';
+                    if(project.hasOwnProperty('thumbnail') && project.thumbnail.length){
+                        html += '<a href="https://www.pichkaari.com/devaps/portfolio/' + project.link + '" target="_blank" class="absolute-bg"></a>';
+                    }
+                    html += '<div class="cardImage secText">';
+                    html += '<img src="assets/images/thumbnails/' + project.thumbnail +'.png"></div>';
+                    html += '<div class="fs3 fwb cardTitle"> ' + project.title + '</div>';
+                    html += '<div class="fs2 cardCategory">' + project.description + '</div></div>';
 
                     return html;
                 }
@@ -366,8 +413,31 @@ jQuery(function ($) {
                 }
 
                 $('#loadMoreCards').click(function () {
-                    pageIndex++;
-                    addCards();
+                    var state = mixer.getState();
+                    var activeFilter = '';
+                    console.log(state);
+                    if (state.totalTargets === portfolioItems.length) {
+                        $(this).hide();
+                        return false;
+                    }
+
+                    if(state.totalTargets !== state.totalMatching) {
+                        activeFilter = state.activeFilter.selector;
+                        activeFilter = activeFilter.substring(1);
+                    }
+                    addCards(activeFilter);
+                });
+
+                $('#portfolioCards').on('mixEnd', function (e) {
+                    var state = mixer.getState();
+                    var activeFilter = state.activeFilter.selector;
+                    activeFilter = activeFilter.substring(1);
+                    if((activeFilter === 'portfolioCard') && (state.totalTargets != portfolioItems.length)) {
+                        $('#loadMoreCards').show();
+                    } else {
+                        $('#loadMoreCards').hide();
+                        addCards(activeFilter);
+                    }
                 });
             }
         },
@@ -383,7 +453,7 @@ jQuery(function ($) {
                 $('#page_loader').fadeOut();
                 if(screen.width > 992 && screen.height>600) {
                     if ($('#fullpage').length > 0) {
-                        $('#fullpage').fullpage({
+                        var fullpageOptions = {
                             //options here
                             autoScrolling: true,
                             slideSelector: '.fullpageSlide',
@@ -405,7 +475,11 @@ jQuery(function ($) {
                                     }
                                 }
                             }
-                        });
+                        };
+                        if($('body').hasClass('home')){
+                            fullpageOptions = {...fullpageOptions, anchors:['firstPage', 'secondPage', 'services', 'fourthPage', 'fifthPage', 'sixthPage', 'contactus']}
+                        }
+                        $('#fullpage').fullpage(fullpageOptions);
                         //methods
                         $.fn.fullpage.setAllowScrolling(true);
                     }

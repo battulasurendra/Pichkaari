@@ -12,16 +12,19 @@
                                 <div class="fs6 fc1 secText">
                                     A mature integrated <strong>communication agency</strong> that lives your brand and builds it to the moment <br>it becomes the people’s brand
                                 </div>
-                                <button type="button" class="btn btn-black-white">Start a Project</button>
+                                <a href="https://vikas921897.typeform.com/to/ibpgeKDW" target="_blank" class="btn btn-black-white">Start a Project</a>
                             </div>
                         </div>
-                        <div class="absolute-bg animate up xs-hide">
+                        <div class="absolute-bg animate up">
                             <img src="assets/images/Home-img1.png" class="i-inline m-right">
                         </div>
                     </div>
                 </div>
                 <div class="absolute-bg sec-bg">
                     <img src="assets/images/Home-bg1.png" class="i-cover pos-rel">
+                </div>
+                <div class="absolute-bg sec-bg pattern-bg">
+                    <img src="assets/images/Home-bg1-pattern.png" class="i-cover pos-rel">
                 </div>
             </section>
         </div>
@@ -68,90 +71,84 @@
                             <div class="slide">
                                 <div class="d-table d-sm-block d-xs-block">
                                     <div class="cell w-g-md-6 w-g-12 no-padding secImage">
-                                        <img src="assets/images/slides/Home-category-slide1.jpg">
+                                        <img src="assets/images/slides/Home-category-slide1.png">
                                     </div>
                                     <div class="cell w-g-md-6 w-g-12">
-                                        <h4 class="hs4 fw8">Branding</h4>
+                                        <h4 class="hs4 fw8">Branding & Merchandising</h4>
                                         <div class="fs2 secText w-g-md-6">
-                                            We encourage and hope that you judge by the cover. We help brands engage and have
-                                            the audience by the hook in a glance. We redeﬁne love at ﬁrst sight.
+                                            We add 1/2 cup of identity, 1/2 cup of personality, stir them up with our creative juices  and we have ourselves a ‘brand’ new ﬂavour in the market!
                                         </div>
-                                        <a href="#" class="btn btn-red-white">More Projects</a>
+                                        <a href="portfolio.php?category=branding" class="btn btn-red-white">More Projects</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="slide">
                                 <div class="d-table d-sm-block d-xs-block">
                                     <div class="cell w-g-md-6 w-g-12 no-padding secImage">
-                                        <img src="assets/images/slides/Home-category-slide1.jpg">
+                                        <img src="assets/images/slides/Home-category-slide2.png">
                                     </div>
                                     <div class="cell w-g-md-6 w-g-12">
-                                        <h4 class="hs4 fw8">Package Design</h4>
+                                        <h4 class="hs4 fw8">Marketing Communication</h4>
                                         <div class="fs2 secText w-g-md-6">
-                                            We encourage and hope that you judge by the cover. We help brands engage and have
-                                            the audience by the hook in a glance. We redeﬁne love at ﬁrst sight.
+                                            Your business creates the products and services. We make sure that the audience fully understands its worth with the right communication. Nobody is lost in translation.
                                         </div>
-                                        <a href="#" class="btn btn-red-white">More Projects</a>
+                                        <a href="portfolio.php?category=marketing" class="btn btn-red-white">More Projects</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="slide">
                                 <div class="d-table d-sm-block d-xs-block">
                                     <div class="cell w-g-md-6 w-g-12 no-padding secImage">
-                                        <img src="assets/images/slides/Home-category-slide1.jpg">
+                                        <img src="assets/images/slides/Home-category-slide3.png">
                                     </div>
                                     <div class="cell w-g-md-6 w-g-12">
-                                        <h4 class="hs4 fw8">Marketing & Communication</h4>
+                                        <h4 class="hs4 fw8">UI/UX Design</h4>
                                         <div class="fs2 secText w-g-md-6">
-                                            We encourage and hope that you judge by the cover. We help brands engage and have
-                                            the audience by the hook in a glance. We redeﬁne love at ﬁrst sight.
+                                            Whether it’s a website or an app, we put the user at it’s centre to create the smoothest user experience. We give U importance.
                                         </div>
-                                        <a href="#" class="btn btn-red-white">More Projects</a>
+                                        <a href="portfolio.php?category=uiux" class="btn btn-red-white">More Projects</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="slide">
                                 <div class="d-table d-sm-block d-xs-block">
                                     <div class="cell w-g-md-6 w-g-12 no-padding secImage">
-                                        <img src="assets/images/slides/Home-category-slide1.jpg">
-                                    </div>
-                                    <div class="cell w-g-md-6 w-g-12">
-                                        <h4 class="hs4 fw8">UI/UX Development</h4>
-                                        <div class="fs2 secText w-g-md-6">
-                                            We encourage and hope that you judge by the cover. We help brands engage and have
-                                            the audience by the hook in a glance. We redeﬁne love at ﬁrst sight.
-                                        </div>
-                                        <a href="#" class="btn btn-red-white">More Projects</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="slide">
-                                <div class="d-table d-sm-block d-xs-block">
-                                    <div class="cell w-g-md-6 w-g-12 no-padding secImage">
-                                        <img src="assets/images/slides/Home-category-slide1.jpg">
+                                        <img src="assets/images/slides/Home-category-slide4.png">
                                     </div>
                                     <div class="cell w-g-md-6 w-g-12">
                                         <h4 class="hs4 fw8">Information Design</h4>
                                         <div class="fs2 secText w-g-md-6">
-                                            We encourage and hope that you judge by the cover. We help brands engage and have
-                                            the audience by the hook in a glance. We redeﬁne love at ﬁrst sight.
+                                            Your data is your biggest asset. BUT only when it is clear, engaging and easy to absorb. Our communication focuses on breaking down data and simplifying it through efficient design, conveying all the information at just a glance.
                                         </div>
-                                        <a href="#" class="btn btn-red-white">More Projects</a>
+                                        <a href="portfolio.php?category=information" class="btn btn-red-white">More Projects</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="slide">
                                 <div class="d-table d-sm-block d-xs-block">
                                     <div class="cell w-g-md-6 w-g-12 no-padding secImage">
-                                        <img src="assets/images/slides/Home-category-slide1.jpg">
+                                        <img src="assets/images/slides/Home-category-slide5.png">
                                     </div>
                                     <div class="cell w-g-md-6 w-g-12">
-                                        <h4 class="hs4 fw8">Motion Graphics & Video</h4>
+                                        <h4 class="hs4 fw8">Motion graphics & video</h4>
                                         <div class="fs2 secText w-g-md-6">
-                                            We encourage and hope that you judge by the cover. We help brands engage and have
-                                            the audience by the hook in a glance. We redeﬁne love at ﬁrst sight.
+                                            A picture speaks a 1000 words. But a motion graphic/video can keep an audience’s attention for about a 1000 minutes (ever binge-watched online content like us? Exactly). We conceptualise and produce, interactive videos and animations that create the right impact and get the right reaction.
                                         </div>
-                                        <a href="#" class="btn btn-red-white">More Projects</a>
+                                        <a href="portfolio.php?category=video" class="btn btn-red-white">More Projects</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="d-table d-sm-block d-xs-block">
+                                    <div class="cell w-g-md-6 w-g-12 no-padding secImage">
+                                        <img src="assets/images/slides/Home-category-slide6.png">
+                                    </div>
+                                    <div class="cell w-g-md-6 w-g-12">
+                                        <h4 class="hs4 fw8">Package Design</h4>
+                                        <div class="fs2 secText w-g-md-6">
+                                            We encourage and hope that you judge by the cover. We help brands engage and have the audience by the hook in a glance. We redeﬁne love at ﬁrst sight.
+                                        </div>
+                                        <a href="portfolio.php?category=packaging" class="btn btn-red-white">More Projects</a>
                                     </div>
                                 </div>
                             </div>
@@ -184,7 +181,7 @@
                         <div class="d-table d-sm-block d-xs-block">
                             <div class="cell w-g-md-4 w-g-12 animate left">
                                 <div class="hs5 fc3 fw8 secText">
-                                    We are not bound by geographics or timezones
+                                    We are not bound by geographics <br> or timezones. <br> We cater to clients in
                                 </div>
                                 <div class="hs5 fc7 fw8 secHead" id="clientCountry">
                                     Luxembourg
@@ -200,36 +197,14 @@
                     <div class="secrow3 container">
                         <div class="sliderContainer pos-rel">
                             <div id="brandSlider">
-                                <div class="slide">
-                                    <div class="secImage">
-                                        <img src="assets/images/slides/Home-brand-slide1.png" class="i-inline">
+                                <?php  for ($i=0; $i<18; $i++) { ?>     
+                                    <div class="slide">
+                                        <div class="secImage">
+                                            <img src="assets/images/clients/Client-logo-<?php echo $i+1 ?>.png" class="i-inline">
+                                            <img src="assets/images/clients/Client-logo-grey-<?php echo $i+1 ?>.png" class="i-inline greyImage">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="slide">
-                                    <div class="secImage">
-                                        <img src="assets/images/slides/Home-brand-slide1.png" class="i-inline">
-                                    </div>
-                                </div>
-                                <div class="slide">
-                                    <div class="secImage">
-                                        <img src="assets/images/slides/Home-brand-slide1.png" class="i-inline">
-                                    </div>
-                                </div>
-                                <div class="slide">
-                                    <div class="secImage">
-                                        <img src="assets/images/slides/Home-brand-slide1.png" class="i-inline">
-                                    </div>
-                                </div>
-                                <div class="slide">
-                                    <div class="secImage">
-                                        <img src="assets/images/slides/Home-brand-slide1.png" class="i-inline">
-                                    </div>
-                                </div>
-                                <div class="slide">
-                                    <div class="secImage">
-                                        <img src="assets/images/slides/Home-brand-slide1.png" class="i-inline">
-                                    </div>
-                                </div>
+                                <?php } ?>
                             </div>
                             <div class="sliderNavs absolute-bg">
                                 <div id="brandSliderArrow1" class="navLeft float-l">
@@ -265,7 +240,7 @@
                                     <div class="slide">
                                         <div class="innerSlide bg1">
                                             <div class="secImage">
-                                                <img src="assets/images/slides/Home-testimonial-slide1.png" class="i-inline">
+                                                <img src="assets/images/slides/Home-testimonial-slide5.png" class="i-inline">
                                             </div>
                                             <div class="fs2 fc3 secText scrollable-content">
                                                 Pichkaari is very fast and responsive with an unbelievably quick turnaround time. Their attention to detail is hugely admirable. And the way they conceptualize things and weave in their astounding creative sense is commendable. I absolutely loved working with these guys and would highly recommend them.
@@ -293,21 +268,21 @@
                                     <div class="slide">
                                         <div class="innerSlide bg1">
                                             <div class="secImage">
-                                                <img src="assets/images/slides/Home-testimonial-slide1.png" class="i-inline">
+                                                <img src="assets/images/slides/Home-testimonial-slide4.png" class="i-inline">
                                             </div>
                                             <div class="fs2 fc3 secText scrollable-content">
                                                 It’s been 2 years since we started working with Pichkaari. At that time, my firm was quite small but Pichkaari (esp Vikas) never made me or my requirements feel small. Pichkaari always listened to our requirements and came up with some excellent work. They have developed a deep understanding of our business and objectives, and consider our communication challenges with sound and well-informed reasoning. We are extremely happy with their work, and they have always found a way to exceed our expectations.
                                             </div>
                                             <div class="testiDetails w-g-10">
                                                 <div class="fs3 fwb">Harish Ravi</div>
-                                                <div class="fw5">General Manager, Eurofins IT Solutions India Pvt. Ltd</div>
+                                                <div class="fw5">General Manager, Eurofins IT Solutions</div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="slide">
                                         <div class="innerSlide bg1">
                                             <div class="secImage">
-                                                <img src="assets/images/slides/Home-testimonial-slide1.png" class="i-inline">
+                                                <img src="assets/images/slides/Home-testimonial-slide6.png" class="i-inline">
                                             </div>
                                             <div class="fs2 fc3 secText scrollable-content">
                                                 The zeal with which Pichkaari carried out our campaign is highly commendable. We explained the idea just once and they were able to conceptualize it and execute exactly what we had in mind. They have immensely fast turn-around time and deliver terrific creatives. We are very happy with their work and will definitely recommend them as the ‘go to’ agency.
@@ -321,7 +296,7 @@
                                     <div class="slide">
                                         <div class="innerSlide bg1">
                                             <div class="secImage">
-                                                <img src="assets/images/slides/Home-testimonial-slide1.png" class="i-inline">
+                                                <img src="assets/images/slides/Home-testimonial-slide3.png" class="i-inline">
                                             </div>
                                             <div class="fs2 fc3 secText scrollable-content">
                                                 I've been working with Pichkaari ever since their initial days and it's been an absolute pleasure. Their designs are creative, their approach is fresh, their attitude is great and they've always delivered on time. We've used them for our website design, landing page designs and social media artwork. Their work has helped us in significantly increasing our conversion rates.
@@ -335,7 +310,7 @@
                                     <div class="slide">
                                         <div class="innerSlide bg1">
                                             <div class="secImage">
-                                                <img src="assets/images/slides/Home-testimonial-slide1.png" class="i-inline">
+                                                <img src="assets/images/slides/Home-testimonial-slide2.png" class="i-inline">
                                             </div>
                                             <div class="fs2 fc3 secText scrollable-content">
                                                 Everything was presented so professionally and with a lot of care. Details are what make or break campaigns and Pichkaari took great care in ensuring that all the 't’s' were crossed and the 'i's' dotted. I love working with you guys and appreciate all that you have done for us.
@@ -382,7 +357,7 @@
                             <div class="fw8 hs5 pos-rel">
                                 Take Your <br> Project<br> From Draft<br> to Craft.
                             </div>
-                            <button type="button" class="btn btn-black-white pos-rel">Start a Project</button>
+                            <a href="https://vikas921897.typeform.com/to/ibpgeKDW" target="_blank" class="btn btn-black-white pos-rel">Start a Project</a>
                             <div class="absolute-bg">
                                 <img src="assets/images/Home-img4.jpg" class="i-cover">
                             </div>
@@ -391,7 +366,7 @@
                             <div class="fw8 hs5 pos-rel">
                                 Got A Passion<br> For Creativity<br> & Brands?
                             </div>
-                            <button type="button" class="btn btn-black-white pos-rel">Apply now</button>
+                            <a href="careers.php" class="btn btn-black-white pos-rel">Apply now</a>
                             <div class="absolute-bg">
                                 <img src="assets/images/Home-img5.jpg" class="i-cover">
                             </div>
@@ -422,31 +397,26 @@
                         </h4>
                     </div>
                     <div class="secrow2 row bg8 hideflow pos-rel">
-                        <div class="col w-g-md-4 w-g-12">
+                        <div class="row2col1">
                             <div class="fwb fs5 footHead">Get in touch</div>
-                            <div class="fs2">Work Enquires</div>
                             <div class="row secText">
-                                <div class="col w-g-6 fwb">+91 80 4954 6742</div>
-                                <div class="col w-g-6 fwb">+91 99 0073 0603</div>
-                            </div>
-                            <div class="row">
-                                <div class="col w-g-6 fs2">Mail At</div>
-                                <div class="col w-g-6 fs2">Website</div>
+                                <div class="col w-g-12 fs2">Work Enquires</div>
+                                <div class="col w-g-12 fwb">+91 80 4954 6742</div>
                             </div>
                             <div class="row secText">
+                                <div class="col w-g-12 fs2">Mail At</div>
                                 <div class="col w-g-6 fwb">hello@pichkaari.com</div>
-                                <div class="col w-g-6 fwb">www.pichkaari.com</div>
                             </div>
                         </div>
-                        <div class="col w-g-md-offset-1 w-g-md-4 w-g-12">
+                        <div class="row2col2">
                             <div class="fwb fs5 footHead">Post address</div>
                             <div class="fs2 fwb secText">Pichkaari Design Studio Pvt. Ltd</div>
-                            <address class="w-g-md-11">
+                            <address>
                                 209/210, The Arcade, Bridge Metropolis,
-                                Garudacharpalya, Whitefield Main Road, Bangalore -560048
+                                Garudacharpalya, <br>Whitefield Main Road, Bangalore -560048
                             </address>
                         </div>
-                        <div class="col w-g-md-3 w-g-12">
+                        <div class="row2col3">
                             <div class="fwb fs5 footHead">Social Media</div>
                             <ul class="footerSocialLinks">
                                 <li class="fs3 fwb"><a class="d-inline" href="#">Facebook</a></li>

@@ -22,7 +22,7 @@
                 <ul id="portfolioFilters" class="col w-g-12 text-center"></ul>
             </div>
             <div class="secrow2 row fc3 targets">
-                <div class="grid text-center" id="portfolioCards">
+                <div class="grid m-auto" id="portfolioCards">
                     <div class="gap"></div>
                 </div>
             </div>
@@ -32,10 +32,10 @@
         </div>
     </section>
     <section id="portfolioSec3" class="zero-padding h-auto" data-theme="dark">
-        <div class="container-fluid pos-rel bg9 hideflow">
+        <div class="container-fluid pos-rel bg8 hideflow">
             <div class="secrow1 row text-center animate up pos-rel">
                 <h4 class="hs4 fc1 fw8 secHeader">Liked what you saw? <br> Hit us up</h4>
-                <button class="btn btn-red-white d-inline">Plan a project</button>
+                <a href="https://vikas921897.typeform.com/to/ibpgeKDW" target="_blank" class="btn btn-red-white d-inline">Plan a project</a>
             </div>
             <div class="absolute-bg sec-bg">
                 <img src="assets/images/Portfolio-bg2.svg">

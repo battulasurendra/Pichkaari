@@ -266,7 +266,7 @@
                                             If you are a dreamer who has an eye for details, we are looking for you. If your specialty stunning visual imagery, you are at the right place.
                                         </div>
                                     </div>
-                                    <button type="button" class="btn btn-red-white pos-rel">Apply Now</button>
+                                    <a target="_blank" href="https://vikas921897.typeform.com/to/VG2IWn7u" class="btn btn-red-white pos-rel">Apply Now</a>
                                     <div class="absolute-bg">
                                         <img src="assets/images/slides/Career-jobs-slide1.jpg" class="i-cover">
                                     </div>
@@ -288,12 +288,12 @@
                                             If making an impact by focusing on user behavior is your thing. You are at the right place. You’ll be responsible for bringing out the teeny weeny intricacies and specifics of design while keeping in mind the psychology of consumers.
                                         </div>
                                     </div>
-                                    <button type="button" class="btn btn-red-white pos-rel">Apply Now</button>
+                                    <a target="_blank" href="https://vikas921897.typeform.com/to/nGQhl5kB" class="btn btn-red-white pos-rel">Apply Now</a>
                                     <div class="absolute-bg">
-                                        <img src="assets/images/slides/Career-jobs-slide1.jpg" class="i-cover">
+                                        <img src="assets/images/slides/Career-jobs-slide2.png" class="i-cover">
                                     </div>
                                     <div class="absolute-bg hover-image">
-                                        <img src="assets/images/slides/Career-jobs-slide1-hover.png" class="i-cover">
+                                        <img src="assets/images/slides/Career-jobs-slide2-hover.png" class="i-cover">
                                     </div>
                                 </div>
                             </div>
@@ -310,12 +310,12 @@
                                             If you are a dreamer who has an eye for details, we are looking for you. If your specialty s stunning visual imagery, you are at the right place.
                                         </div>
                                     </div>
-                                    <button type="button" class="btn btn-red-white pos-rel">Apply Now</button>
+                                    <a target="_blank" href="https://vikas921897.typeform.com/to/Gg7kklKf" class="btn btn-red-white pos-rel">Apply Now</a>
                                     <div class="absolute-bg">
-                                        <img src="assets/images/slides/Career-jobs-slide1.jpg" class="i-cover">
+                                        <img src="assets/images/slides/Career-jobs-slide3.png" class="i-cover">
                                     </div>
                                     <div class="absolute-bg hover-image">
-                                        <img src="assets/images/slides/Career-jobs-slide1-hover.png" class="i-cover">
+                                        <img src="assets/images/slides/Career-jobs-slide3-hover.png" class="i-cover">
                                     </div>
                                 </div>
                             </div>
@@ -332,7 +332,7 @@
                                             If making an impact by focusing on user behavior is your thing. You are at the right place. You’ll be responsible for bringing out the teeny weeny intricacies and specifics of design while keeping in mind the psychology of consumers.
                                         </div>
                                     </div>
-                                    <button type="button" class="btn btn-red-white pos-rel">Apply Now</button>
+                                    <a target="_blank" href="https://vikas921897.typeform.com/to/VG2IWn7u" class="btn btn-red-white pos-rel">Apply Now</a>
                                     <div class="absolute-bg">
                                         <img src="assets/images/slides/Career-jobs-slide1.jpg" class="i-cover">
                                     </div>
@@ -354,12 +354,12 @@
                                             If making an impact by focusing on user behavior is your thing. You are at the right place. You’ll be responsible for bringing out the teeny weeny intricacies and specifics of design while keeping in mind the psychology of consumers.
                                         </div>
                                     </div>
-                                    <button type="button" class="btn btn-red-white pos-rel">Apply Now</button>
+                                    <a target="_blank" href="https://vikas921897.typeform.com/to/VG2IWn7u" class="btn btn-red-white pos-rel">Apply Now</a>
                                     <div class="absolute-bg">
-                                        <img src="assets/images/slides/Career-jobs-slide1.jpg" class="i-cover">
+                                        <img src="assets/images/slides/Career-jobs-slide3.png" class="i-cover">
                                     </div>
                                     <div class="absolute-bg hover-image">
-                                        <img src="assets/images/slides/Career-jobs-slide1-hover.png" class="i-cover">
+                                        <img src="assets/images/slides/Career-jobs-slide3-hover.png" class="i-cover">
                                     </div>
                                 </div>
                             </div>
@@ -393,7 +393,7 @@
                         <div class="fs3 fc1 fw5 secText secHeader">
                             Drop us a mail with your resume and a cover letter explaining what you’d like to do and why
                         </div>
-                        <button class="btn btn-black-white d-inline">Contact Us</button>
+                        <a target="_blank" href="https://vikas921897.typeform.com/to/t0AXRZ9d" class="btn btn-black-white d-inline">Contact Us</a>
                     </div>
                 </div>
                 <div class="absolute-bg sec-bg">
@@ -410,10 +410,10 @@
                                 <div class="hs4 fw8 secHeader">
                                     Internship <br> Programme
                                 </div>
-                                <div class="secText w-g-md-10 w-g-12">
+                                <div class="secText fs2 w-g-md-10 w-g-12">
                                     Gone are the days when internship was synonymous with delivering coffee (not that we have anything against coffee). At Pichkaari, you will be treated like an adult who gets real time projects. If you think you can add as much value to our team, as much as we can add to your resume,
                                 </div>
-                                <button class="btn btn-red-white">Apply Now</button>
+                                <a target="_blank" href="https://vikas921897.typeform.com/to/N7GpLfDm" class="btn btn-red-white">Apply Now</a>
                             </div>
                             <div class="cell w-g-md-7 w-g-12 no-padding v-bottom">
                                 <div class="secImage animate right slow">

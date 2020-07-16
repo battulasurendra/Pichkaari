@@ -45,12 +45,19 @@
             }
         }
     }
-
+    
     #portfolioCards {
+        max-width: 1080px;
+
         .portfolioCard {
             max-width: 33%;
-            width: 370px;
+            width: 360px;
             padding: 20px 15px;
+
+            a.ansolute-bg{
+                z-index: 2;
+                margin: 20px 15px;
+            }
         }
     }
 
