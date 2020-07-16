@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+
+    <meta name="keywords"
+        content="Design,Creativity,Branding,User Experience, UI, UX, Marketing, Corporate Communication,Web Design">
+    <meta name="description"
+        content="Pichkaari is a communication boutique. Expressions are our way of life. Designing effective communication is our religion.And our sole ambition is to sketch the brand of a brand in different communication formats by combining colors with immaculate designs and clever wordsmithing pivoted around a communication centric strategy.">
+    <meta name="author" content="Pichkaari Design Studio">
+    <title>Wave Animation 3</title>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+
+    <link href="assets/css/app.min.css?v=2.0" rel="stylesheet">
+    <style>
+        #waveSec2 {
+            background-color: #19181b;
+        }
+
+        #waveSec1 .wavePattern {
+            position: relative;
+            top: 50%;
+            left: 50%;
+            -webkit-transform :translate(-50%, -50%);
+            -moz-transform :translate(-50%, -50%);
+            transform :translate(-50%, -50%);
+        }
+        #waveSec2 .wavePattern {
+            max-height: 100%;
+            max-width: 100%;
+        }
+
+        .wavePattern path {
+            -webkit-animation: wavePulse 20s infinite forwards cubic-bezier(.36, .11, .89, .32);
+            -moz-animation: wavePulse 20s infinite forwards cubic-bezier(.36, .11, .89, .32);
+            animation: wavePulse 20s infinite forwards cubic-bezier(.36, .11, .89, .32);
+            transform-origin: center;
+            fill: none;
+            stroke: #ffffff;
+            stroke-width: 0.75;
+            stroke-miterlimit: 10;
+        }
+
+        .wavePattern path:first-child {
+            -webkit-animation: none;
+            -moz-animation: none;
+            animation: none;
+            opacity: 0;
+        }
+
+        @keyframes wavePulse {
+            0% {
+                -webkit-transform: scale(0);
+                -moz-transform: scale(0);
+                transform: scale(0);
+                opacity: 0;
+            }
+
+            19% {
+                opacity: 0;
+            }
+            20% {
+                opacity: 1;
+            }
+
+            90% {
+                opacity: 1;
+            }
+            
+            100% {
+                opacity: 0;
+                -webkit-transform: scale(0.9);
+                -moz-transform: scale(0.9);
+                transform: scale(0.9);
+            }
+        }
+    </style>
+
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+    <section id="waveSec1" class="no-padding zero-padding">
+        <div class="container-fluid h-max">
+            <div class="row waveSecRow1 h-max pos-rel">
+                <div class="h-max secImage pos-rel">
+                    <svg class="wavePattern" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1120 900"
+                        style="enable-background:new 0 0 1120 900;" xml:space="preserve" class="i-cover">
+                        <g class="path-wrapper">
+                            <path class="st0" d="M561.9,788.31c58.89-15.74,118.53,1.21,170.15,25.1c51.63,23.89,99.7,54.96,155.69,69.64 c55.99,14.68,124.29,9.59,170.62-31.19c48.92-43.06,59.2-112.44,51.33-171.74c-7.86-59.3-30.05-115.33-32-175.65 c-2.41-74.79,26.47-150.94,26.07-225.96c-0.49-92.38-48.4-178.81-125.62-226.6C900.93,4.11,796.21-3.93,703.59,30.81 c-63.51,23.83-120.89,66.2-186.19,82.51c-93.2,23.28-187.16-10.11-281.14,7.28C124.84,141.22,26.45,240.2,10.31,347.91 c-16.14,107.71,51.55,213.65,155.44,243.3c74.82,21.35,167.26,8.6,223.59,58.31c28.66,25.3,39.43,49.38,63.88,78.54 c15.32,18.27,31.06,36.89,52.36,48.56C526.87,788.3,536.6,795.07,561.9,788.31z" />
+                        </g>
+                    </svg>
+                </div>
+                <div class="absolute-bg">
+                    <img src="assets/images/Home-bg1.png" class="i-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="waveSec2" class="no-padding zero-padding">
+        <div class="container-fluid h-max">
+            <div class="row waveSecRow1 h-max pos-rel">
+                <div class="h-max secImage pos-rel">
+                    <svg class="wavePattern" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1120 900"
+                        style="enable-background:new 0 0 1120 900;" xml:space="preserve">
+                        <g class="path-wrapper">
+                            <path class="st0" d="M561.9,788.31c58.89-15.74,118.53,1.21,170.15,25.1c51.63,23.89,99.7,54.96,155.69,69.64 c55.99,14.68,124.29,9.59,170.62-31.19c48.92-43.06,59.2-112.44,51.33-171.74c-7.86-59.3-30.05-115.33-32-175.65 c-2.41-74.79,26.47-150.94,26.07-225.96c-0.49-92.38-48.4-178.81-125.62-226.6C900.93,4.11,796.21-3.93,703.59,30.81 c-63.51,23.83-120.89,66.2-186.19,82.51c-93.2,23.28-187.16-10.11-281.14,7.28C124.84,141.22,26.45,240.2,10.31,347.91 c-16.14,107.71,51.55,213.65,155.44,243.3c74.82,21.35,167.26,8.6,223.59,58.31c28.66,25.3,39.43,49.38,63.88,78.54 c15.32,18.27,31.06,36.89,52.36,48.56C526.87,788.3,536.6,795.07,561.9,788.31z" />
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container-fluid">
+            <div class="footrow1 row text-center">
+                <a href="http://pichkaari.com" target="_blank" class="d-inline fw5">www.pichkaari.com 2013 &copy; All
+                    Rights Reserved</a>
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+    function patternPulseAnimation(svgSelector){
+        var svg = $(svgSelector);
+        
+        $(svg).each(function(){
+            var wrapper = $(this).find('.path-wrapper');
+            var ele = $(wrapper).find('path');
+            var count = 30;
+            var animTime = 20;
+            for(var i =0; i< count; i++){
+                var delay = animTime/count;
+                delay = delay*(i+1);
+                var newEle = $(ele).clone();
+                $(wrapper).append(newEle);
+                $(newEle).css("animation-delay", '-' + delay + 's');
+            }
+        });
+    }
+    patternPulseAnimation('.wavePattern');
+</script>

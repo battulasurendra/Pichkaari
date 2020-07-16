@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+
+    <meta name="keywords"
+        content="Design,Creativity,Branding,User Experience, UI, UX, Marketing, Corporate Communication,Web Design">
+    <meta name="description"
+        content="Pichkaari is a communication boutique. Expressions are our way of life. Designing effective communication is our religion.And our sole ambition is to sketch the brand of a brand in different communication formats by combining colors with immaculate designs and clever wordsmithing pivoted around a communication centric strategy.">
+    <meta name="author" content="Pichkaari Design Studio">
+    <title>Wave Animation 1</title>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+
+    <link href="assets/css/app.min.css?v=2.0" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.0/lottie.min.js" type="text/javascript"></script>
+    <style>
+        
+    </style>
+</head>
+
+<body>
+    <section id="videoSec" class="no-padding zero-padding">
+        <div class="container-fluid h-max">
+            <div class="row videoSecRow1 h-max pos-rel">
+                <div id="videoContainer" class="w-g-6">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container-fluid">
+            <div class="footrow1 row text-center">
+                <a href="http://pichkaari.com" target="_blank" class="d-inline fw5">www.pichkaari.com 2013 &copy; All
+                    Rights Reserved</a>
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+    var element = document.getElementById('videoContainer');
+    lottie.loadAnimation({
+        container: element, // the dom element that will contain the animation
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: 'data.json' // the path to the animation json
+    });
+    // var animation = bodymovin.loadAnimation({
+    //     container: document.getElementById('videoContainer'), // Required
+    //     path: 'data.json', // Required
+    //     renderer: 'svg/canvas/html', // Required
+    //     loop: true, // Optional
+    //     autoplay: true, // Optional
+    //     name: "Hello World", // Name for future reference. Optional.
+    // })
+</script>

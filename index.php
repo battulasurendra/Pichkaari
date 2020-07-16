@@ -45,9 +45,10 @@
                                 </div>
                             </div>
                             <div class="cell w-g-md-7 w-g-12">
-                                <div class="secImage animate up">
+                                <!-- <div class="secImage">
                                     <img src="assets/images/Home-img2.svg" class="i-inline">
-                                </div>
+                                </div> -->
+                                <div id="lottieContainer"></div>
                             </div>
                         </div>
                     </div>

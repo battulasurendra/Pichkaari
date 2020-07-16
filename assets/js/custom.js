@@ -202,6 +202,15 @@ jQuery(function ($) {
                         }
                     ]
                 });
+
+                var element = document.getElementById('lottieContainer');
+                lottie.loadAnimation({
+                    container: element, // the dom element that will contain the animation
+                    renderer: 'svg',
+                    loop: true,
+                    autoplay: true,
+                    path: 'assets/json/cause-and-effect.json' // the path to the animation json
+                });
             }
         },
         career: {
@@ -458,11 +467,7 @@ jQuery(function ($) {
                             autoScrolling: true,
                             slideSelector: '.fullpageSlide',
                             licenseKey: '897A7684-99CB4ACB-931F45AA-AA7D475B',
-                            parallaxKey: '7E0A0283-09AA4525-99BE6DBB-A249FD6C',
-                            scrollOverflowResetKey: '11698024-1B244CC9-A3467738-31627BAC',
-                            parallax: true,
                             scrollOverflow: true,
-                            scrollOverflowReset: false,
                             normalScrollElements: '.scrollable-content',
                             afterLoad: function (origin, destination, direction) {
                                 populate_animations();
@@ -477,7 +482,7 @@ jQuery(function ($) {
                             }
                         };
                         if($('body').hasClass('home')){
-                            fullpageOptions = {...fullpageOptions, anchors:['firstPage', 'secondPage', 'services', 'fourthPage', 'fifthPage', 'sixthPage', 'contactus']}
+                            fullpageOptions = {...fullpageOptions, anchors:['banner', 'cause-and-effect', 'services', 'geographics', 'testimonials', 'interact', 'contactus']}
                         }
                         $('#fullpage').fullpage(fullpageOptions);
                         //methods

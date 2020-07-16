@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+
+    <meta name="keywords"
+        content="Design,Creativity,Branding,User Experience, UI, UX, Marketing, Corporate Communication,Web Design">
+    <meta name="description"
+        content="Pichkaari is a communication boutique. Expressions are our way of life. Designing effective communication is our religion.And our sole ambition is to sketch the brand of a brand in different communication formats by combining colors with immaculate designs and clever wordsmithing pivoted around a communication centric strategy.">
+    <meta name="author" content="Pichkaari Design Studio">
+    <title>Wave Animation 1</title>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+
+    <link href="assets/css/app.min.css?v=2.0" rel="stylesheet">
+    <style>
+        .flag {
+            position: relative;
+            -webkit-animation-name: wave;
+            -webkit-animation-duration: 8s;
+            -webkit-animation-timing-function: linear;
+            -webkit-animation-iteration-count: infinite;
+        }
+
+        .flag-wave {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: -webkit-gradient(linear, 0 -25%, 100% top, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(20%, rgba(255, 255, 255, 0)), color-stop(30%, rgba(0, 0, 0, 0.04)), color-stop(40%, rgba(255, 255, 255, 0.2)), color-stop(60%, rgba(255, 255, 255, 0)), color-stop(65%, rgba(255, 255, 255, 0.2)), color-stop(80%, rgba(0, 0, 0, 0.05)), color-stop(100%, rgba(255, 255, 255, 0)));
+            background-size: 200%;
+            -webkit-animation-name: flutter;
+            -webkit-animation-duration: 8s;
+            -webkit-animation-timing-function: cubic-bezier(0.16, 0.14, 0.82, 0.73);
+            -webkit-animation-iteration-count: infinite;
+        }
+
+
+        @-webkit-keyframes flutter {
+            0% {
+                background-position: -200% 0px;
+            }
+
+            30% {
+                background-position: -60% 5px;
+            }
+
+            70% {
+                background-position: 70% -5px;
+            }
+
+            100% {
+                background-position: 200% 0px;
+            }
+        }
+
+        @-webkit-keyframes wave {
+            0% {
+                -webkit-transform: translate3d(0, 0, 0) ; 
+            }
+
+            20% {
+                -webkit-transform: translate3d(0, 0, 0) ; 
+            }
+
+            40% {
+                -webkit-transform: translate3d(0, 0, 0) ; 
+            }
+
+            60% {
+                -webkit-transform: translate3d(0, 0, 0) ; 
+            }
+
+            80% {
+                -webkit-transform: translate3d(0, 0, 0) ; 
+            }
+
+            100% {
+                -webkit-transform: translate3d(0, 0, 0) ; 
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section id="waveSec" class="no-padding zero-padding">
+        <div class="container-fluid h-max">
+            <div class="row waveSecRow1 h-max pos-rel">
+                <div class="flag h-max secImage pos-rel">
+                    <div class="flag-wave">
+                        <img src="assets/images/Home-bg1-pattern.png" class="i-cover">
+                    </div>
+                </div>
+                <div class="absolute-bg">
+                    <img src="assets/images/Home-bg1.png" class="i-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container-fluid">
+            <div class="footrow1 row text-center">
+                <a href="http://pichkaari.com" target="_blank" class="d-inline fw5">www.pichkaari.com 2013 &copy; All
+                    Rights Reserved</a>
+            </div>
+        </div>
+    </footer>
+</body>
