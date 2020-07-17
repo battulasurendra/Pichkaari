@@ -1,0 +1,38 @@
+#contactSec1 {
+
+    .formTitle {
+        padding: 10px 0 7%;
+    }
+
+    .input-wrapper{
+        margin: 5% 0;
+
+        .form-control {
+            @extend .fs2;
+            line-height: 2;
+            font-family: $font-family1;
+            padding: 8px 15px 8px 0;
+            border: none;
+            border-bottom: 1px solid $color4;
+            display: block;
+            width: 100%;
+        }
+
+        .error{
+            display: none;
+        }
+    }
+
+    .btn {
+        margin-top: 10%;
+    }
+}
+
+
+/************************************ Media queries(Mobile & Tablet) ************************************/
+@media only screen and (max-width: 991px) {
+    #contactSec1 {
+        height: auto;
+    }
+}
+/************************************ Media queries(Mobile & Tablet) ************************************/

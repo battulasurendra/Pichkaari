@@ -450,6 +450,58 @@ jQuery(function ($) {
                 });
             }
         },
+        contact: {
+            init: function () {
+                $('.phoneInput').on('keydown',function(evt){
+                    evt = (evt) ? evt : window.event;
+                    var charCode = (evt.which) ? evt.which : evt.keyCode;
+                    if ($.inArray(charCode, [46, 8, 9, 27, 13, 110, 190]) !== -1 ||
+                         // Allow: Ctrl/cmd+A
+                        (charCode == 65 && (evt.ctrlKey === true || evt.metaKey === true)) ||
+                         // Allow: Ctrl/cmd+C
+                        (charCode == 67 && (evt.ctrlKey === true || evt.metaKey === true)) ||
+                         // Allow: Ctrl/cmd+X
+                        (charCode == 88 && (evt.ctrlKey === true || evt.metaKey === true)) ||
+                         // Allow: Ctrl/cmd+V
+                        (charCode == 86 && (evt.ctrlKey === true || evt.metaKey === true)) ||
+                         // Allow: home, end, left, right
+                        (charCode >= 35 && charCode <= 39)) {
+                             return;
+                    }
+                    
+                    if (charCode > 31 && (charCode < 48 || charCode > 57) && (charCode < 96 || charCode > 105)) {
+                        return false;
+                    }      
+                });
+
+                $('#contactForm').submit(function(e){
+                    e.preventDefault();
+                    var formData = new FormData();
+                    $('.form-control').each(function (){
+                        formData.append($(this).attr('name'), $(this).val());
+                    });
+                    console.log(formData);
+                    
+                    $.ajax({
+                        type: 'POST',
+                        contentType: 'application/json',
+                        url: "./api/sendmail.php",
+                        data : formData,
+                        contentType: false,
+                        processData: false,
+                        success: function(response){
+                            var text = response.message;
+                            $('.formSec').append('<div class="subscribeText">'+ text +'</div>');
+                            document.getElementById('contactForm').reset();
+                        },
+                        error: function(error){
+                            console.log(error);
+                            return false;
+                        }
+                    });
+                });
+            }
+        },
         postload: {
             init: function () {        
                 var win = $(window);
