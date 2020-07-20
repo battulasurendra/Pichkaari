@@ -179,6 +179,24 @@
 	}
 }
 
+@mixin generateBrandSprite($image, $brand, $columns, $rows, $size) {
+
+	[class*="sprite-#{$brand}"] {
+		width: $size+px;
+		height: $size+px;
+		background: url($image) 0% 0% unquote('/') (100*$columns)+unquote('%') (100*$rows)+unquote('%') no-repeat;
+		display: block;
+	}
+
+	$percentage : 100/($rows - 1);
+
+	@for $i from 0 through $rows {
+		.sprite-#{$brand}-icon#{$i+1} {
+			background-position: 0 ($percentage*$i)+unquote('%');
+		}
+	}
+}
+
 @mixin delaySequence($parent,$child,$count,$delay) {
 	@for $i from 0 through $count {
 		#{$parent} #{$child}:nth-child(#{$i+1}) {

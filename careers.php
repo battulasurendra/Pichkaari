@@ -301,7 +301,7 @@
                                 <div class="v-stretch hideflow pos-rel fc1">
                                     <div class="slideContent">
                                         <div class="fw8 hs5 secHeader">
-                                            Copy Writer
+                                            Copywriter
                                         </div>
                                         <div class="fwb fs1 ttu">
                                             EXPERIENCE - 1-2 years
@@ -389,7 +389,7 @@
             <section id="careerSec5" class="bg7 h-auto">
                 <div class="container pos-rel">
                     <div class="secrow1 row text-center animate up">
-                        <h4 class="hs4 fc1 fw8 w-g-12 secHeader">If you are a person of those <br>people who can’t be boxed</h4>
+                        <h4 class="hs4 fc1 fw8 w-g-12 secHeader">If you are a person <br>people who can’t be boxed</h4>
                         <div class="fs3 fc1 fw5 secText secHeader">
                             Drop us a mail with your resume and a cover-letter explaining what you’d like to do and why
                         </div>
@@ -411,7 +411,7 @@
                                     Internship <br> Programme
                                 </div>
                                 <div class="secText fs2 w-g-md-10 w-g-12">
-                                    Gone are the days when internship was synonymous with delivering coffee. At Pichkaari, you will be treated like an adult who gets real-time projects. If you think you&nbsp;can add as much value to our team, as&nbsp;much&nbsp;as we can add to your resume.
+                                    Gone are the days when internship was synonymous with delivering coffee. At Pichkaari, you will be treated like an adult who gets real-time projects. If you think that you can add as much value to our team, as we can add to your resume - go ahead and apply to us, and we'll get in touch with you soon.
                                 </div>
                                 <a target="_blank" href="https://vikas921897.typeform.com/to/N7GpLfDm" class="btn btn-red-white">Apply Now</a>
                             </div>

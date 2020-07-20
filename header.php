@@ -22,7 +22,7 @@
                     <li class="menu-scroll"><a class="d-block" href="portfolio.php">Portfolio</a></li>
                     <li class="menu-scroll"><a class="d-block" href="careers.php">Careers</a></li>
                     <li class="menu-scroll"><a class="d-block" href="https://vikas921897.typeform.com/to/ibpgeKDW" target="_blank">Project Planner</a></li>
-                    <li class="menu-scroll"><a class="d-block" href="./#contactus">Contact Us</a></li>
+                    <li class="menu-scroll"><a class="d-block" href="contact.php">Contact Us</a></li>
                 </ul>
             </div>
             <div class="navbar-social cell w-g-md-0 w-g-4 text-right">

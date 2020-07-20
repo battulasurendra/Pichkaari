@@ -190,23 +190,23 @@
             position: relative;
 
             .secImage {
-                img {
-                    display: none;
+                [class*=sprite-client] {
+                    background-position-x: 100%;
                 }
-                .greyImage {
-                    display: block;
-                }
+                // img {
+                //     display: none;
+                // }
+                // .greyImage {
+                //     display: block;
+                // }
             }
 
             &.slick-center{
                 z-index: 2;
     
                 .secImage {
-                    img {
-                        display: block;
-                    }
-                    .greyImage {
-                        display: none;
+                    [class*=sprite-client] {
+                        background-position-x: 0;
                     }
                 }
             }

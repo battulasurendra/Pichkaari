@@ -203,7 +203,7 @@ jQuery(function ($) {
                     ]
                 });
 
-                var element = document.getElementById('lottieContainer');
+                var element = document.getElementById('causeAndPlayLottie');
                 lottie.loadAnimation({
                     container: element, // the dom element that will contain the animation
                     renderer: 'svg',

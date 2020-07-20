@@ -48,7 +48,7 @@
                                 <!-- <div class="secImage">
                                     <img src="assets/images/Home-img2.svg" class="i-inline">
                                 </div> -->
-                                <div id="lottieContainer"></div>
+                                <div id="causeAndPlayLottie"></div>
                             </div>
                         </div>
                     </div>
@@ -76,7 +76,7 @@
                                     </div>
                                     <div class="cell w-g-md-6 w-g-12">
                                         <h4 class="hs4 fw8">Branding & Merchandising</h4>
-                                        <div class="fs2 secText w-g-md-6">
+                                        <div class="fs2 secText w-g-md-7">
                                             We add half cup of identity, half cup of personality, stir them up with our creative juices  and we have ourselves a ‘brand’ new ﬂavour in the market!
                                         </div>
                                         <a href="portfolio.php?category=branding" class="btn btn-red-white">More Projects</a>
@@ -90,7 +90,7 @@
                                     </div>
                                     <div class="cell w-g-md-6 w-g-12">
                                         <h4 class="hs4 fw8">Marketing Communication</h4>
-                                        <div class="fs2 secText w-g-md-6">
+                                        <div class="fs2 secText w-g-md-7">
                                             Your business creates the products and services. We make sure that the audience <br>fully understands its worth with the right communication. Nobody is lost in <br>translation.
                                         </div>
                                         <a href="portfolio.php?category=marketing" class="btn btn-red-white">More Projects</a>
@@ -104,7 +104,7 @@
                                     </div>
                                     <div class="cell w-g-md-6 w-g-12">
                                         <h4 class="hs4 fw8">UI/UX Design</h4>
-                                        <div class="fs2 secText w-g-md-6">
+                                        <div class="fs2 secText w-g-md-7">
                                             Whether it’s a website or an app, we put the user at it’s centre to create the smoothest <br>user experience. We give U importance.
                                         </div>
                                         <a href="portfolio.php?category=uiux" class="btn btn-red-white">More Projects</a>
@@ -118,7 +118,7 @@
                                     </div>
                                     <div class="cell w-g-md-6 w-g-12">
                                         <h4 class="hs4 fw8">Information Design</h4>
-                                        <div class="fs2 secText w-g-md-6">
+                                        <div class="fs2 secText w-g-md-7">
                                             Your data is your biggest asset. BUT only <br>when it is clear, engaging and easy to absorb.<br> Our communication focuses on breaking down data and simplifying it through efficient design, conveying all the information at just a glance.
                                         </div>
                                         <a href="portfolio.php?category=information" class="btn btn-red-white">More Projects</a>
@@ -131,7 +131,7 @@
                                         <img src="assets/images/slides/Home-category-slide5.png">
                                     </div>
                                     <div class="cell w-g-md-6 w-g-12">
-                                        <h4 class="hs4 fw8">Motion graphics & video</h4>
+                                        <h4 class="hs4 fw8">Motion Graphics & Video</h4>
                                         <div class="fs2 secText w-g-md-7">
                                             A picture speaks a 1000 words. But a motion graphic/video can keep an audience’s attention for about a 1000 minutes (ever binge-watched online content like us? Exactly). We conceptualise and produce, interactive videos and animations that create the right impact and get the right reaction.
                                         </div>
@@ -146,7 +146,7 @@
                                     </div>
                                     <div class="cell w-g-md-6 w-g-12">
                                         <h4 class="hs4 fw8">Package Design</h4>
-                                        <div class="fs2 secText w-g-md-6">
+                                        <div class="fs2 secText w-g-md-7">
                                             We encourage and hope that you judge by the cover. We help brands engage and have the audience by the hook in a glance. We redeﬁne love at ﬁrst sight.
                                         </div>
                                         <a href="portfolio.php?category=packaging" class="btn btn-red-white">More Projects</a>
@@ -201,8 +201,7 @@
                                 <?php  for ($i=0; $i<18; $i++) { ?>     
                                     <div class="slide">
                                         <div class="secImage">
-                                            <img src="assets/images/clients/Client-logo-<?php echo $i+1 ?>.png" class="i-inline">
-                                            <img src="assets/images/clients/Client-logo-grey-<?php echo $i+1 ?>.png" class="i-inline greyImage">
+                                            <i class="sprite-client-icon<?php echo $i+1 ?>"></i>
                                         </div>
                                     </div>
                                 <?php } ?>
@@ -322,6 +321,20 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="slide">
+                                        <div class="innerSlide bg1">
+                                            <div class="secImage">
+                                                <img src="assets/images/slides/Home-testimonial-slide7.png" class="i-inline">
+                                            </div>
+                                            <div class="fs2 fc3 secText scrollable-content">
+                                                I thank and congratulate Pichkaari for the wonderful support provided as they started with our two path breaking Campaigns in India this year - ‘Diwali with Mi’. Vikas and his team demonstrated great commitment and made a wonderful effort in strategising a truly integrated advertising campaign, with great results. I am delighted and once again thank everyone at the Pichkaari team."
+                                            </div>
+                                            <div class="testiDetails w-g-10">
+                                                <div class="fs3 fwb">Sushant Sreeram</div>
+                                                <div class="fw5">Head of Marketing, Xiaomi, India</div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="sliderNavs pos-rel">
                                     <div id="testimonialSliderArrow1" class="navLeft col">
@@ -422,7 +435,7 @@
                             <ul class="footerSocialLinks">
                                 <li class="fs3 fwb"><a class="d-inline" href="#">Facebook</a></li>
                                 <li class="fs3 fwb"><a class="d-inline" href="#">Instagram</a></li>
-                                <li class="fs3 fwb"><a class="d-inline" href="#">Linkedin</a></li>
+                                <li class="fs3 fwb"><a class="d-inline" href="#">LinkedIn</a></li>
                             </ul>
                         </div>
                         <div class="absolute-bg sec-bg pattern1">

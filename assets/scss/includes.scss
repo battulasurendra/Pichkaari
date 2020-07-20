@@ -107,6 +107,16 @@ header {
     }
 
     &.transparent {
+         .menu-scroll a {
+             &:hover,
+             &:focus,
+             &:active {
+                 color: $color1;
+            }
+        }
+    }
+
+    &.transparent {
         .navbar {
             @include color($color1);
             background-color: transparent;
@@ -265,6 +275,7 @@ header {
 footer {
     .footrow1 {
         padding: 25px 10px;
+        font-size: 15px;
     }
 }
 /****************** Footer ******************/

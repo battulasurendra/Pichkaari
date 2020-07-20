@@ -4,16 +4,6 @@
             z-index: -1;
         }
     }
-
-    header.transparent {
-         .menu-scroll a {
-             &:hover,
-             &:focus,
-             &:active {
-                 color: $color1;
-            }
-        }
-    }
 }
 
 #careerSec1 {
