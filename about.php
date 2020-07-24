@@ -9,7 +9,7 @@
                 <div class="container pos-rel">
                     <div class="secrow1 h-fold d-table animate up">
                         <div class="bannerContent cell">
-                            <div class="hs3 fc1 fw8 text-center">
+                            <div class="hs3 fc1 fw8 ttc text-center">
                                 A Better Glimpse at the <br>Pihkaari Way of Living
                             </div>
                         </div>
@@ -196,19 +196,13 @@
                                         <div class="founderDesignation ttu fs1 fw5">Co-Founder</div>
                                     </div>
                                     <div class="cell v-top w-g-sm-7 w-g-12 founderContent">
-                                        <div class="col w-g-10 fs3 founderDescription text-left">
+                                        <div class="col w-g-9 fs3 founderDescription text-left">
                                         Painter, curator, green thumb, culinary genius; these just few of the many feathers that Priyanka wears on her cap. She is a nurturer by nature, and it shows in her creative approach, her rapport with the team and in all the green that you will see in our office!
                                         </div>
-                                        <div class="col w-g-2 v-top founderSocialIcons text-right xs-hide">
+                                        <div class="col w-g-md-3 w-g-3 v-top founderSocialIcons text-right xs-hide">
                                             <a class="col float-r" href="https://www.linkedin.com/company/pichkaari-design-studio-private-limited/about/" target="_blank" title="Linkedin"><i class="sprite-xs icon-3"></i></a>
                                         </div>
                                         <div class="founderHobbies text-center w-g-sm-10 w-g-12">
-                                            <!-- <div class="col w-sm-2 w-g-4">
-                                                <div class="d-inline">
-                                                    <i class="sprite-md icon-8"></i>
-                                                </div>
-                                                <div class="fs1 ttu">Lorem</div>
-                                            </div> -->
                                             <div class="col w-g-md-10 w-g-sm-10 w-g-12 secImage">
                                                 <img src="assets/images/slides/founder-slide2.png" class="i-inline m-auto" >
                                             </div>
@@ -267,6 +261,47 @@
                     </div>
             </section>
         </div>
+        <div class="section fp-height-auto">
+            <section id="aboutSec8" data-theme="dark" class="h-auto">
+                <div class="container-fluid pos-rel h-max d-table">
+                    <div class="secrow1 cell w-g-12 text-center">
+                        <div class="faceGrid d-inline">
+                            <?php  for ($i=1; $i<9; $i++) { ?>
+                                <?php if($i === 2) { ?>
+                                    <div class="faceTile faceTitle d-table">
+                                        <h4 class="hs4 cell">Faces of <span class="fw8">Pichkaari</span></h4>
+                                    </div>
+                                <?php } ?>
+                                <div class="faceTile">
+                                    <div class="space3d d-inline text-center">
+                                        <div class="_3dbox pos-rel text-center w-g-12 h-max d-inline team-member<?php echo $i ?>">
+                                            <div class="_3dface face-front hideflow">
+                                                <i class="sprite-team-member-icon1"></i>
+                                            </div>
+                                            <div class="_3dface face-top hideflow">
+                                                <i class="sprite-team-member-icon2"></i>
+                                            </div>
+                                            <div class="_3dface face-bottom hideflow">
+                                                <i class="sprite-team-member-icon3"></i>
+                                            </div>
+                                            <div class="_3dface face-left hideflow">
+                                                <i class="sprite-team-member-icon4"></i>
+                                            </div>
+                                            <div class="_3dface face-right hideflow">
+                                                <i class="sprite-team-member-icon5"></i>
+                                            </div>
+                                            <div class="_3dface face-back hideflow">
+                                                <i class="sprite-team-member-icon1"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            <?php } ?>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
         <div class="section">
             <section id="aboutSec5" class="d-table bg7 fc1">
                 <div class="container cell pos-rel">
@@ -282,7 +317,7 @@
                         </div>
                         <div class="v-stretch hideflow w-g-sm-6 pos-rel">
                             <div class="fw8 hs5 pos-rel w-g-md-8 w-sm-10 w-g-11">
-                                If you want to materialize your project into <br>reality
+                                If you want to materialize your project into reality
                             </div>
                             <a href="https://vikas921897.typeform.com/to/ibpgeKDW" target="_blank" class="btn btn-red-white pos-rel">Plan a project</a>
                             <div class="absolute-bg hideflow">

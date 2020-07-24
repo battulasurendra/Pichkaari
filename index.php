@@ -89,7 +89,7 @@
                                         <img src="assets/images/slides/Home-category-slide2.png">
                                     </div>
                                     <div class="cell w-g-md-6 w-g-12">
-                                        <h4 class="hs4 fw8">Marketing Communication</h4>
+                                        <h4 class="hs4 fw8">Marketing & Communication</h4>
                                         <div class="fs2 secText w-g-md-7">
                                             Your business creates the products and services. We make sure that the audience <br>fully understands its worth with the right communication. Nobody is lost in <br>translation.
                                         </div>
@@ -198,10 +198,10 @@
                     <div class="secrow3 container">
                         <div class="sliderContainer pos-rel">
                             <div id="brandSlider">
-                                <?php  for ($i=0; $i<18; $i++) { ?>     
+                                <?php  for ($i=1; $i<31; $i++) { ?>
                                     <div class="slide">
                                         <div class="secImage">
-                                            <i class="sprite-client-icon<?php echo $i+1 ?>"></i>
+                                            <i class="sprite-client-icon<?php echo $i ?>"></i>
                                         </div>
                                     </div>
                                 <?php } ?>
@@ -240,6 +240,48 @@
                                     <div class="slide">
                                         <div class="innerSlide bg1">
                                             <div class="secImage">
+                                                <img src="assets/images/slides/Home-testimonial-slide7.png" class="i-inline">
+                                            </div>
+                                            <div class="fs2 fc3 secText scrollable-content">
+                                                I thank and congratulate Pichkaari for the wonderful support provided as they started with our two path breaking Campaigns in India this year - ‘Diwali with Mi’. Vikas and his team demonstrated great commitment and made a wonderful effort in strategising a truly integrated advertising campaign, with great results. I am delighted and once again thank everyone at the Pichkaari team."
+                                            </div>
+                                            <div class="testiDetails w-g-10">
+                                                <div class="fs3 fwb">Sushant Sreeram</div>
+                                                <div class="fw5">Head of Marketing, Xiaomi, India</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slide">
+                                        <div class="innerSlide bg1">
+                                            <div class="secImage">
+                                                <img src="assets/images/slides/Home-testimonial-slide4.png" class="i-inline">
+                                            </div>
+                                            <div class="fs2 fc3 secText scrollable-content">
+                                                It’s been 2 years since we started working with Pichkaari. At that time, my firm was quite small but Pichkaari (esp Vikas) never made me or my requirements feel small. Pichkaari always listened to our requirements and came up with some excellent work. They have developed a deep understanding of our business and objectives, and consider our communication challenges with sound and well-informed reasoning. We are extremely happy with their work, and they have always found a way to exceed our expectations.
+                                            </div>
+                                            <div class="testiDetails w-g-10">
+                                                <div class="fs3 fwb">Harish Ravi</div>
+                                                <div class="fw5">General Manager, Eurofins IT Solutions</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slide">
+                                        <div class="innerSlide bg1">
+                                            <div class="secImage">
+                                                <img src="assets/images/slides/Home-testimonial-slide3.png" class="i-inline">
+                                            </div>
+                                            <div class="fs2 fc3 secText scrollable-content">
+                                                I've been working with Pichkaari ever since their initial days and it's been an absolute pleasure. Their designs are creative, their approach is fresh, their attitude is great and they've always delivered on time. We've used them for our website design, landing page designs and social media artwork. Their work has helped us in significantly increasing our conversion rates.
+                                            </div>
+                                            <div class="testiDetails w-g-10">
+                                                <div class="fs3 fwb">Vikalp Jain</div>
+                                                <div class="fw5">Co-founder and President, AcadGild</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slide">
+                                        <div class="innerSlide bg1">
+                                            <div class="secImage">
                                                 <img src="assets/images/slides/Home-testimonial-slide5.png" class="i-inline">
                                             </div>
                                             <div class="fs2 fc3 secText scrollable-content">
@@ -268,20 +310,6 @@
                                     <div class="slide">
                                         <div class="innerSlide bg1">
                                             <div class="secImage">
-                                                <img src="assets/images/slides/Home-testimonial-slide4.png" class="i-inline">
-                                            </div>
-                                            <div class="fs2 fc3 secText scrollable-content">
-                                                It’s been 2 years since we started working with Pichkaari. At that time, my firm was quite small but Pichkaari (esp Vikas) never made me or my requirements feel small. Pichkaari always listened to our requirements and came up with some excellent work. They have developed a deep understanding of our business and objectives, and consider our communication challenges with sound and well-informed reasoning. We are extremely happy with their work, and they have always found a way to exceed our expectations.
-                                            </div>
-                                            <div class="testiDetails w-g-10">
-                                                <div class="fs3 fwb">Harish Ravi</div>
-                                                <div class="fw5">General Manager, Eurofins IT Solutions</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="slide">
-                                        <div class="innerSlide bg1">
-                                            <div class="secImage">
                                                 <img src="assets/images/slides/Home-testimonial-slide6.png" class="i-inline">
                                             </div>
                                             <div class="fs2 fc3 secText scrollable-content">
@@ -296,20 +324,6 @@
                                     <div class="slide">
                                         <div class="innerSlide bg1">
                                             <div class="secImage">
-                                                <img src="assets/images/slides/Home-testimonial-slide3.png" class="i-inline">
-                                            </div>
-                                            <div class="fs2 fc3 secText scrollable-content">
-                                                I've been working with Pichkaari ever since their initial days and it's been an absolute pleasure. Their designs are creative, their approach is fresh, their attitude is great and they've always delivered on time. We've used them for our website design, landing page designs and social media artwork. Their work has helped us in significantly increasing our conversion rates.
-                                            </div>
-                                            <div class="testiDetails w-g-10">
-                                                <div class="fs3 fwb">Vikalp Jain</div>
-                                                <div class="fw5">Co-founder and President, AcadGild</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="slide">
-                                        <div class="innerSlide bg1">
-                                            <div class="secImage">
                                                 <img src="assets/images/slides/Home-testimonial-slide2.png" class="i-inline">
                                             </div>
                                             <div class="fs2 fc3 secText scrollable-content">
@@ -318,20 +332,6 @@
                                             <div class="testiDetails w-g-10">
                                                 <div class="fs3 fwb">Vikas Minda</div>
                                                 <div class="fw5">Co-founder, AssetTrackr</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="slide">
-                                        <div class="innerSlide bg1">
-                                            <div class="secImage">
-                                                <img src="assets/images/slides/Home-testimonial-slide7.png" class="i-inline">
-                                            </div>
-                                            <div class="fs2 fc3 secText scrollable-content">
-                                                I thank and congratulate Pichkaari for the wonderful support provided as they started with our two path breaking Campaigns in India this year - ‘Diwali with Mi’. Vikas and his team demonstrated great commitment and made a wonderful effort in strategising a truly integrated advertising campaign, with great results. I am delighted and once again thank everyone at the Pichkaari team."
-                                            </div>
-                                            <div class="testiDetails w-g-10">
-                                                <div class="fs3 fwb">Sushant Sreeram</div>
-                                                <div class="fw5">Head of Marketing, Xiaomi, India</div>
                                             </div>
                                         </div>
                                     </div>
@@ -426,7 +426,7 @@
                             <div class="fwb fs5 footHead">Post address</div>
                             <div class="fs2 fwb secText">Pichkaari Design Studio Pvt. Ltd</div>
                             <address>
-                                209/210, The Arcade, Brigade Metropolis,
+                                #307, The Arcade, Brigade Metropolis,
                                 Garudacharpalya, <br>Whitefield Main Road, Bangalore -560048
                             </address>
                         </div>

@@ -40,10 +40,6 @@
                                     <div class="fc1 fs2 secText w-g-sm-10 w-g-12">
                                         We're a fun bunch of communication creators, constantly on the lookout for people with passion who have what it takes to join us. Here's a small cheat-list to give you an idea of what we look for in an eligible candidate.
                                     </div>
-                                    <div class="absolute-bg fc1 fs2 test dealSliderScore">
-                                        <div id="dealSliderPosition" class="d-inline v-top"></div>
-                                        <div id="dealSliderLength" class="d-inline v-top pos-rel"></div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -89,7 +85,7 @@
                                             </div>
                                             <div class="fs6 fw8 secHead">Curious</div>
                                             <div class="fs2 secText">
-                                                We believe that in order to become a good designer, one must be willing to share knowledge and ideas, and not hoard them.
+                                                Curiosity is that one virtue that we believe makes us better creators. We ask a lot of questions and also admire those who do.
                                             </div>
                                         </div>
                                         <div class="secImage h-max">
@@ -126,6 +122,10 @@
                                         <line x1="0.71" y1="10" x2="18.54" y2="10" />
                                         <polyline points="11.87,3.78 18.21,10 11.87,16.22" />
                                     </svg>
+                                </div>
+                                <div class="absolute-bg fc1 fs2 test dealSliderScore">
+                                    <div id="dealSliderPosition" class="d-inline v-top"></div>
+                                    <div id="dealSliderLength" class="d-inline v-top pos-rel"></div>
                                 </div>
                             </div>
                         </div>
@@ -329,7 +329,7 @@
                                             EXPERIENCE - 1-2 years
                                         </div>
                                         <div class="fs2 secText scrollable-content">
-                                            If making an impact by focusing on user behavior is your thing. You are at the right place. You’ll be responsible for bringing out the teeny weeny intricacies and specifics of design while keeping in mind the psychology of consumers.
+                                            If you're someone who enjoys turning aesthetic website designs into fully-functional, feature-filled websites, you have come to the right place. We are looking for people who have got a keen eye for tech, coding, website functionality and design responsiveness.
                                         </div>
                                     </div>
                                     <a target="_blank" href="https://vikas921897.typeform.com/to/VG2IWn7u" class="btn btn-red-white pos-rel">Apply Now</a>
@@ -345,13 +345,13 @@
                                 <div class="v-stretch hideflow pos-rel fc1">
                                     <div class="slideContent">
                                         <div class="fw8 hs5 secHeader">
-                                            HR Manager
+                                            Social Media Specialist
                                         </div>
                                         <div class="fwb fs1 ttu">
                                             EXPERIENCE - 1-2 years
                                         </div>
                                         <div class="fs2 secText scrollable-content">
-                                            If making an impact by focusing on user behavior is your thing. You are at the right place. You’ll be responsible for bringing out the teeny weeny intricacies and specifics of design while keeping in mind the psychology of consumers.
+                                            If you are curious, data driven, have an analytical mind to observe behavioral psychology towards creativity - get connected with us. We are looking for fast-paced, digital marketing enthusiasts.
                                         </div>
                                     </div>
                                     <a target="_blank" href="https://vikas921897.typeform.com/to/VG2IWn7u" class="btn btn-red-white pos-rel">Apply Now</a>

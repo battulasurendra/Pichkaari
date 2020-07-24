@@ -49,8 +49,10 @@
 #careerSec2 {
     .secrow1{
         .dealSliderScore {
-            top: auto;
             right: auto;
+            left: -52%;
+            top: auto;
+            bottom: auto;
 
             div {
                 padding: 5px 10px;
@@ -72,17 +74,18 @@
         }
 
         #dealSlider {
+            max-height: 560px;
+            top: 50%;
+            transform: translateY(-50%);
+
             .slick-track, .slick-list {
                 height: 100% !important;
             }
 
             .slide {
                 max-width: 480px;
-                max-height: 560px;
                 padding: 40px 20px;
                 @include transition($transition-set2);
-                top: 50%;
-                transform: translateY(-50%);
                 position: relative;
 
                 &.slick-current {                    
@@ -111,7 +114,7 @@
             height: auto;
             padding-left: 20px;
             position: relative;
-            top: -33px;
+            top: 5%;
 
             > div {
                 background: transparent;

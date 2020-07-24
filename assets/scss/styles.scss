@@ -188,6 +188,7 @@ address {
 /****************** Sprite styles ******************/
 @include generateSprite("../images/sprite-icons.svg", 2, 8);
 @include generateBrandSprite("../images/sprite-client-logos.png", 'client', 2, 30, 200);
+@include generateBrandSprite("../images/sprite-team-members.png", 'team-member', 8, 5, 250);
 /****************** Sprite styles ******************/
 /****************** Button styles ******************/
 .btn {
@@ -1160,7 +1161,7 @@ body {
         }
     }
 
-    @keyframes btnBubblesTop {
+    @include keyframes(btnBubblesTop) {
         0% {
             background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%,
                 25% 90%, 40% 90%, 55% 90%, 70% 90%;
@@ -1178,7 +1179,7 @@ body {
         }
     }
 
-    @keyframes btnBubblesBottom {
+    @include keyframes(btnBubblesBottom) {
         0% {
             background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%,
                 70% -10%, 70% 0%;
@@ -1338,6 +1339,21 @@ body {
     .animated.flipInX {
         @include property($backface-visibility: visible !important);
         @include anim($name: flipInX);
+    }
+  
+
+    @include keyframes(cube-rotation) {
+        0% { @include transform(rotateY(-90deg));}
+        15% { @include transform(rotateY(-90deg));}
+        20% { @include transform(rotateY(0deg));}
+        35% { @include transform(rotateY(0deg));}
+        40% { @include transform(rotateX(90deg));}
+        35% { @include transform(rotateX(90deg));}
+        60% { @include transform(rotateY(180deg));}
+        75% { @include transform(rotateY(180deg));}
+        80% { @include transform(rotateX(-90deg));}
+        95% { @include transform(rotateX(-90deg));}
+        100% { @include transform(rotateY(-90deg));}
     }
 }
 /****************** Scroll Animations ******************/

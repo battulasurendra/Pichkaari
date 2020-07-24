@@ -1,33 +1,74 @@
 #contactSec1 {
     min-height: 100vh;
     padding: 50px 0 0;
-
-    .formTitle {
-        padding: 10px 0 7%;
-    }
-
-    .input-wrapper{
-        margin: 5% 0;
-
-        .form-control {
-            @extend .fs2;
-            line-height: 2;
-            font-family: $font-family1;
-            padding: 8px 15px 8px 0;
-            border: none;
-            border-bottom: 1px solid $color4;
-            display: block;
-            width: 100%;
+    .secrow1 {
+        .formTitle {
+            padding: 10px 0 7%;
         }
 
-        .error{
-            display: none;
+        .input-wrapper{
+            margin: 5% 0;
+
+            .form-control {
+                @extend .fs2;
+                line-height: 2;
+                font-family: $font-family1;
+                padding: 8px 15px 8px 0;
+                border: none;
+                border-bottom: 1px solid $color4;
+                display: block;
+                width: 100%;
+            }
+
+            .error{
+                display: none;
+            }
         }
+
+        .btn {
+            margin-top: 10%;
+            min-width: 175px;
+        }
+        
     }
 
-    .btn {
-        margin-top: 10%;
-        min-width: 175px;
+    
+    
+    .secrow2 {
+        padding: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        .row2col2{
+            padding-right: 60px;
+        }
+
+        .footHead {
+            padding: 30px 0;
+        }
+
+        .footerSocialLinks {
+            a:hover {
+                color: $color7;
+            }
+        }
+    
+        .sec-bg.pattern1 {
+            width: 70%;
+            top: auto;
+            bottom: 65%;
+            right: auto;
+            left: -17%;
+        }
+
+        .sec-bg.pattern2 {
+            width: 75%;
+            top: 15%;
+            bottom: auto;
+            right: auto;
+            left: 80%;
+        }
     }
 
     ::-webkit-input-placeholder { /* Edge */

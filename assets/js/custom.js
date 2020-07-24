@@ -122,7 +122,7 @@ jQuery(function ($) {
         },
         home: {
             init: function () {
-                var categories = ['branding', 'marketing & communication', 'ui/ux design', 'information design', 'motion graphics & video','package design'];
+                var categories = ['Branding & Merchandising', 'marketing & communication', 'ui/ux design', 'information design', 'motion graphics & video','package design'];
 
                 $('.clientLocation').hover(function () {
                     var ele = $(this);
@@ -159,7 +159,7 @@ jQuery(function ($) {
                     centerMode: true,
                     infinite: true,
                     variableWidth: true,
-                    autoplay: true,
+                    autoplay: false,
                     autoplaySpeed: 1000,
                     prevArrow: $("#brandSliderArrow1"),
                     nextArrow: $("#brandSliderArrow2"),
@@ -292,7 +292,7 @@ jQuery(function ($) {
         portfolio: {
             init: function () {
                 var categories = {
-                    'branding': 'Branding',
+                    'branding': 'Branding & Merchandising',
                     'packaging': 'Package Design',
                     'marketing': 'Marketing & Communication',
                     'uiux': 'UI/UX design',
@@ -512,7 +512,7 @@ jQuery(function ($) {
                 };
 
                 $('#page_loader').fadeOut();
-                if(screen.width > 992 && screen.height>600) {
+                if((screen.width > 992) && (screen.height>600)) {
                     if ($('#fullpage').length > 0) {
                         var fullpageOptions = {
                             //options here

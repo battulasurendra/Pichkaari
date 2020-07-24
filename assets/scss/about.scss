@@ -90,6 +90,7 @@
         .founderDescription {
             padding-top: 50px;
             padding-bottom: 50px;
+            font-size: 17px;
         }
 
         .founderSocialIcons {
@@ -207,6 +208,111 @@
         opacity: .1;
         width: 75%;
     }
+}
+
+
+// Gallery cube preset
+$cubeWidth: 15vw;
+$cubeHeight: 15vw;
+$cubeDepth: $cubeHeight;
+
+
+// Gallery cube calculations
+$cubeContainerWidth: floor($cubeWidth*1.124);
+$cubeContainerHeight: floor($cubeHeight*1.124);
+
+#aboutSec8 {
+    padding: 10vw 0;
+    .faceGrid {
+        float: left;
+        width: 80vw;
+        margin-left: 10vw;
+    }
+
+    .faceTile {
+        width: $cubeContainerWidth;
+        height: $cubeContainerHeight;
+        padding: ($cubeContainerWidth - $cubeWidth)/2;
+        float: left;
+        overflow: hidden;
+    }
+
+    .faceTitle{
+        width: floor($cubeContainerWidth*2);
+        height: $cubeContainerHeight;
+    }
+
+    .space3d {
+        @include property($perspective: 1000px);
+        width: $cubeWidth;
+        height: $cubeHeight;
+
+        ._3dbox {
+            @include property ($transform-style: preserve-3d);
+            @include animation (cube-rotation ease-in-out 20s infinite forwards);
+            @include transition (all 0.85s cubic-bezier(0.175, 0.885, 0.32, 1.275));
+
+            $teamCount: 8;
+	        $percentage : 100/($teamCount - 1);
+
+            @for $i from 0 through $teamCount {
+                &.team-member#{$i+1} {
+                    [class*="sprite-team-member"] {
+                        width: $cubeContainerWidth;
+                        height: $cubeContainerWidth;
+                        background-position-x: ($percentage*$i)+unquote('%');
+                    }
+                }
+            }
+        }
+    
+        ._3dface {
+            position: absolute;
+            line-height: $cubeWidth;
+            opacity: 1;
+    
+            &.face-front {
+                width: $cubeWidth;
+                height: $cubeHeight;
+                @include transform(rotateX(0) rotateY(0) translate3d(0, 0, $cubeDepth / 2));
+            }
+        
+            &.face-top {
+                width: $cubeWidth;
+                height: $cubeDepth;
+                @include transform(rotateX(90deg) translate3d(0, 0, $cubeHeight / 2));
+            }
+        
+            &.face-bottom {
+                width: $cubeWidth;
+                height: $cubeDepth;
+                @include transform(rotateX(-90deg) translate3d(0, 0, $cubeHeight / 2));
+            }
+        
+            &.face-left {
+                width: $cubeDepth;
+                height: $cubeHeight;
+                left: 50%;
+                margin-left: -$cubeDepth / 2;
+                @include transform(rotateY(-90deg) translate3d(0, 0, $cubeWidth / 2));
+            }
+        
+            &.face-right {
+                width: $cubeDepth;
+                height: $cubeHeight;
+                left: 50%;
+                margin-left: -$cubeDepth / 2;
+                @include transform(rotateY(90deg) translate3d(0, 0, $cubeWidth / 2));
+            }
+        
+            &.face-back {
+                width: $cubeWidth;
+                height: $cubeHeight;
+                @include transform(rotateY(180deg) translate3d(0, 0, $cubeDepth / 2));
+            }
+        }
+    }
+
 }
 
 /************************************ Media queries(Mobile & Tablet) ************************************/

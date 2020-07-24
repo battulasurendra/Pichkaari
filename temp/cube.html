@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+
+    <meta name="keywords"
+        content="Design,Creativity,Branding,User Experience, UI, UX, Marketing, Corporate Communication,Web Design">
+    <meta name="description"
+        content="Pichkaari is a communication boutique. Expressions are our way of life. Designing effective communication is our religion.And our sole ambition is to sketch the brand of a brand in different communication formats by combining colors with immaculate designs and clever wordsmithing pivoted around a communication centric strategy.">
+    <meta name="author" content="Pichkaari Design Studio">
+    <title>Cube gallery</title>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../assets/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicons/favicon-16x16.png">
+
+    <link href="../assets/css/app.min.css?v=2.0" rel="stylesheet">
+    <style>
+        /* // toggle the cube dimensions here.
+        $cubeWidth: 222px;
+        $cubeHeight: 222px;
+        $cubeDepth: $cubeHeight;
+
+        .faceTile {
+            width: 249px;
+            height: 249px;
+            padding: 14px;
+            float: left;
+            overflow: hidden;
+        }
+
+        /* 3D Cube */
+        .space3d {
+            perspective: 1000px;
+            width: $cubeWidth;
+            height: $cubeHeight;
+            text-align: center;
+            display: inline-block;
+        }
+
+        ._3dbox {
+            display: inline-block;
+            transition: all 0.85s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            text-align: center;
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transform: rotateY(0);
+        }
+
+        ._3dface {
+            overflow: hidden;
+            position: absolute;
+
+            background: #fff;
+            color: #333;
+            line-height: $cubeWidth;
+            opacity: 1;
+        }
+
+        ._3dface--front {
+            width: $cubeWidth;
+            height: $cubeHeight;
+            transform: translate3d(0, 0, $cubeDepth / 2);
+        }
+
+        ._3dface--top {
+            width: $cubeWidth;
+            height: $cubeDepth;
+            transform: rotateX(90deg) translate3d(0, 0, $cubeHeight / 2);
+        }
+
+        ._3dface--bottom {
+            width: $cubeWidth;
+            height: $cubeDepth;
+            transform: rotateX(-90deg) translate3d(0, 0, $cubeHeight / 2);
+        }
+
+        ._3dface--left {
+            width: $cubeDepth;
+            height: $cubeHeight;
+            left: 50%;
+            margin-left: -$cubeDepth / 2;
+            transform: rotateY(-90deg) translate3d(0, 0, $cubeWidth / 2);
+        }
+
+        ._3dface--right {
+            width: $cubeDepth;
+            height: $cubeHeight;
+            left: 50%;
+            margin-left: -$cubeDepth / 2;
+            transform: rotateY(90deg) translate3d(0, 0, $cubeWidth / 2);
+        }
+
+        ._3dface--back {
+            width: $cubeWidth;
+            height: $cubeHeight;
+            transform: rotateY(180deg) translate3d(0, 0, $cubeDepth / 2);
+        }
+
+        #radio-left:checked ~ .faceTile .space3d ._3dbox {
+            transform: rotateY(90deg);
+        }
+
+        #radio-right:checked ~ .faceTile .space3d ._3dbox {
+            transform: rotateY(-90deg);
+        }
+
+        #radio-bottom:checked ~ .faceTile .space3d ._3dbox {
+            transform: rotateX(90deg);
+        }
+
+        #radio-top:checked ~ .faceTile .space3d ._3dbox {
+            transform: rotateX(-90deg);
+        }
+
+        #radio-back:checked ~ .faceTile .space3d ._3dbox {
+            transform: rotateY(180deg);
+        } */
+    </style>
+</head>
+
+<body>
+     
+    <input type="radio" checked id="radio-front" name="select-face"/>    
+    <input type="radio" id="radio-left" name="select-face"/>
+    <input type="radio" id="radio-right" name="select-face"/>
+    <input type="radio" id="radio-top" name="select-face"/>
+    <input type="radio" id="radio-bottom" name="select-face"/>
+    <input type="radio" id="radio-back" name="select-face"/>
+    <div class="faceTile">
+    <div class="space3d">
+        <div class="_3dbox">
+            <div class="_3dface _3dface--front">
+                <img src="../assets/images/team/Team Member-01.png" class="i-inline">
+            </div>
+            <div class="_3dface _3dface--top">
+                <img src="../assets/images/team/Team Member-01.png" class="i-inline">
+            </div>
+            <div class="_3dface _3dface--bottom">
+                <img src="../assets/images/team/Team Member-01.png" class="i-inline">
+            </div>
+            <div class="_3dface _3dface--left">
+                <img src="../assets/images/team/Team Member-01.png" class="i-inline">
+            </div>
+            <div class="_3dface _3dface--right">
+                <img src="../assets/images/team/Team Member-01.png" class="i-inline">
+            </div>
+            <div class="_3dface _3dface--back">
+                <img src="../assets/images/team/Team Member-01.png" class="i-inline">
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

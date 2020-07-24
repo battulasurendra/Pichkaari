@@ -239,7 +239,7 @@
             "title": "Udaan",
             "description": "UI/UX Design",
             "thumbnail": "udaan-uiux",
-            "active": true
+            "active": false
         }
     },
     "bhoomi": {

@@ -76,6 +76,7 @@
                 position: relative;
 
                 div {
+                    font-size: 12px;
                     letter-spacing: 1px;
                     cursor: pointer;
                 }
@@ -203,7 +204,7 @@
 
             &.slick-center{
                 z-index: 2;
-    
+                box-shadow: 0 20px 30px rgba($color3, 0.1);
                 .secImage {
                     [class*=sprite-client] {
                         background-position-x: 0;
@@ -271,13 +272,19 @@
                         margin-bottom: 5vh;
                         max-height: 150px;
                         padding-right: 16%;
-                        overflow-y: auto;
+                        overflow-y: hidden;
                     }
 
                     .testiDetails {
                         border-top: 1px solid $color3;
                         padding-top:25px;
                         margin-top:5px;
+                    }
+
+                    &:hover {
+                        .secText {
+                            overflow-y: auto;
+                        }
                     }
                 }
             }

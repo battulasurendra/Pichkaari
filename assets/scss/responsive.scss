@@ -39,7 +39,15 @@
 	//.lg-show { display: $show }
 }
 /****************** Column styles ******************/
+/****************** fullpage to Parallax styles ******************/
+@media only screen and (max-width: 992px), only screen and (max-height: 600){
+    section {
+        min-height: 100vh;
+        height: auto;
+    }
 
+}
+    /****************** Parallax and fullpage styles ******************/
 @media only screen and (max-width: 991px){
 /****************** Global ******************/
     section{
