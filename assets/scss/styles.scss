@@ -1336,24 +1336,10 @@ body {
             @include transform(perspective(400px));
         }
     }
+
     .animated.flipInX {
         @include property($backface-visibility: visible !important);
         @include anim($name: flipInX);
-    }
-  
-
-    @include keyframes(cube-rotation) {
-        0% { @include transform(rotateY(-90deg));}
-        15% { @include transform(rotateY(-90deg));}
-        20% { @include transform(rotateY(0deg));}
-        35% { @include transform(rotateY(0deg));}
-        40% { @include transform(rotateX(90deg));}
-        35% { @include transform(rotateX(90deg));}
-        60% { @include transform(rotateY(180deg));}
-        75% { @include transform(rotateY(180deg));}
-        80% { @include transform(rotateX(-90deg));}
-        95% { @include transform(rotateX(-90deg));}
-        100% { @include transform(rotateY(-90deg));}
     }
 }
 /****************** Scroll Animations ******************/

@@ -287,6 +287,11 @@ jQuery(function ($) {
                     nextArrow: $("#founderSliderArrow2")
                 });
 
+                if($('.faceTile').length > 0)  {
+                    var cw = $('.faceTile').width();
+                    $('.faceTile').css({'height':cw+'px'});
+                }
+
             }
         },
         portfolio: {
