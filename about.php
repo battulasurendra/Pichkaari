@@ -261,40 +261,19 @@
                     </div>
             </section>
         </div>
-        <div class="section fp-height-auto">
+        <div class="section fp-auto-height active">
             <section id="aboutSec8" data-theme="dark" class="h-auto">
-                <div class="container-fluid pos-rel h-max d-table">
-                    <div class="secrow1 cell w-g-12 text-center">
-                        <div class="faceGrid d-inline">
+                <div class="container-fluid pos-rel">
+                    <div class="secrow1 row">
+                        <div class="faceGrid col w-g-12 no-padding">
                             <?php  for ($i=1; $i<9; $i++) { ?>
                                 <?php if($i === 2) { ?>
-                                    <div class="faceTile faceTitle d-table">
+                                    <div class="faceTile col w-md-4 no-padding text-center pos-rel faceTitle d-table">
                                         <h4 class="hs4 cell">Faces of <span class="fw8">Pichkaari</span></h4>
                                     </div>
                                 <?php } ?>
-                                <div class="faceTile">
-                                    <div class="space3d d-inline text-center">
-                                        <div class="_3dbox pos-rel text-center w-g-12 h-max d-inline team-member<?php echo $i ?>">
-                                            <div class="_3dface face-front hideflow">
-                                                <i class="sprite-team-member-icon1"></i>
-                                            </div>
-                                            <div class="_3dface face-top hideflow">
-                                                <i class="sprite-team-member-icon2"></i>
-                                            </div>
-                                            <div class="_3dface face-bottom hideflow">
-                                                <i class="sprite-team-member-icon3"></i>
-                                            </div>
-                                            <div class="_3dface face-left hideflow">
-                                                <i class="sprite-team-member-icon4"></i>
-                                            </div>
-                                            <div class="_3dface face-right hideflow">
-                                                <i class="sprite-team-member-icon5"></i>
-                                            </div>
-                                            <div class="_3dface face-back hideflow">
-                                                <i class="sprite-team-member-icon1"></i>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="faceTile col w-2 no-padding pos-rel">
+                                    <div class="faceBox absolute-bg team-member<?php echo $i ?> sprite-team-member-icon1"></div>
                                 </div>
                             <?php } ?>
                         </div>

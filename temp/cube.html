@@ -32,7 +32,6 @@
             overflow: hidden;
         }
 
-        /* 3D Cube */
         .space3d {
             perspective: 1000px;
             width: $cubeWidth;
@@ -120,7 +119,22 @@
 
         #radio-back:checked ~ .faceTile .space3d ._3dbox {
             transform: rotateY(180deg);
-        } */
+        } 
+        
+        @include keyframes(cube-rotation) {
+            0% { @include transform(rotateY(-90deg));}
+            15% { @include transform(rotateY(-90deg));}
+            20% { @include transform(rotateY(0deg));}
+            35% { @include transform(rotateY(0deg));}
+            40% { @include transform(rotateX(90deg));}
+            35% { @include transform(rotateX(90deg));}
+            60% { @include transform(rotateY(180deg));}
+            75% { @include transform(rotateY(180deg));}
+            80% { @include transform(rotateX(-90deg));}
+            95% { @include transform(rotateX(-90deg));}
+            100% { @include transform(rotateY(-90deg));}
+        }
+        */
     </style>
 </head>
 
