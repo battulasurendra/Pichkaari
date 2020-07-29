@@ -1,18 +1,14 @@
-
-#aboutSec1 {
-    .sec-bg {
-        img {
-            top: 50%;
-            left: 50%;
-            @include transform(translate(-50%, -50%));
-        }
-    }
-}
-
-
 #aboutSec2 {
     .secrow1 {
         padding: 10px;
+    }
+
+    .sec-bg {
+        img {
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+        }
     }
 }
 
@@ -217,14 +213,26 @@
         margin: auto;
     }
 
-    .faceBox { 
-        margin: -1px;
-        @include animation (face-change 10s steps(1, jump-start) infinite);
-
-        &:hover {
-            background-position-y: 25%;
+    .faceTile:nth-of-type(7) {
+        .faceBox {
+            margin: -1px;
         }
+    }
 
+    .faceTitle {
+        h4 {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+    .faceBox {
+        width: 100%;
+        height: 100%;
+        @include animation (face-change 10s infinite);
+        overflow: hidden;
+        
         $teamCount: 8;
         $percentage : 100/($teamCount - 1);
         @for $i from 0 through $teamCount {
@@ -237,13 +245,13 @@
 
     @include keyframes(face-change) {
         0% { background-position-y: 0%; }
-        19% { background-position-y: 0%; }
+        19.99% { background-position-y: 0%; }
         20% { background-position-y: 25%; }
-        39% { background-position-y: 25%; }
+        39.99% { background-position-y: 25%; }
         40% { background-position-y: 50%; }
-        59% { background-position-y: 50%; }
+        59.99% { background-position-y: 50%; }
         60% { background-position-y: 75%; }
-        79% { background-position-y: 75%; }
+        79.99% { background-position-y: 75%; }
         80% { background-position-y: 100%; }
         100% { background-position-y: 100%; }
     }
@@ -252,12 +260,329 @@
 
 /************************************ Media queries(Mobile & Tablet) ************************************/
 @media only screen and (max-width: 991px) {
+    #aboutSec1 {
+        padding: 0;
+
+        .container {
+            position: absolute;
+            transform: translateY(-50%);
+            top: 50%;
+        }
+
+        .secrow1 {
+            height: auto;
+        }
+
+        .sec-bg {
+            position: relative;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+
+    #aboutSec2 {
+        .secrow1 {
+            padding: 7%;
+        }
+    }
+
+    #aboutSec3 {
+        .sliderNavs {
+            display: none;
+        }        
+
+        #motifSlider {
+            .slide {
+                > .d-table.d-xs-block {
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-orient: vertical;
+                    -webkit-box-direction: reverse;
+                        -ms-flex-direction: column-reverse;
+                            flex-direction: column-reverse;  
+                    -webkit-box-align: center;
+                        -ms-flex-align: center;
+                            align-items: center;
+                }
+            }
+
+            .slideContent {
+                padding-left: 20px;
+                padding-right: 20px;
+                text-align: center;
+
+                br {
+                    display: none;
+                }
+            }
+        }
+
+        .slick-dots {
+            padding: 15px 0;
+            text-align: center;
+
+            li {
+                display: inline-block;
+                vertical-align: top;
+                font-size: 0;
+    
+                button{
+                    width: 10px;
+                    height: 10px;
+                    background: rgba($color1, 0.29);
+                    border-radius: 50%;
+                    margin: auto 10px;
+                    font-size: 0;
+                }
+    
+                &.slick-active {
+                    button{
+                        background: rgba($color1, 1);
+                    }
+    
+                }
+            }
+        }
+    }
+        
+    
+    #aboutSec4 {
+        padding-top: 70px;
+        padding-bottom: 70px;
+        
+        .secHeader {
+            margin: auto;
+        }
+
+        .sliderNavs {
+            display: none;
+        }
+
+        #founderSlider {
+            .slide {
+                padding-top: 230px;
+            }
+            
+            .founderImage {
+                margin-top: -200px;
+            }
+
+            .founderDesignation {
+                padding: 5px;
+            }
+            
+            .founderDescription {
+                text-align: center;
+                width: 100%;
+                padding: 20px 40px;
+            }
+
+            .founderSocialIcons {
+                padding-top: 30px;
+                padding: 27px 0;
+                width: auto;
+                position: absolute;
+                left: auto;
+                right: 10px;
+                top: 0;
+            }
+
+            .founderHobbies {
+                display: inline-block;
+                width: auto;
+                padding-bottom: 30px;
+            }
+
+            .sliderNavs {
+                display: none;
+            }
+
+            .slick-dots {
+                padding: 15px 0;
+                text-align: center;
+
+                li {
+                    display: inline-block;
+                    vertical-align: top;
+                    font-size: 0;
+        
+                    button{
+                        width: 10px;
+                        height: 10px;
+                        background: rgba($color1, 0.29);
+                        border-radius: 50%;
+                        margin: auto 10px;
+                        font-size: 0;
+                    }
+        
+                    &.slick-active {
+                        button{
+                            background: rgba($color1, 1);
+                        }
+        
+                    }
+                }
+            }
+        }
+    }
+    
+    #aboutSec5 {
+        padding: 0;
+
+        &::after{
+            display: none;
+        }
+
+        
+        .secrow1 {
+            display: block;
+            padding: 0;
+        }
+        
+        .v-stretch {
+            width: auto;
+            padding: 50px;
+            display: block;
+            margin: 10%;
+            min-height: auto;
+    
+            .btn {
+                margin-top: 15%;
+            }
+        }
+    }
+
+    #aboutSec6 {
+        .secHeader {
+            margin: auto;
+        }
+
+        .socialIcons{
+            a {
+                margin: 30px 30px auto;
+            }
+        }
+    }
+
+    #aboutSec7{
+        .container {
+            padding: 50px 10px;
+        }
+    }
 
 }
 /************************************ Media queries(Mobile & Tablet) ************************************/
 /************************************ Media queries(Mobile) ************************************/
 @media only screen and (max-width: 767px) {
+    #aboutSec1 {
+        .bannerContent {
+            br {
+                display: none;
+            }
+        }
+
+        .sec-bg img {
+            width: 200%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    #aboutSec2 {
+        .secrow1 {
+            padding: 20px;
+        }
+    }
+
+    #aboutSec3 {
+        #motifSlider {
+            padding-top: 25px;
+        }
+    }
     
+    #aboutSec4 {
+        padding: 25px;
+
+        .secHeader {
+            padding: 25px 0 0;
+        }
+
+        #founderSlider {
+            .slide {
+                padding-top: 150px;
+            }
+
+            .founderImage {
+                margin: auto;
+                margin-top: -150px;
+                max-width: 200px;
+            }
+
+            .founderDescription {
+                padding: 0 10px 30px;
+                font-size: 13px;
+            }
+            
+            .founderHobbies {
+                padding-bottom: 10px;
+            }
+        }
+    }
+
+    #aboutSec5 {
+        .v-stretch {
+            width: auto;
+            padding: 25px;
+            margin: 25px ;
+        }
+    }
+
+    #aboutSec6 {
+        .socialIcons{
+            a {
+                margin: 20px 20px auto;
+            }
+            
+            i {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+    
+    #aboutSec7 {
+        .container {
+            padding: 25px 10px;
+        }
+    }
+
+    #aboutSec8 {
+        .faceGrid {
+            display: block;
+            float: none;
+            max-width: 300px;
+            margin: auto;
+        }
+
+        .faceTile {
+            overflow: hidden;
+
+            .faceBox {
+                width: 104%;
+                height: 104%;
+                left: -2%;
+                top: -2%;
+            }
+
+            &:nth-of-type(7) .faceBox {
+                margin: 0;
+            }
+        }
+    }
 }
 /************************************ Media queries(Mobile) ************************************/
 /************************************ Media queries(Older Mobiles) ************************************/

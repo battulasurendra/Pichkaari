@@ -1,6 +1,7 @@
+<?php $pageId = 'home'; ?>
 <?php include('meta.php') ?>
 
-<body class="home">
+<body class="<?php echo $pageId; ?>">
     <?php include('header.php') ?>
     <div id="fullpage">
         <div class="section">
@@ -38,17 +39,17 @@
                                     We go through layers of depths to learn and understand your brand proposition, and analyse
                                     it’s <strong>cause-and-effect</strong> on every aspect.
                                 </div>
-                                <div class="fs6 fc7 secText fw8">
+                                <div class="fs6 fc7 secText fw8 hideMobile">
                                     Collaborative <br>
                                     Introspection <br>
                                     & Research
                                 </div>
                             </div>
                             <div class="cell w-g-md-7 w-g-12">
-                                <!-- <div class="secImage">
-                                    <img src="assets/images/Home-img2.svg" class="i-inline">
-                                </div> -->
                                 <div id="causeAndPlayLottie"></div>
+                                <div class="fs6 fc7 secText fw8 lg-hide md-hide">
+                                    Collaborative Introspection  & Research
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -64,7 +65,7 @@
                     <div class="secrow1 row animate up">
                         <h4 class="hs4 fw8 text-center">A little bit of what we do</h4>
                     </div>
-                    <div class="secrow2 row text-center xs-hide animate up">
+                    <div class="secrow2 row text-center animate up">
                         <div id="categorySliderLinks" class="d-inline"></div>
                     </div>
                     <div class="secrow3 row animate up">
@@ -154,20 +155,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="sliderNavs pos-rel xs-show">
-                            <div id="categorySliderArrow1" class="navLeft col">
-                                <svg x="0px" y="0px" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;">
-                                    <line x1="19.29" y1="10" x2="1.46" y2="10" />
-                                    <polyline points="8.13,16.22 1.79,10 8.13,3.78" />
-                                </svg>
-                            </div>
-                            <div id="categorySliderArrow2" class="navRight col">
-                                <svg x="0px" y="0px" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;">
-                                    <line x1="0.71" y1="10" x2="18.54" y2="10" />
-                                    <polyline points="11.87,3.78 18.21,10 11.87,16.22" />
-                                </svg>
-                            </div>
-                        </div>
+                        <div class="text-center pos-rel md-hide lg-hide" id="categorySliderDots"></div>
                     </div>
                 </div>
                 <div class="absolute-bg sec-bg">
@@ -184,13 +172,16 @@
                                 <div class="hs5 fc3 fw8 secText">
                                     We are not bound by geographics <br> or timezones. <br> We cater to clients in
                                 </div>
-                                <div class="hs5 fc7 fw8 secHead" id="clientCountry">
+                                <div class="hs5 fc7 fw8 secHead clientCountry">
                                     Luxembourg
                                 </div>
                             </div>
-                            <div class="cell w-g-md-8 w-g-12">
+                            <div class="cell w-g-md-8 w-g-12 mapSec">
                                 <div class="secImage">
                                     <?php echo file_get_contents("assets/images/Home-img3.svg"); ?>
+                                </div>
+                                <div class="hs5 fc7 fw8 secHead clientCountry">
+                                    Luxembourg
                                 </div>
                             </div>
                         </div>
@@ -369,7 +360,7 @@
                     <div class="secrow1 m-auto d-flex h-max">
                         <div class="v-stretch hideflow w-g-md-4 w-g-12 pos-rel h-max animate bounceInLeft slow">
                             <div class="fw8 hs5 pos-rel">
-                                Take Your <br> Project<br> From Draft<br> to Craft.
+                                Take Your <br> Project<br> From Draft<br> To Craft.
                             </div>
                             <a href="https://vikas921897.typeform.com/to/ibpgeKDW" target="_blank" class="btn btn-black-white pos-rel">Start a Project</a>
                             <div class="absolute-bg">

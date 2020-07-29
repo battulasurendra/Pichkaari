@@ -52,17 +52,20 @@
         left: -50%;
         top: -73%;
     }
-
-    #lottieContainer {
-        margin-left: -10%;
-        margin-right: -10%;
-    }
 }
 
 #homeSec3 {
     .container-fluid {
         flex-direction: column;
         justify-content: space-evenly;
+    }
+
+    #categorySlider {
+        .slide {
+            .secText {
+                padding: 30px 0;
+            }
+        }
     }
 
     #categorySliderLinks {
@@ -106,31 +109,26 @@
         }
     }
 
-    #categorySlider {
-        .slide {
-            .secText {
-                padding: 30px 0;
+    #categorySliderDots{
+        display: none;
+
+        li {
+            display: inline-block;
+            vertical-align: top;
+
+            button{
+                width: 10px;
+                height: 10px;
+                background: rgba($color1, 0.29);
+                border-radius: 50%;
+                margin: auto 7px;
             }
-        }
-    }
 
-    .sliderNavs {
-        left: 0;
-        right: 0;
-        height: auto;
-        padding-left: 0;
+            &.slick-active {
+                button{
+                    background: rgba($color1, 1);
+                }
 
-        > div {
-            background: transparent;
-            box-shadow: none;
-            width: auto;
-            height: auto;
-            text-align: left;
-            padding: 5px 10px;
-
-            svg {
-                stroke:$color1;
-                height: 20px;
             }
         }
     }
@@ -156,6 +154,12 @@
             
             .secHead {
                 padding: 20px 0;
+            }
+        }
+
+        .mapSec {
+            .clientCountry {
+                display: none;
             }
         }
 
@@ -395,19 +399,100 @@
 
 /************************************ Media queries(Mobile & Tablet) ************************************/
 @media only screen and (max-width: 991px) {
-    #homeSec3 {
-        padding-left: 50px;
-        padding-right: 50px;
-        #categorySlider {
-            .slide {
-                .cell:last-child {
-                    padding: 50px 0;
+    #homeSec1 {
+        .secrow1 {
+            .bannerContent {
+                padding-top: 10%;
+                top: 0;
+    
+                .btn {
+                    margin-top: 5%;
                 }
+            }
+    
+            .absolute-bg {
+                max-height: 90%;
+                max-width: 100%;
+                margin-top: -15%;
+                left: auto;
+                right: 0;
+                position: relative;
+            }
+        }
+    
+        .sec-bg {
+            img {
+                left: 80%;                
             }
         }
     }
 
-    #homeSec4 {    
+    
+    #homeSec2 {
+        .secrow1 {
+            .secText {
+                padding:0 10%;
+                text-align: center;
+            }
+        }
+
+        .hideMobile {
+            display: none;
+        }
+
+        #causeAndPlayLottie {
+            margin: 5% auto;
+        }
+
+        .sec-bg {
+            right: auto;
+            left: -50%;
+            top: -73%;
+        }
+    }
+
+    #homeSec3 {
+        padding-left: 50px;
+        padding-right: 50px;
+
+        .secrow1 {
+            padding-bottom: 10%;
+        }
+
+        .secrow2 {
+            display: none;
+        }
+        
+        #categorySlider {
+            .slide {
+                text-align: center;
+                 
+                .cell:last-child {
+                    padding: 50px 0;
+                }
+                .secText {
+                    padding: 30px;
+
+                    br {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        #categorySliderDots {
+            display: block;
+        }
+    }
+
+    #homeSec4 {
+        text-align: center;
+        padding-bottom: 0;
+
+        br {
+            display: none;
+        }
+
         .secrow1 {    
             .cell {
                 padding: 5% 5% 0;
@@ -420,28 +505,105 @@
             .secImage {
                 padding: 0;    
             }
+        
+            .clientCountry {
+                display: none;
+            }
+    
+            .mapSec {
+                .clientCountry {
+                    display: block;
+                }
+            }
         }
 
         .secrow3 {
-            margin-right: 40px;
-            margin-left: 40px;
+            margin-right: -60px;
+            margin-left: -60px;
             width: auto;
+            padding: 0;
+        }
+
+        .sliderNavs {
+            display: none;
+        }
+        
+    }
+
+    #homeSec5 {
+
+        .secHeader {
+            margin-left: -50px;
+            text-align: center;
+            br {
+                display: none;
+            }
+
+            span {
+                display: block;
+            }
+        }
+
+        .secrow1 {
+            #testimonialSlider {
+                .slide {
+                    @include transform (scale(1));
+                    
+                    .innerSlide {
+                        .secText {
+                            overflow-y: auto;
+                        }
+                    }
+                }
+            }
+
+            .sliderNavs {
+                display: none;
+            }
+
+            .slick-dots {
+                padding: 20px 0 0;
+                text-align: center;
+
+                li {
+                    display: inline-block;
+                    vertical-align: top;
+                    font-size: 0;
+        
+                    button{
+                        width: 10px;
+                        height: 10px;
+                        background: rgba($color1, 0.29);
+                        border-radius: 50%;
+                        margin: auto 10px;
+                        font-size: 0;
+                    }
+        
+                    &.slick-active {
+                        button{
+                            background: rgba($color1, 1);
+                        }
+        
+                    }
+                }
+            }
         }
     }
 
     
     #homeSec6 {
-        .secrow1 {     
-            flex-direction: column;
+        padding-top: 0;
+        padding-bottom: 0;
+
+        .secrow1 {
+            display: block;
+            padding: 0;
         }
         
         .v-stretch {
-            padding: 20px 10%;
-            justify-content: space-evenly;
-
-            br {
-                display: none;
-            }
+            padding: 50px;
+            display: block;
+            margin: 10% auto;
     
             .btn {
                 margin-top: 10%;
@@ -451,14 +613,39 @@
 
     #homeSec7 {
         .secrow1 {
-            padding: 25% 7% 7%;
+            padding: 7%;
         }
 
         .secrow2 {
             padding: 7%;
-        
+            display: block;
+
+            .row2col1 {
+                display: inline-block;
+                width: 100%;
+
+                .footHead {
+                    padding-top: 0;
+                }
+                
+                .row {
+                    float: left;
+                    width: 50%;
+                }
+            }
+
+            .row2col2 {
+                padding-right: 0;
+            }
+
+            .row2col3 {                    
+                li {
+                    font-weight: 400;
+                }
+            }
+
             .footHead {
-                padding: 15px 0 5px;
+                padding: 25px 0 5px;
             }
             
             .secText {
@@ -471,85 +658,107 @@
 /************************************ Media queries(Mobile & Tablet) ************************************/
 /************************************ Media queries(Mobile) ************************************/
 @media only screen and (max-width: 767px) {
-    #homeSec1 {
-        .secrow1 {
-            .bannerContent {
-                top: 0;
-            }
-        } 
-    }
-
     #homeSec3 {
-        padding-left: 30px;
-        padding-right: 30px;
-
+        padding-left: 25px;
+        padding-right: 25px;
+        
         #categorySlider {
-            .slide {
+            .slide {                 
                 .cell:last-child {
+                    padding: 25px 0;
+                }
+                .secText {
                     padding: 20px 0;
                 }
-
-                .secText {
-                    padding: 10px 0;
-                }
             }
         }
     }
-    
-    #homeSec4 {    
-        .secrow1 {    
-            .cell {
-                padding: 5% 5% 0 !important;
-                
-                .secHead {
-                    padding: 10px 0;
-                }
-            }
-        }
 
-        .secrow3 {
-            margin-right: 20px;
-            margin-left: 20px;
+    #homeSec4 {
+        .secrow1 {
+            background-color: rgba(227,231,232,.5);
+            padding-bottom: 120px;
+        }
+        
+        [class*="sprite-client"] {
+            width: 120px;
+            height: 120px;
         }
     }
-    
+
     #homeSec5 {
-        padding-right: 30px;
-        .secrow1{
-            .secHeader {
-                br {
-                    display: none;
+        .secHeader {
+            margin-left: -25px;
+        }
+
+        .secrow1 {
+            #testimonialSlider {
+                .slide {
+                    width: 300px;
+                    padding: 10px;
+
+                    &.slick-current {                    
+                        .innerSlide {
+                        }
+                    }
+
+                    .innerSlide {
+                        padding: 20px;
+
+                        .secText {
+                            margin-bottom: 20px;
+                            max-height: 150px;
+                            padding-right: 20px;
+                            overflow-y: hidden;
+                        }
+
+                        .testiDetails {
+                            border-top: 1px solid $color3;
+                            padding-top:25px;
+                            margin-top:5px;
+                        }
+
+                        &:hover {
+                            .secText {
+                                overflow-y: auto;
+                            }
+                        }
+                    }
                 }
             }
 
-            .cell {
-                padding: 0;
-            }
-
-            #testimonialSlider .slide {
-                padding: 0;
-
-                .innerSlide {
-                    padding: 4vh;
-
-                    .secImage {
-                        width: 60px;
-                        margin-bottom: 5px;
-                    }
-
-                    .secText {
-                        margin-bottom: 4vh;
-                        max-height: 130px;
-                        padding-right: 10%;
-                    }
-                }
-            }
-
-            .sliderNavs {
-                padding: 10px 0;
-            }
-        } 
+        }
     }
+
+    #homeSec6 {
+        .v-stretch {
+            padding: 25px;
+            margin: 25px auto;
+    
+            .btn {
+                margin-top: 25px;
+            }
+        }
+    }
+
+    #homeSec7 {
+        .secrow1 {
+            padding: 25px;
+        }
+
+        .secrow2 {
+            padding: 25px;
+
+            .footHead {
+                padding: 25px 0 5px;
+            }
+            
+            .secText {
+                padding: 0 0 10px;
+            }
+        }
+    }
+
 }
 /************************************ Media queries(Mobile) ************************************/
 /************************************ Media queries(Older Mobiles) ************************************/

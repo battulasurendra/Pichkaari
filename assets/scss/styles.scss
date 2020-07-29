@@ -911,75 +911,57 @@ body {
 .fs1 {
     font-size: 13px;
     line-height: 1.6;
-    @include interpolate(font-size, 300px, 767px, 12px, 12px);
 }
 
 .fs2 {
     font-size: 16px;
     line-height: 1.6;
     letter-spacing: 0.4px;
-    @include interpolate(font-size, 300px, 767px, 14px, 14px);
 }
 
 .fs3 {
     font-size: 18px;
     line-height: 1.6;
-    @include interpolate(font-size, 300px, 767px, 16px, 16px);
 }
 
 .fs4 {
     font-size: 22px;
     line-height: 1.6;
-    @include interpolate(font-size, 300px, 767px, 18px, 18px);
 }
 
 .fs5 {
     font-size: 30px;
     line-height: 1.3;
-    @include interpolate(font-size, 360px, 767px, 24px, 24px);
-    @include interpolate(font-size, 300px, 359px, 20px, 24px);
 }
 
 .fs6 {
     font-size: 36px;
     line-height: 1.3;
-    @include interpolate(font-size, 360px, 767px, 24px, 24px);
-    @include interpolate(font-size, 300px, 359px, 20px, 24px);
 }
 
 .hs1 {
     font-size: 100px;
     line-height: 1;
-    @include interpolate(font-size, 360px, 767px, 50px, 50px);
-    @include interpolate(font-size, 300px, 359px, 38px, 50px);
 }
 
 .hs2 {
     font-size: 80px;
     line-height: 1;
-    @include interpolate(font-size, 360px, 767px, 45px, 45px);
-    @include interpolate(font-size, 300px, 359px, 36px, 45px);
 }
 
 .hs3 {
     font-size: 50px;
     line-height: 1.2;
-    @include interpolate(font-size, 360px, 767px, 28px, 28px);
-    @include interpolate(font-size, 300px, 359px, 22px, 28px);
 }
 
 .hs4 {
     font-size: 45px;
     line-height: 1.15;
-    @include interpolate(font-size, 360px, 767px, 28px, 28px);
-    @include interpolate(font-size, 300px, 359px, 22px, 28px);
 }
 
 .hs5 {
     font-size: 38px;
     line-height: 1.1;
-    @include interpolate(font-size, 360px, 767px, 24px, 24px);
-    @include interpolate(font-size, 300px, 359px, 20px, 24px);
 }
 /****************** Font Sizes ******************/
 /****************** Font Family ******************/

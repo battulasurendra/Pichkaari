@@ -124,12 +124,25 @@ jQuery(function ($) {
             init: function () {
                 var categories = ['Branding & Merchandising', 'marketing & communication', 'ui/ux design', 'information design', 'motion graphics & video','package design'];
 
-                $('.clientLocation').hover(function () {
-                    var ele = $(this);
+                function switchCountry(ele) {
                     $('.clientLocation.active').removeClass('active');
                     $(ele).addClass('active');
-                    $('#clientCountry').html($(ele).data('location'));
+                    $('.clientCountry').html($(ele).data('location'));
+                }
+
+                $('.clientLocation').hover(function () {
+                    switchCountry($(this));
                 });
+
+                $('.clientLocation').each(function () {
+                    const ele = this;
+                    console.log(ele);
+                    setInterval(() => {
+                        switchCountry(ele);
+                        // $(ele).trigger('hover');
+                        // $(ele).trigger('hover');
+                    }, 2000);
+                })
 
                 $('#categorySlider').slick({
                     arrows: false, // disable
@@ -138,18 +151,18 @@ jQuery(function ($) {
                     autoplay: false,
                     autoplaySpeed: 5000,
                     adaptiveHeight: true,
-                    prevArrow: $("#categorySliderArrow1"),
-                    nextArrow: $("#categorySliderArrow2"),
                     customPaging: function (slider, i) {
                         return '<div class="ttu fc4 fw5 fs1">' + categories[i] + '</div>';
                     },
                     appendDots: "#categorySliderLinks",
                     responsive: [
                         {
-                            breakpoint: 767,
+                            breakpoint: 991,
                             settings: {
-                                dots: false,
-                                arrows: true
+                                appendDots: "#categorySliderDots",
+                                customPaging: function (slider, i) {
+                                    return '<button type="button" data-role="none" role="button"></button>';
+                                },
                             }
                         }
                     ]
@@ -159,24 +172,18 @@ jQuery(function ($) {
                     centerMode: true,
                     infinite: true,
                     variableWidth: true,
-                    autoplay: false,
+                    autoplay: true,
                     autoplaySpeed: 1000,
                     prevArrow: $("#brandSliderArrow1"),
                     nextArrow: $("#brandSliderArrow2"),
-                    // responsive: [
-                    //     {
-                    //         breakpoint: 991,
-                    //         settings: {
-                    //             slidesToShow: 3
-                    //         }
-                    //     },
-                    //     {
-                    //         breakpoint: 767,
-                    //         settings: {
-                    //             slidesToShow: 1
-                    //         }
-                    //     }
-                    // ]
+                    responsive: [
+                        {
+                            breakpoint: 991,
+                            settings: {
+                                arrows: false
+                            }
+                        }
+                    ]
                 });
 
                 $('#testimonialSlider').on('init', function (event, slick) {
@@ -194,10 +201,10 @@ jQuery(function ($) {
                     nextArrow: $("#testimonialSliderArrow2"),
                     responsive: [
                         {
-                            breakpoint: 767,
+                            breakpoint: 991,
                             settings: {
-                                variableWidth: false,
-                                slidesToSShow: 1
+                                arrows: false,
+                                dots: true
                             }
                         }
                     ]
@@ -227,7 +234,16 @@ jQuery(function ($) {
                     autoplaySpeed: 5000,
                     adaptiveHeight: true,
                     prevArrow: $("#dealSliderArrow1"),
-                    nextArrow: $("#dealSliderArrow2")
+                    nextArrow: $("#dealSliderArrow2"),
+                    responsive: [
+                        {
+                            breakpoint: 991,
+                            settings: {
+                                arrows: false,
+                                dots: true
+                            }
+                        }
+                    ]
                 });
 
                 $('#slaySlider').slick({
@@ -235,10 +251,18 @@ jQuery(function ($) {
                     autoplay: false,
                     autoplaySpeed: 5000,
                     adaptiveHeight: true,
-                    // fade: true,
-                    // cssEase: 'linear',
                     prevArrow: $("#slaySliderArrow1"),
-                    nextArrow: $("#slaySliderArrow2")
+                    nextArrow: $("#slaySliderArrow2"),
+                    responsive: [
+                        {
+                            breakpoint: 991,
+                            settings: {
+                                variableWidth: true,
+                                arrows: false,
+                                dots: true
+                            }
+                        }
+                    ]
                 });
 
                 $('#jobsSlider').slick({
@@ -253,13 +277,9 @@ jQuery(function ($) {
                         {
                             breakpoint: 991,
                             settings: {
-                                slidesToShow: 1
-                            }
-                        },
-                        {
-                            breakpoint: 767,
-                            settings: {
-                                slidesToShow: 1
+                                variableWidth: true,
+                                arrows: false,
+                                dots: true
                             }
                         }
                     ]
@@ -275,7 +295,17 @@ jQuery(function ($) {
                     autoplaySpeed: 5000,
                     adaptiveHeight: false,
                     prevArrow: $("#motifSliderArrow1"),
-                    nextArrow: $("#motifSliderArrow2")
+                    nextArrow: $("#motifSliderArrow2"),
+                    responsive: [
+                        {
+                            breakpoint: 991,
+                            settings: {
+                                adaptiveHeight: true,
+                                arrows: false,
+                                dots: true
+                            }
+                        }
+                    ]
                 });
 
                 $('#founderSlider').slick({
@@ -284,7 +314,16 @@ jQuery(function ($) {
                     autoplaySpeed: 5000,
                     adaptiveHeight: true,
                     prevArrow: $("#founderSliderArrow1"),
-                    nextArrow: $("#founderSliderArrow2")
+                    nextArrow: $("#founderSliderArrow2"),
+                    responsive: [
+                        {
+                            breakpoint: 991,
+                            settings: {
+                                arrows: false,
+                                dots: true
+                            }
+                        }
+                    ]
                 });
 
                 if($('.faceTile').length > 0)  {
@@ -525,6 +564,7 @@ jQuery(function ($) {
                             slideSelector: '.fullpageSlide',
                             licenseKey: '897A7684-99CB4ACB-931F45AA-AA7D475B',
                             scrollOverflow: true,
+                            touchSensitivity: 25,
                             normalScrollElements: '.scrollable-content',
                             afterLoad: function (origin, destination, direction) {
                                 populate_animations();
@@ -544,20 +584,24 @@ jQuery(function ($) {
                         $('#fullpage').fullpage(fullpageOptions);
                         //methods
                         $.fn.fullpage.setAllowScrolling(true);
+
+                        $('#scrollToTopBtn').click(function () {
+                            $.fn.fullpage.moveTo(1);
+                            $("html, body").animate({ scrollTop: "0" });
+                        });
+                    } else {
+                        $('#scrollToTopBtn').hide();
                     }
                 } else {
-                    //  Mobile parallax
+                    $('#scrollToTopBtn').click(function () {
+                        $("html, body").animate({ scrollTop: "0" });
+                    });
                 }
 
                 var $navbar = $('#header-menu');
 
                 $('#navbar-toggle').click(function () {
                     $navbar.toggleClass('open');
-                });
-
-                $('#scrollToTopBtn').click(function () {
-                    $.fn.fullpage.moveTo(1);
-                    $("html, body").animate({ scrollTop: "0" });
                 });
 
                 $(window).on("scroll", function () {

@@ -1,7 +1,8 @@
 <?php $pageTitle = 'Careers'; ?>
+<?php $pageId = 'career'; ?>
 <?php include('meta.php') ?>
 
-<body class="career">
+<body class="<?php echo $pageId; ?>">
     <?php include('header.php') ?>
     <div id="fullpage">
         <div class="section">
@@ -10,7 +11,7 @@
                     <div class="secrow1 h-max animate up">
                         <div class="bannerContent h-max d-flex text-center">
                             <div class="hs2 fc1 fw8 secHeader m-auto">
-                                work <span class="text-stroke">for</span> with us
+                                work <div class="text-stroke pos-rel">for</div> with us
                             </div>
                             <div class="secImage pos-rel">
                                 <img src="assets/images/Career-img1.png" class="i-inline pos-rel">
@@ -31,19 +32,19 @@
             <section id="careerSec2" class="bg3 no-pad-right">
                 <div class="container-fluid no-padding h-max">
                     <div class="secrow1 d-flex h-max w-g-12">
-                        <div class="w-g-md-4 w-g-sm-5 w-g-12 pos-rel animate left no-padding">
+                        <div class="w-g-md-4 w-g-12 pos-rel animate left no-padding">
                             <div class="d-table pos-rel h-max">
                                 <div class="cell no-padding">
                                     <div class="hs4 fc1 fw8 secHeader">
                                         Here’s what <br>it takes to <br><span class="fc7">seal the deal</span>
                                     </div>
-                                    <div class="fc1 fs2 secText w-g-sm-10 w-g-12">
+                                    <div class="fc1 fs2 secText w-g-md-10 w-g-12">
                                         We're a fun bunch of communication creators, constantly on the lookout for people with passion who have what it takes to join us. Here's a small cheat-list to give you an idea of what we look for in an eligible candidate.
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="w-g-md-8 w-g-sm-7 w-g-12 pos-rel animate right">
+                        <div class="w-g-md-8 w-g-12 pos-rel animate right">
                             <div id="dealSlider" class="h-max">
                                 <div class="slide h-max">
                                     <div class="innerSlide pos-rel h-max hideflow">
@@ -248,10 +249,10 @@
         <div class="section">
             <section id="careerSec4" class="bg6" data-theme="dark">
                 <div class="container-fluid">
-                    <div class="secrow1 row  animate up">
+                    <div class="secrow1 row animate up">
                         <h4 class="hs4 fw8 text-center">Checkout our current openings!</h4>
                     </div>
-                    <div class="secrow2 cell">
+                    <div class="secrow2 row">
                         <div id="jobsSlider">
                             <div class="slide">
                                 <div class="v-stretch hideflow pos-rel fc1">
@@ -389,7 +390,7 @@
             <section id="careerSec5" class="bg7 h-auto">
                 <div class="container pos-rel">
                     <div class="secrow1 row text-center animate up">
-                        <h4 class="hs4 fc1 fw8 w-g-12 secHeader">If you are a person <br>people who can’t be boxed</h4>
+                        <h4 class="hs4 fc1 fw8 w-g-12 secHeader">If you are a person <br>who can’t be boxed</h4>
                         <div class="fs3 fc1 fw5 secText secHeader">
                             Drop us a mail with your resume and a cover-letter explaining what you’d like to do and why
                         </div>

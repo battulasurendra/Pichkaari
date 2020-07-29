@@ -2,6 +2,10 @@
     min-height: 100vh;
     padding: 50px 0 0;
     .secrow1 {
+        .formSec {
+            padding: 10% 0;
+        }
+        
         .formTitle {
             padding: 10px 0 7%;
         }
@@ -30,9 +34,7 @@
             min-width: 175px;
         }
         
-    }
-
-    
+    }    
     
     .secrow2 {
         padding: 50px;
@@ -89,6 +91,71 @@
 @media only screen and (max-width: 991px) {
     #contactSec1 {
         height: auto;
+
+        .secrow2 {
+            padding: 7%;
+            display: block;
+
+            .row2col1 {
+                display: inline-block;
+                width: 100%;
+
+                .footHead {
+                    padding-top: 0;
+                }
+                
+                .row {
+                    float: left;
+                    width: 50%;
+                }
+            }
+
+            .row2col2 {
+                padding-right: 0;
+            }
+
+            .row2col3 {                    
+                li {
+                    font-weight: 400;
+                }
+            }
+
+            .footHead {
+                padding: 25px 0 5px;
+            }
+            
+            .secText {
+                padding: 0 0 10px;
+            }
+        }
+    }
+}
+/************************************ Media queries(Mobile & Tablet) ************************************/
+/************************************ Media queries(Mobile & Tablet) ************************************/
+@media only screen and (max-width: 767px) {
+    #contactSec1 {
+        height: auto;
+        .secrow1 {
+            .formSec {
+                padding: 15px;
+            }
+            
+            .formTitle {
+                padding: 0;
+            }            
+        }   
+
+        .secrow2 {
+            padding: 25px;
+
+            .footHead {
+                padding: 25px 0 5px;
+            }
+            
+            .secText {
+                padding: 0 0 10px;
+            }
+        }
     }
 }
 /************************************ Media queries(Mobile & Tablet) ************************************/

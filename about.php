@@ -1,7 +1,8 @@
 <?php $pageTitle = 'About us'; ?>
+<?php $pageId = 'about'; ?>
 <?php include('meta.php') ?>
 
-<body class="about">
+<body class="<?php echo $pageId; ?>">
     <?php include('header.php') ?>
     <div id="fullpage">
         <div class="section">
@@ -10,12 +11,12 @@
                     <div class="secrow1 h-fold d-table animate up">
                         <div class="bannerContent cell">
                             <div class="hs3 fc1 fw8 ttc text-center">
-                                A Better Glimpse at the <br>Pihkaari Way of Living
+                                A Better Glimpse at the <br>Pichkaari Way of Living
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="absolute-bg animate up">
+                <div class="absolute-bg sec-bg animate up">
                     <img src="assets/images/About-bg1.jpg" class="pos-rel i-cover">
                 </div>
             </section>
@@ -24,14 +25,14 @@
             <section id="aboutSec2" class="h-max d-table" data-theme="dark">
                 <div class="container-fluid cell no-padding h-max">
                     <div class="secrow1 animate up pos-rel hideflow h-max d-flex">
-                        <div class="bannerContent pos-rel w-g-lg-10 w-g-md-9 w-g-sm-10 w-g-12 m-auto">
+                        <div class="bannerContent pos-rel w-g-lg-10 w-g-md-9 w-g-12 m-auto">
                             <div class="hs4 fc2 fw8 text-center animate flipInX slow">
                                 We're a design and communication studio, based in Bangalore, India, <br>that came into force in 2013.<br>
                                 Our mission is to embrace <span class="fc7">empathy</span> and <span class="fc7">symphony</span> to <span class="fc7">design</span> a <span class="fc7">story</span> that <br>is <span class="fc7">playful</span> but <span class="fc7">meaningful.</span>
                             </div>
                         </div>
                         <div class="absolute-bg sec-bg hideflow">
-                            <img src="assets/images/About-bg2.png">
+                            <img src="assets/images/About-bg2.png" class="i-cover">
                         </div>
                     </div>
                 </div>
@@ -152,34 +153,28 @@
             <section id="aboutSec4" data-theme="dark">
                 <div class="container-fluid bg8 h-max d-table no-padding">
                     <div class="secrow1 cell w-g-12 no-padding pos-rel hideflow">
-                        <h4 class="hs4 fw8 ttc secHeader text-center w-g-md-6 w-g-sm-8 w-g-12 pos-rel animate up">
-                            Meet the co-parents <br> of Pichkaari.
+                        <h4 class="hs4 fw8 secHeader text-center w-g-md-6 w-g-12 pos-rel animate up">
+                            Meet the Co-Parents <br> of Pichkaari.
                         </h4>
                         <div id="founderSlider" class="container m-auto pos-rel animate right">
                             <div class="slide">
-                                <div class="d-table d-xs-block bg1 text-center">
-                                    <div class="cell w-g-sm-4 w-g-12">
+                                <div class="d-table d-sm-block d-xs-block bg1 text-center pos-rel">
+                                    <div class="cell w-g-md-4 w-g-12">
                                         <div class="founderImage">
                                             <img src="assets/images/slides/About-founder-slide1.png" class="i-inline">
                                         </div>
                                         <div class="founderName ttu fs2 fw8">Vikas Jaiswal</div>
                                         <div class="founderDesignation ttu fs1 fw5">Co-Founder</div>
                                     </div>
-                                    <div class="cell v-top w-g-sm-7 w-g-12 founderContent">
+                                    <div class="cell v-top w-g-md-7 w-g-12 founderContent">
                                         <div class="col w-g-10 fs3 founderDescription text-left">
                                             With his impeccable taste and attention to detail, Vikas is the leader of the tribe. He started Pichkaari out of his passion for UX and communication. A cup full of Darjeeling tea, a room full of optimistic people, and a playlist full of peppy and upbeat music is what gets him inspired to inspire.
                                         </div>
-                                        <div class="col w-g-2 v-top founderSocialIcons text-right xs-hide">
+                                        <div class="col w-g-2 v-top founderSocialIcons text-right">
                                             <a class="col float-r" href="https://www.linkedin.com/in/jaiswalvikas/" target="_blank" title="Linkedin"><i class="sprite-xs icon-3"></i></a>
                                         </div>
-                                        <div class="founderHobbies text-center w-g-sm-10 w-g-12">
-                                            <!-- <div class="col w-sm-2 w-g-4">
-                                                <div class="d-inline">
-                                                    <i class="sprite-md icon-8"></i>
-                                                </div>
-                                                <div class="fs1 ttu">Lorem</div>
-                                            </div> -->
-                                            <div class="col w-g-md-10 w-g-sm-10 w-g-12 secImage">
+                                        <div class="founderHobbies text-center w-g-md-10 w-g-12">
+                                            <div class="col w-g-md-10 w-g-12 secImage">
                                                 <img src="assets/images/slides/founder-slide1.png" class="i-inline m-auto" >
                                             </div>
                                         </div>
@@ -187,23 +182,23 @@
                                 </div>
                             </div>
                             <div class="slide">
-                                <div class="d-table d-xs-block bg1 text-center">
-                                    <div class="cell w-g-sm-4 w-g-12">
+                                <div class="d-table d-sm-block d-xs-block bg1 text-center pos-rel">
+                                    <div class="cell w-g-md-4 w-g-12">
                                         <div class="founderImage">
                                             <img src="assets/images/slides/About-founder-slide2.png" class="i-inline">
                                         </div>
                                         <div class="founderName ttu fs2 fw8">Priyanka Jain</div>
                                         <div class="founderDesignation ttu fs1 fw5">Co-Founder</div>
                                     </div>
-                                    <div class="cell v-top w-g-sm-7 w-g-12 founderContent">
+                                    <div class="cell v-top w-g-md-7 w-g-12 founderContent">
                                         <div class="col w-g-9 fs3 founderDescription text-left">
                                         Painter, curator, green thumb, culinary genius; these just few of the many feathers that Priyanka wears on her cap. She is a nurturer by nature, and it shows in her creative approach, her rapport with the team and in all the green that you will see in our office!
                                         </div>
-                                        <div class="col w-g-md-3 w-g-3 v-top founderSocialIcons text-right xs-hide">
+                                        <div class="col w-g-md-3 w-g-3 v-top founderSocialIcons text-right">
                                             <a class="col float-r" href="https://www.linkedin.com/company/pichkaari-design-studio-private-limited/about/" target="_blank" title="Linkedin"><i class="sprite-xs icon-3"></i></a>
                                         </div>
-                                        <div class="founderHobbies text-center w-g-sm-10 w-g-12">
-                                            <div class="col w-g-md-10 w-g-sm-10 w-g-12 secImage">
+                                        <div class="founderHobbies text-center w-g-md-10 w-g-12">
+                                            <div class="col w-g-md-10 w-g-12 secImage">
                                                 <img src="assets/images/slides/founder-slide2.png" class="i-inline m-auto" >
                                             </div>
                                         </div>
@@ -211,29 +206,23 @@
                                 </div>
                             </div>
                             <div class="slide">
-                                <div class="d-table d-xs-block bg1 text-center">
-                                    <div class="cell w-g-sm-4 w-g-12">
+                                <div class="d-table d-sm-block d-xs-block bg1 text-center pos-rel">
+                                    <div class="cell w-g-md-4 w-g-12">
                                         <div class="founderImage">
                                             <img src="assets/images/slides/About-founder-slide3.png" class="i-inline">
                                         </div>
                                         <div class="founderName ttu fs2 fw8">Sebastian Jacob</div>
                                         <div class="founderDesignation ttu fs1 fw5">Co-Founder</div>
                                     </div>
-                                    <div class="cell v-top w-g-sm-7 w-g-12 founderContent">
+                                    <div class="cell v-top w-g-md-7 w-g-12 founderContent">
                                         <div class="col w-g-10 fs3 founderDescription text-left">
                                             The perfect example of a book that can’t be judged by the cover, behind Seb’s wallflower like persona, is a mind that is bursting with ideas, wit and dark humour. Being the perfectionist that he is, Seb art direction and UX expertise is what helps us makes sure that the projects we deliver are both aesthetically and technically sound.
                                         </div>
-                                        <div class="col w-g-2 v-top founderSocialIcons text-right xs-hide">
+                                        <div class="col w-g-2 v-top founderSocialIcons text-right">
                                             <a class="col float-r" href="https://www.linkedin.com/in/sebastian-jacob-92701877/" target="_blank" title="Linkedin"><i class="sprite-xs icon-3"></i></a>
                                         </div>
-                                        <div class="founderHobbies text-center w-g-sm-10 w-g-12">
-                                            <!-- <div class="col w-sm-2 w-g-4">
-                                                <div class="d-inline">
-                                                    <i class="sprite-md icon-8"></i>
-                                                </div>
-                                                <div class="fs1 ttu">Lorem</div>
-                                            </div> -->
-                                            <div class="col w-g-md-10 w-g-sm-10 w-g-12 secImage">
+                                        <div class="founderHobbies text-center w-g-md-10 w-g-12">
+                                            <div class="col w-g-md-10 w-g-12 secImage">
                                                 <img src="assets/images/slides/founder-slide3.png" class="i-inline m-auto" >
                                             </div>
                                         </div>
@@ -261,18 +250,18 @@
                     </div>
             </section>
         </div>
-        <div class="section fp-auto-height active">
+        <div class="section fp-auto-height">
             <section id="aboutSec8" data-theme="dark" class="h-auto">
                 <div class="container-fluid pos-rel">
                     <div class="secrow1 row">
                         <div class="faceGrid col w-g-12 no-padding">
                             <?php  for ($i=1; $i<9; $i++) { ?>
                                 <?php if($i === 2) { ?>
-                                    <div class="faceTile col w-md-4 no-padding text-center pos-rel faceTitle d-table">
+                                    <div class="faceTile col w-md-4 w-g-sm-4 w-g-6 no-padding text-center pos-rel faceTitle">
                                         <h4 class="hs4 cell">Faces of <span class="fw8">Pichkaari</span></h4>
                                     </div>
                                 <?php } ?>
-                                <div class="faceTile col w-2 no-padding pos-rel">
+                                <div class="faceTile col w-md-2 w-g-sm-4 w-g-6 no-padding pos-rel">
                                     <div class="faceBox absolute-bg team-member<?php echo $i ?> sprite-team-member-icon1"></div>
                                 </div>
                             <?php } ?>
@@ -285,8 +274,8 @@
             <section id="aboutSec5" class="d-table bg7 fc1">
                 <div class="container cell pos-rel">
                     <div class="secrow1 row d-flex animate up">
-                        <div class="v-stretch hideflow w-g-sm-6 pos-rel">
-                            <div class="fw8 hs5 pos-rel w-g-md-8 w-sm-10 w-g-11">
+                        <div class="v-stretch hideflow w-g-md-6 w-g-12 pos-rel">
+                            <div class="fw8 hs5 pos-rel w-g-8">
                                 If you're looking for partners in creativity
                             </div>
                             <a href="careers.php" class="btn btn-red-white pos-rel">Apply Now</a>
@@ -294,8 +283,8 @@
                                 <img src="assets/images/About-img1.png" class="i-cover">
                             </div>
                         </div>
-                        <div class="v-stretch hideflow w-g-sm-6 pos-rel">
-                            <div class="fw8 hs5 pos-rel w-g-md-8 w-sm-10 w-g-11">
+                        <div class="v-stretch hideflow w-g-md-6 w-g-12 pos-rel">
+                            <div class="fw8 hs5 pos-rel w-g-8">
                                 If you want to materialize your project into reality
                             </div>
                             <a href="https://vikas921897.typeform.com/to/ibpgeKDW" target="_blank" class="btn btn-red-white pos-rel">Plan a project</a>

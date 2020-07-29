@@ -1,6 +1,8 @@
 <?php $pageTitle = 'Contact Us'; ?>
+<?php $pageId = 'contact'; ?>
 <?php include('meta.php') ?>
-<body class="contact">
+
+<body class="<?php echo $pageId; ?>">
     <?php include('header.php') ?>
     <section id="contactSec1" class="bg1 h-auto" data-float="hide" data-theme="dark">
         <div class="container-fluid pos-rel h-max no-padding">

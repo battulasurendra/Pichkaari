@@ -1,3 +1,11 @@
+<?php 
+    if (isset($pageId)) {
+        $pageId = $pageId;
+    } else {
+        $pageId = '';
+    } 
+?>
+
 <div id="page_loader">
     <svg class="spinner_svg m-auto" width="60px" height="60px">
         <circle class="bgPath" cx="30px" cy="30px" r="25px" fill="none" stroke-width="5px"></circle>
@@ -17,12 +25,12 @@
             </div>
             <div class="navbar-wrapper collapse navbar-collapse cell w-g-md-9 w-g-0">
                 <ul class="navbar-menu main-menuList text-right ttu">
-                    <li class="menu-scroll"><a class="d-block" href="about.php">About Us</a></li>
+                    <li class="menu-scroll <?php echo (($pageId == 'about') ? 'active' : ''); ?>"><a class="d-block" href="about.php">About Us</a></li>
                     <li class="menu-scroll"><a class="d-block" href="./#services">Services</a></li>
-                    <li class="menu-scroll"><a class="d-block" href="portfolio.php">Portfolio</a></li>
-                    <li class="menu-scroll"><a class="d-block" href="careers.php">Careers</a></li>
+                    <li class="menu-scroll <?php echo (($pageId == 'portfolio') ? 'active' : ''); ?>"><a class="d-block" href="portfolio.php">Portfolio</a></li>
+                    <li class="menu-scroll <?php echo (($pageId == 'career') ? 'active' : ''); ?>"><a class="d-block" href="careers.php">Careers</a></li>
                     <li class="menu-scroll"><a class="d-block" href="https://vikas921897.typeform.com/to/ibpgeKDW" target="_blank">Project Planner</a></li>
-                    <li class="menu-scroll"><a class="d-block" href="contact.php">Contact Us</a></li>
+                    <li class="menu-scroll <?php echo (($pageId == 'contact') ? 'active' : ''); ?>"><a class="d-block" href="contact.php">Contact Us</a></li>
                 </ul>
             </div>
             <div class="navbar-social cell w-g-md-0 w-g-4 text-right">

@@ -13,6 +13,18 @@
             -webkit-text-fill-color: transparent;
             -webkit-text-stroke-width: 1px; 
             -webkit-text-stroke-color: rgba($color1, 0.5);
+            display: inline;
+
+            &::before {
+                content: '';
+                width: 100%;
+                height: 5px;
+                background-color: $color1;
+                position: absolute;
+                top: 15%;
+                bottom: 0;
+                margin: auto;
+            }
         }
 
         .secHeader {
@@ -338,29 +350,244 @@
 
 /************************************ Media queries(Mobile & Tablet) ************************************/
 @media only screen and (max-width: 991px) {
+    #careerSec1 {
+        .secrow1 {    
+            .secHeader {
+                padding:5vh 15px;
+            }
+        }
     
-#careerSec3 {
-    #slaySlider {
-        .innerslide{
-            flex-direction: column;
+        .sec-bg {
+            .image-right {
+                @include anim($duration: 6400s);
+            }
+    
+            .image-left {
+                @include anim($duration: 6400s);
+            }
+        }
+    }
+    
+    #careerSec2 {
+        .secrow1{
+            display: block;
+            text-align: center;
 
-            .cell:last-child {
-                flex: 1 1 auto;
+            .secText,
+            .secHeader {
+                padding-right: 50px;
+
+                br {
+                    display: none;
+                }
+
+                span {
+                    display: block;
+                }
+            }
+
+            #dealSlider {
+                max-height: none;
+                top: 0;
+                transform: none;
+                text-align: left;
+
+                .slick-dots {
+                    padding: 15px 0;
+                    text-align: center;
+
+                    li {
+                        display: inline-block;
+                        vertical-align: top;
+                        font-size: 0;
+            
+                        button{
+                            width: 10px;
+                            height: 10px;
+                            background: rgba($color1, 0.29);
+                            border-radius: 50%;
+                            margin: auto 10px;
+                            font-size: 0;
+                        }
+            
+                        &.slick-active {
+                            button{
+                                background: rgba($color1, 1);
+                            }
+            
+                        }
+                    }
+                }
+            }
+
+            .sliderNavs {
+                display: none;
+            }
+        }
+    }
+    
+    #careerSec3 {
+        padding-right: 0;
+
+        .secrow1 {
+            flex-direction: column;
+        }
+    
+        #slaySlider {
+            max-height: none;
+
+            .slide {
+                max-width: 480px;
+                padding: 40px 20px;
+            }
+    
+            .innerslide{
+                display: block;
+                height: auto;
+            }
+    
+            .slideContent {
+                padding: 40px;
+                text-align: center;
+            }
+    
+            .secImage {
+                img {
+                    margin-right: 0;
+                    position: relative;
+                }
+            }
+
+            .slick-dots {
+                padding: 0;
+                text-align: center;
+
+                li {
+                    display: inline-block;
+                    vertical-align: top;
+                    font-size: 0;
+        
+                    button{
+                        width: 10px;
+                        height: 10px;
+                        background: $color6;
+                        border-radius: 50%;
+                        margin: auto 10px;
+                        font-size: 0;
+                    }
+        
+                    &.slick-active {
+                        button{
+                            background: $color4;
+                        }
+        
+                    }
+                }
             }
         }
 
+        .sliderNavs {
+            display: none;
+        }
     }
-}
+
+    #careerSec4 {
+        padding-right: 0;
+
+        #jobsSlider {
+            .slideContent {
+                .scrollable-content {
+                    overflow-y: auto;
+                }
+            }
+
+            .slide.slick-current {
+                .v-stretch {
+                    &::after {
+                        background: rgba($color7, 0.5);
+                    }
+                    
+                    .btn {
+                        background: $color1;
+                        color: $color7;
+                    }
+
+                    .absolute-bg {
+                        opacity: 0;
+                        
+                        &.hover-image {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+
+            .slick-dots {
+                padding: 15px 0;
+                text-align: center;
+
+                li {
+                    display: inline-block;
+                    vertical-align: top;
+                    font-size: 0;
+        
+                    button{
+                        width: 10px;
+                        height: 10px;
+                        background: $color5;
+                        border-radius: 50%;
+                        margin: auto 10px;
+                        font-size: 0;
+                    }
+        
+                    &.slick-active {
+                        button{
+                            background: $color3;
+                        }
+        
+                    }
+                }
+            }
+        }
+
+        .sliderNavs {
+            display: none;
+        }
+
+    }
+
+    #careerSec5 {
+        padding: 70px 50px;
+    }
+
+    #careerSec6 {
+        .secContent {
+            padding: 50px 50px 0;
+            text-align: center;
+
+            .secHeader {
+                br {
+                    display: none;
+                }
+            }
+
+            .btn {
+                margin-top: 30px;
+            }
+        }
+    }
 
 }
 /************************************ Media queries(Mobile & Tablet) ************************************/
 /************************************ Media queries(Mobile) ************************************/
 @media only screen and (max-width: 767px) {
     #careerSec1 {
-        .secrow1 {
-    
+        padding-left: 15px;
+        padding-right: 15px;
+
+        .secrow1 {    
             .secHeader {
-                padding:3vh 0;
+                padding:25% 0 35px;
             }
         }
     
@@ -373,22 +600,72 @@
         }
     }
 
-    #careerSec2 {
-        padding-right: 30px;
+    #careerSec2 {        
         .secrow1{
-            flex-direction: column;
+            .secText,
+            .secHeader {
+                padding-right: 25px;
+            }
 
             .dealSliderScore {
                 display: none;
             }
 
-            #dealSlider {
-                .slick-track, .slick-list {
-                    height: 100% !important;
-                }
-    
+            #dealSlider {    
                 .slide {
-                    padding: 20px 0;
+                    padding: 10px; 
+                    width: 320px;
+                    height: 400px;
+
+                    .innerSlide .absolute-bg {
+                        padding: 25px;
+
+                        .secText {
+                            padding-right: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #careerSec3 {    
+        #slaySlider {
+            .slide {
+                padding: 10px; 
+                width: 320px;
+            }
+    
+            .slideContent {
+                padding: 25px;
+            }
+        }
+    }
+
+    #careerSec4 {
+        .secrow1 {
+            padding: 10px 25px 20px 0;
+        }
+
+        .secrow2{
+            .slide{
+                width: 320px;
+                padding: 15px;
+
+                .slideContent {
+                    .secHeader {
+                        padding-top: 0;
+                        margin-top: 0;
+                        margin-bottom: 20px;
+                    }
+
+                    .secText {
+                        margin-top: 20px;
+                    }
+                }
+
+                .v-stretch {
+                    min-height: auto;
                 }
             }
         }

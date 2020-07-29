@@ -1,13 +1,15 @@
 <?php $pageTitle = 'Portfolio'; ?>
+<?php $pageId = 'portfolio'; ?>
 <?php include('meta.php') ?>
-<body class="portfolio">
+
+<body class="<?php echo $pageId; ?>">
     <?php include('header.php') ?>
     <section id="portfolioSec1" class="bg3 h-auto" data-float="hide" data-nav="transparent">
         <div class="container-fluid pos-rel">
             <div class="secrow1 animate explode">
                 <div class="bannerContent cell">
                     <div class="hs4 fc1 fw8 text-center w-g-md-7 w-g-12 m-auto">
-                        When Brands think that there's no more water, we show them an ocean. <span class="fc7">Here's some of the many Brands that took a dive!</span>
+                        When Brands think that there's no more water, we show them an ocean. <span class="fc7">Here are some of the many Brands that took a dive!</span>
                     </div>
                 </div>
             </div>
