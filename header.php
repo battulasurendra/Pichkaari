@@ -15,7 +15,7 @@
 <header>
     <nav class="navbar w-g-12" id="header-menu">
         <div class="d-table">
-            <div class="navbar-header cell w-g-md-3 w-g-8">
+            <div class="navbar-header cell w-g-md-2 w-g-8">
                 <div class="brand-logo">
                     <a class="d-inline w-g-12 logoAnchor text-center v-top" href="index.php">
                         <img src="assets/images/logo.svg" class="logo-default">
@@ -23,8 +23,9 @@
                     </a>
                 </div>
             </div>
-            <div class="navbar-wrapper collapse navbar-collapse cell w-g-md-9 w-g-0">
+            <div class="navbar-wrapper collapse navbar-collapse cell w-g-md-10 w-g-0">
                 <ul class="navbar-menu main-menuList text-right ttu">
+                    <li class="menu-scroll" id="device_dimensions"></li>
                     <li class="menu-scroll <?php echo (($pageId == 'about') ? 'active' : ''); ?>"><a class="d-block" href="about.php">About Us</a></li>
                     <li class="menu-scroll"><a class="d-block" href="./#services">Services</a></li>
                     <li class="menu-scroll <?php echo (($pageId == 'portfolio') ? 'active' : ''); ?>"><a class="d-block" href="portfolio.php">Portfolio</a></li>

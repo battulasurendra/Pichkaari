@@ -17,6 +17,7 @@
             $siteTitle = $pageTitle . ' | ';
         }
         $siteTitle .= 'Pichkaari Design Studio';
+        $site_version = '5.0.19';
     ?>
     <title><?php echo $siteTitle ?></title>
 
@@ -38,6 +39,6 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
-    <link href="assets/css/fullpage.min.css" rel="stylesheet">
-    <link href="assets/css/app.min.css?v=2.0" rel="stylesheet">
+    <link href="assets/css/fullpage.min.css?v=<?php echo $site_version ?>" rel="stylesheet">
+    <link href="assets/css/app.min.css?v=<?php echo $site_version ?>" rel="stylesheet">
 </head>

@@ -3,6 +3,10 @@
         padding: 10px;
     }
 
+    .bannerContent {
+        padding: 10% 0;
+    }
+
     .sec-bg {
         img {
             position: relative;
@@ -59,7 +63,7 @@
 }
 
 #aboutSec4 {
-    padding-top: 50px;
+    padding-top: 60px;
     padding-bottom: 0;
     
     .secHeader {
@@ -68,7 +72,7 @@
     }
 
     #founderSlider {
-        padding: 0 6%;
+        padding: 0 6% 50px;
         max-width: 1200px;
 
         .slide {
@@ -114,6 +118,7 @@
     .sliderNavs {
         height: auto;
         padding: 10px 0;
+        top: -50px;
         left: 0;
         right: 0;
 
@@ -140,15 +145,6 @@
 }
 
 #aboutSec5 {
-    &::after{
-        content: '';
-        @extend %absolute-basic;
-        background-color: $color1;
-        z-index: 2;
-        height: 50px;
-        bottom: auto;
-    }
-
     .v-stretch {
         width: 48%;
         min-height: 457px;

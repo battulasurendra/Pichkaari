@@ -264,7 +264,7 @@
                                             EXPERIENCE - 1-2 years
                                         </div>
                                         <div class="fs2 secText scrollable-content">
-                                            If you are a dreamer who has an eye for details, we are looking for you. If your specialty is stunning visual-imagery, you&nbsp;have come to the right place.
+                                            If you are a dreamer with a keen eye for detail, specializing in stunning visual imagery. If you are imaginative and can translate communication into design, then connect with us by sending in your application.
                                         </div>
                                     </div>
                                     <a target="_blank" href="https://vikas921897.typeform.com/to/VG2IWn7u" class="btn btn-red-white pos-rel">Apply Now</a>
@@ -308,7 +308,7 @@
                                             EXPERIENCE - 1-2 years
                                         </div>
                                         <div class="fs2 secText scrollable-content">
-                                            If you are a dreamer who has an eye for details, we are looking for you. If your specialty s stunning visual imagery, you are at the right place.
+                                            If you love using your words to craft stories, paint people’s imagination and make compelling arguments. If the thought of creating impactful and meaningful content excites you, then get connected with us by sending in your application.
                                         </div>
                                     </div>
                                     <a target="_blank" href="https://vikas921897.typeform.com/to/Gg7kklKf" class="btn btn-red-white pos-rel">Apply Now</a>

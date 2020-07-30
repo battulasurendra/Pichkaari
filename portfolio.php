@@ -23,7 +23,7 @@
             <div class="secrow1 row controls">
                 <ul id="portfolioFilters" class="col w-g-12 text-center"></ul>
             </div>
-            <div class="secrow2 row fc3 targets">
+            <div class="secrow2 row fc3 targets text-center">
                 <div class="grid m-auto" id="portfolioCards">
                     <div class="gap"></div>
                 </div>

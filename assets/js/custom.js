@@ -123,26 +123,31 @@ jQuery(function ($) {
         home: {
             init: function () {
                 var categories = ['Branding & Merchandising', 'marketing & communication', 'ui/ux design', 'information design', 'motion graphics & video','package design'];
+                
+                var $locations = $('.clientLocation');
+                var $totalLocations = $($locations).length;
+
+                if($totalLocations>0){
+                    // $('.clientLocation').hover(function () {
+                    //     switchCountry($(this));
+                    // });
+
+                    $($locations).each(function (i,v) {
+                        const ele = this;
+                        setTimeout(() => {
+                            switchCountry(ele);
+                            setInterval(() => {
+                                switchCountry(ele);
+                            }, $totalLocations * 1000);
+                        }, i*1000);
+                    });
+                }
 
                 function switchCountry(ele) {
                     $('.clientLocation.active').removeClass('active');
                     $(ele).addClass('active');
                     $('.clientCountry').html($(ele).data('location'));
                 }
-
-                $('.clientLocation').hover(function () {
-                    switchCountry($(this));
-                });
-
-                $('.clientLocation').each(function () {
-                    const ele = this;
-                    console.log(ele);
-                    setInterval(() => {
-                        switchCountry(ele);
-                        // $(ele).trigger('hover');
-                        // $(ele).trigger('hover');
-                    }, 2000);
-                })
 
                 $('#categorySlider').slick({
                     arrows: false, // disable
@@ -442,7 +447,7 @@ jQuery(function ($) {
 
                 function renderProject(project) {
                     var html = '';
-                    html += '<div class="portfolioCard d-inline pos-rel ' + project.category + '">';
+                    html += '<div class="portfolioCard text-left d-inline pos-rel ' + project.category + '">';
                     if(project.hasOwnProperty('thumbnail') && project.thumbnail.length){
                         html += '<a href="https://www.pichkaari.com/devaps/portfolio/' + project.link + '" target="_blank" class="absolute-bg"></a>';
                     }
@@ -555,8 +560,9 @@ jQuery(function ($) {
                     height: win.height()
                 };
 
-                $('#page_loader').fadeOut();
-                if((screen.width > 992) && (screen.height>600)) {
+                $('#device_dimensions').html(screen.width + ' x ' + screen.height);
+
+                if((screen.width > 992) && (screen.height>700)) {
                     if ($('#fullpage').length > 0) {
                         var fullpageOptions = {
                             //options here
@@ -611,6 +617,15 @@ jQuery(function ($) {
 
                 populate_animations();
                 themeChanges();
+
+                $('section').each(function(){
+                    var secHeight = $(this).innerHeight();
+                    if(secHeight === screen.height){
+                        $(this).css('height',secHeight);
+                    }
+                });
+
+                $('#page_loader').fadeOut();
             }
         }
     },
