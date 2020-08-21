@@ -149,7 +149,7 @@
                 </div>
             </section>
         </div>
-        <div class="section active">
+        <div class="section">
             <section id="aboutSec4" data-theme="dark">
                 <div class="container-fluid bg8 h-max d-table no-padding">
                     <div class="secrow1 cell w-g-12 no-padding pos-rel hideflow">

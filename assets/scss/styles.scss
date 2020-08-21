@@ -1037,7 +1037,8 @@ body {
 }
 /****************** Border Radius ******************/
 /****************** Scroll Animations ******************/
-@media only screen and (min-width: 320px) {
+@media only screen and (min-height: 300px) {
+// @media only screen and (min-height: 700px) {     // enable when parallax enables
     .loading,
     .animate {
         opacity: 0;

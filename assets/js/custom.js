@@ -562,7 +562,7 @@ jQuery(function ($) {
 
                 $('#device_dimensions').html(screen.width + ' x ' + screen.height);
 
-                if((screen.width > 992) && (screen.height>700)) {
+                if((screen.width > 992)) {
                     if ($('#fullpage').length > 0) {
                         var fullpageOptions = {
                             //options here
@@ -596,9 +596,21 @@ jQuery(function ($) {
                             $("html, body").animate({ scrollTop: "0" });
                         });
                     } else {
-                        $('#scrollToTopBtn').hide();
+                        $('#scrollToTopBtn').click(function () {
+                            $("html, body").animate({ scrollTop: "0" });
+                        });
                     }
+
+                    populate_animations();
+
+                    $(window).on("scroll", function () {
+                        populate_animations();
+                    });
                 } else {
+                    // var rellax = new Rellax('.animate', {
+                    //     center:true
+                    // });
+                    
                     $('#scrollToTopBtn').click(function () {
                         $("html, body").animate({ scrollTop: "0" });
                     });
@@ -611,11 +623,8 @@ jQuery(function ($) {
                 });
 
                 $(window).on("scroll", function () {
-                    populate_animations();
                     themeChanges();
                 });
-
-                populate_animations();
                 themeChanges();
 
                 $('section').each(function(){
