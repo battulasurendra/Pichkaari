@@ -25,12 +25,12 @@
             </div>
             <div class="navbar-wrapper collapse navbar-collapse cell w-g-md-10 w-g-0">
                 <ul class="navbar-menu main-menuList text-right ttu">
-                    <li class="menu-scroll" id="device_dimensions"></li>
+                    <!-- <li class="menu-scroll" id="device_dimensions"></li> -->
                     <li class="menu-scroll <?php echo (($pageId == 'about') ? 'active' : ''); ?>"><a class="d-block" href="about.php">About Us</a></li>
                     <li class="menu-scroll"><a class="d-block" href="./#services">Services</a></li>
                     <li class="menu-scroll <?php echo (($pageId == 'portfolio') ? 'active' : ''); ?>"><a class="d-block" href="portfolio.php">Portfolio</a></li>
                     <li class="menu-scroll <?php echo (($pageId == 'career') ? 'active' : ''); ?>"><a class="d-block" href="careers.php">Careers</a></li>
-                    <li class="menu-scroll"><a class="d-block" href="https://vikas921897.typeform.com/to/ibpgeKDW" target="_blank">Project Planner</a></li>
+                    <li class="menu-scroll <?php echo (($pageId == 'projectplanner') ? 'active' : ''); ?>"><a class="d-block" href="project-planner.php" target="_blank">Project Planner</a></li>
                     <li class="menu-scroll <?php echo (($pageId == 'contact') ? 'active' : ''); ?>"><a class="d-block" href="contact.php">Contact Us</a></li>
                 </ul>
             </div>

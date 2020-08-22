@@ -14,6 +14,7 @@
                                     A mature integrated <strong>communication agency</strong> that lives your brand and builds it to the moment <br>it becomes the people’s brand
                                 </div>
                                 <a href="https://vikas921897.typeform.com/to/ibpgeKDW" target="_blank" class="btn btn-black-white">Start a Project</a>
+                                <button class="js-video-button d-none" data-video-id='450226080' data-channel="vimeo">Vimeo</button>
                             </div>
                         </div>
                         <div class="absolute-bg animate up">

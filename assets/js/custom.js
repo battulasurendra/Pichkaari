@@ -560,7 +560,7 @@ jQuery(function ($) {
                     height: win.height()
                 };
 
-                $('#device_dimensions').html(screen.width + ' x ' + screen.height);
+                // $('#device_dimensions').html(screen.width + ' x ' + screen.height);
 
                 if((screen.width > 992)) {
                     if ($('#fullpage').length > 0) {
@@ -635,6 +635,13 @@ jQuery(function ($) {
                 });
 
                 $('#page_loader').fadeOut();
+                
+                if($(".js-video-button").length) {
+                    $(".js-video-button").modalVideo();
+                    setTimeout(function() {
+                        $(".js-video-button").trigger('click');
+                    }, 500);
+                }
             }
         }
     },

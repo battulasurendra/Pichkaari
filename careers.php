@@ -137,7 +137,7 @@
                 </div>
             </section>
         </div>
-        <div class="section">
+        <!-- <div class="section">
             <section id="careerSec3" data-theme="dark">
                 <div class="container-fluid no-padding h-max">
                     <div class="secrow1 d-flex h-max w-g-12 pos-rel animate up">
@@ -245,7 +245,7 @@
                     </div>
                 </div>
             </section>
-        </div>
+        </div> -->
         <div class="section">
             <section id="careerSec4" class="bg6" data-theme="dark">
                 <div class="container-fluid">

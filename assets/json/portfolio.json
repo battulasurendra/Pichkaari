@@ -115,7 +115,7 @@
             "description": "Brand Identity",
             "link": "Organicana",
             "thumbnail": "organicana-branding",
-            "active": true
+            "active": false
         },
         "packaging": {
             "title": "Organicana",
