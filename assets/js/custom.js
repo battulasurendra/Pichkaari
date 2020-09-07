@@ -653,15 +653,20 @@ jQuery(function ($) {
                     namespace[func][funcname](args);
                 }
             },
-            loadEvents: function () {
+            readyEvents: function () {
                 window.scrollTo(0, 0);
                 page.fire("preload");
                 $.each(document.body.className.replace(/-/g, "_").split(/\s+/), function (i, v) {
                     page.fire(v);
                 });
+            },
+            loadEvents: function () {
                 page.fire("postload");
             }
         };
 
-    $(document).ready(page.loadEvents);
+    $(document).ready(page.readyEvents);
+    $(window).on('load', function(){
+        page.loadEvents();
+    });
 });

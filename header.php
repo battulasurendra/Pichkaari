@@ -30,7 +30,7 @@
                     <li class="menu-scroll"><a class="d-block" href="./#services">Services</a></li>
                     <li class="menu-scroll <?php echo (($pageId == 'portfolio') ? 'active' : ''); ?>"><a class="d-block" href="portfolio.php">Portfolio</a></li>
                     <li class="menu-scroll <?php echo (($pageId == 'career') ? 'active' : ''); ?>"><a class="d-block" href="careers.php">Careers</a></li>
-                    <li class="menu-scroll <?php echo (($pageId == 'projectplanner') ? 'active' : ''); ?>"><a class="d-block" href="project-planner.php" target="_blank">Project Planner</a></li>
+                    <li class="menu-scroll <?php echo (($pageId == 'projectplanner') ? 'active' : ''); ?>"><a class="d-block" href="project-planner.html" target="_blank">Project Planner</a></li>
                     <li class="menu-scroll <?php echo (($pageId == 'contact') ? 'active' : ''); ?>"><a class="d-block" href="contact.php">Contact Us</a></li>
                 </ul>
             </div>

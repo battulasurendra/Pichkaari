@@ -12,7 +12,7 @@
             "description": "Graphics Video",
             "link": "Betsol-video",
             "thumbnail": "betsol-video",
-            "active": false
+            "active": true
         },
         "information": {
             "title": "Betsol",
@@ -39,7 +39,7 @@
         },
         "uiux": {
             "title": "Envi",
-            "description": "UI/UX Design & Development",
+            "description": "UI/UX Design",
             "link": "Envi",
             "thumbnail": "envi-uiux",
             "active": true
@@ -87,7 +87,7 @@
         },
         "uiux": {
             "title": "Indian Mart",
-            "description": "UI/UX Design",
+            "description": "UI/UX Design & Development.",
             "link": "Indianmart",
             "thumbnail": "indianmart-uiux",
             "active": true
@@ -126,10 +126,10 @@
         },
         "uiux": {
             "title": "Organicana",
-            "description": "UI/UX Design",
+            "description": "UI/UX Design & Development",
             "link": "Organicanauiux",
             "thumbnail": "organicana-uiux",
-            "active": false
+            "active": true
         }
     },
     "zenpulse": {
@@ -163,7 +163,7 @@
             "description": "Graphics Video",
             "link": "Neyamo",
             "thumbnail": "neeyamo-video",
-            "active": false
+            "active": true
         }
     },
     "allstate": {
@@ -188,7 +188,7 @@
             "description": "Information Design",
             "link": "Compile",
             "thumbnail": "compile-information",
-            "active": false
+            "active": true
         }
     },
     "t4u": {
@@ -222,7 +222,7 @@
             "description": "UI/UX Design",
             "link": "Alchemy",
             "thumbnail": "alchemy-uiux",
-            "active": false
+            "active": true
         }
     },
     "xiaomi": {
