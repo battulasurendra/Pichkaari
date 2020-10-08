@@ -216,7 +216,7 @@
                                     </div>
                                     <div class="cell v-top w-g-md-7 w-g-12 founderContent">
                                         <div class="col w-g-10 fs3 founderDescription text-left">
-                                            The perfect example of a book that can’t be judged by the cover, behind Seb’s wallflower like persona, is a mind that is bursting with ideas, wit and dark humour. Being the perfectionist that he is, Seb art direction and UX expertise is what helps us makes sure that the projects we deliver are both aesthetically and technically sound.
+                                            The perfect example of a book that can’t be judged by the cover, behind Seb’s wallflower like persona, is a mind that is bursting with ideas, wit and dark humour. Being the perfectionist that he is, Seb's art direction and UX expertise is what helps us make sure that the projects we deliver are both aesthetically and technically sound.
                                         </div>
                                         <div class="col w-g-2 v-top founderSocialIcons text-right">
                                             <a class="col float-r" href="https://www.linkedin.com/in/sebastian-jacob-92701877/" target="_blank" title="Linkedin"><i class="sprite-xs icon-3"></i></a>
