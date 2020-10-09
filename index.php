@@ -14,7 +14,7 @@
                                     A mature integrated <strong>communication agency</strong> that lives your brand and builds it to the moment <br>it becomes the people’s brand
                                 </div>
                                 <a href="https://vikas921897.typeform.com/to/ibpgeKDW" target="_blank" class="btn btn-black-white">Start a Project</a>
-                                <button class="js-video-button d-none" data-video-id='450226080' data-channel="vimeo">Vimeo</button>
+                                <!-- <button class="js-video-button d-none" data-video-id='450226080' data-channel="vimeo">Vimeo</button> -->
                             </div>
                         </div>
                         <div class="absolute-bg animate up">
@@ -49,7 +49,7 @@
                             <div class="cell w-g-md-7 w-g-12">
                                 <div id="causeAndPlayLottie"></div>
                                 <div class="fs6 fc7 secText fw8 lg-hide md-hide">
-                                    Collaborative Introspection  & Research
+                                    Collaborative Introspection & Research
                                 </div>
                             </div>
                         </div>
@@ -79,7 +79,7 @@
                                     <div class="cell w-g-md-6 w-g-12">
                                         <h4 class="hs4 fw8">Branding & Merchandising</h4>
                                         <div class="fs2 secText w-g-md-7">
-                                            We add half cup of identity, half cup of personality, stir them up with our creative juices  and we have ourselves a ‘brand’ new ﬂavour in the market!
+                                            We add half cup of identity, half cup of personality, stir them up with our creative juices and we have ourselves a ‘brand’ new ﬂavour in the market!
                                         </div>
                                         <a href="portfolio.php?category=branding" class="btn btn-red-white">More Projects</a>
                                     </div>
@@ -190,7 +190,7 @@
                     <div class="secrow3 container">
                         <div class="sliderContainer pos-rel">
                             <div id="brandSlider">
-                                <?php  for ($i=1; $i<31; $i++) { ?>
+                                <?php for ($i = 1; $i < 31; $i++) { ?>
                                     <div class="slide">
                                         <div class="secImage">
                                             <i class="sprite-client-icon<?php echo $i ?>"></i>

@@ -214,15 +214,6 @@ jQuery(function ($) {
                         }
                     ]
                 });
-
-                var element = document.getElementById('causeAndPlayLottie');
-                lottie.loadAnimation({
-                    container: element, // the dom element that will contain the animation
-                    renderer: 'svg',
-                    loop: true,
-                    autoplay: true,
-                    path: 'assets/json/cause-and-effect.json' // the path to the animation json
-                });
             }
         },
         career: {
@@ -635,13 +626,26 @@ jQuery(function ($) {
                 });
 
                 $('#page_loader').fadeOut();
-                
-                if($(".js-video-button").length) {
-                    $(".js-video-button").modalVideo();
-                    setTimeout(function() {
-                        $(".js-video-button").trigger('click');
-                    }, 500);
+
+                if ($('#causeAndPlayLottie').length) {
+                    var causeAndPlayLottie = document.getElementById('causeAndPlayLottie');
+                    lottie.loadAnimation({
+                        container: causeAndPlayLottie, // the dom element that will contain the animation
+                        renderer: 'svg',
+                        loop: true,
+                        autoplay: true,
+                        path: 'assets/json/cause-and-effect.json' // the path to the animation json
+                    });
                 }
+
+                // if($(".js-video-button").length) {
+                //     $(".js-video-button").modalVideo();
+                //     setTimeout(function() {
+                //         $(".js-video-button").trigger('click');
+                //     }, 500);
+                // }
+
+
             }
         }
     },

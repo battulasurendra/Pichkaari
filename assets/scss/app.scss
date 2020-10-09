@@ -1,3 +1,4 @@
+@import "fullpage";
 @import "slick";
 @import "modal-video";
 @import "styles";
@@ -9,5 +10,5 @@
 @import "portfolio";
 @import "contact";
 
-// sass --watch scss/app.scss:css/app.min.css --style compressed
+// sass --watch --no-source-map scss/app.scss:css/app.min.css --style compressed
 // @import "compass/css3";
